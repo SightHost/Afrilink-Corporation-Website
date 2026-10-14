@@ -24,6 +24,8 @@ import SectorDigitalPage from './views/SectorDigitalPage';
 import SectorHumanCapitalPage from './views/SectorHumanCapitalPage';
 import SectorStrategicPage from './views/SectorStrategicPage';
 
+import { withBase } from './lib/paths';
+
 import ContactPage from './views/ContactPage';
 import PartnerPage from './views/PartnerPage';
 
@@ -66,7 +68,7 @@ function parseRoute(route) {
 
 // Each route is a prerendered Astro page; navigating loads the real URL
 export function routeToPath(route) {
-  return !route || route === 'home' ? '/' : `/${route}`;
+  return withBase(!route || route === 'home' ? '/' : `/${route}`);
 }
 
 export default function App({ route = 'home' }) {

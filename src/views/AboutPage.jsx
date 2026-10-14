@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Award, Briefcase, Globe, Users, ExternalLink, ChevronDown, ChevronUp, MapPin, BookOpen } from 'lucide-react';
 import CTAButton from '../components/CTAButton';
 import { ceoProfile, boardMembers, shareholdersData, milestonesData, strategicPartnersData } from '../data/corporateData';
+import { withBase } from '../lib/paths';
 
 function TabNav({ tabs, active, onSelect }) {
   return (
@@ -83,9 +84,9 @@ function CEOTab() {
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="relative shrink-0">
             <img
-              src="/dr-mokgatle.jpg"
+              src={withBase('/dr-mokgatle.jpg')}
               alt="Dr Molefe M.D. Mokgatle"
-              onError={e => { e.target.src = '/afrilink-logo.png'; e.target.className = 'w-40 h-40 rounded-lg object-contain bg-afrilink-cream p-4 border border-afrilink-grey-light'; }}
+              onError={e => { e.target.src = withBase('/afrilink-logo.png'); e.target.className = 'w-40 h-40 rounded-lg object-contain bg-afrilink-cream p-4 border border-afrilink-grey-light'; }}
               className="w-40 h-40 rounded-lg object-cover shadow-card-hover border-2 border-afrilink-orange/30"
             />
             <div className="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-afrilink-orange flex items-center justify-center text-white text-[10px] font-semibold shadow-card">CEO</div>

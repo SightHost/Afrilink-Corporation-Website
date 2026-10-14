@@ -6,6 +6,7 @@ import InvestmentCard from '../components/InvestmentCard';
 import CTAButton from '../components/CTAButton';
 import { investmentsData, focusAreasData } from '../data/investmentsData';
 import { milestonesData } from '../data/corporateData';
+import { withBase } from '../lib/paths';
 
 function HeroSection({ onNavigate }) {
   const [loaded, setLoaded] = useState(false);
@@ -16,7 +17,7 @@ function HeroSection({ onNavigate }) {
       {/* Background with slight cinematic pan */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img
-          src="/hero-bg.jpg"
+          src={withBase('/hero-bg.jpg')}
           alt="Afrilink Pan-African Heritage and Insignia"
           className="absolute inset-0 w-full h-full object-cover object-center animate-hero-pan select-none"
         />

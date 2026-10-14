@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, ArrowUpRight, ShieldCheck, Heart } from 'lucide-react';
 import AfrilinkLogo from './AfrilinkLogo';
+import { withBase } from '../lib/paths';
 
 // lucide-react v1 dropped brand icons, so these are inline equivalents.
 const iconProps = {
@@ -41,7 +42,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
     <footer className="relative bg-afrilink-orange text-white/85 overflow-hidden">
       {/* Pan-African symbol wall background */}
       <img
-        src="/footer-bg.png"
+        src={withBase('/footer-bg.png')}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover object-center opacity-85 pointer-events-none select-none"

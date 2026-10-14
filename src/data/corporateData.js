@@ -1,10 +1,11 @@
 // Corporate Data: Leadership, Milestones, Partnerships, Gallery, Shareholders
+import { withBase } from '../lib/paths';
 
 export const ceoProfile = {
   name: 'Dr Molefe M.D. Mokgatle',
   title: 'Founder, Chairman & Chief Executive Officer',
   credentials: 'DBA (Paris School of Business); Hon. D. Prof Management (CIMS, USA); MBA (Cardiff Business School, Wales); M.A. Development Economics (London); B.A. Economics (USA); FCD (USA); FCMI (UK); FCIM (UK); Cert. Dir (SA)',
-  image: '/dr-mokgatle.jpg',
+  image: withBase('/dr-mokgatle.jpg'),
   quote: "Broad-based economic transformation is not merely a social imperative; it is the single greatest engine for durable, sustainable commercial wealth creation in Africa.",
   overview: "A seasoned pan-African corporate titan with over 39 years of top-tier executive leadership across consumer giants, state utilities, financial institutions, and heavy infrastructure conglomerates.",
   sections: [

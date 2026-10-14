@@ -1,4 +1,5 @@
 import React from 'react';
+import { withBase } from '../lib/paths';
 
 export default function AfrilinkLogo({ className = '', variant = 'full', light = false, onClick }) {
   if (variant === 'icon') {
@@ -9,10 +10,10 @@ export default function AfrilinkLogo({ className = '', variant = 'full', light =
         title="Afrilink Corporation (Pty) Ltd"
       >
         <img
-          src="/afrilink-logo.png"
+          src={withBase('/afrilink-logo.png')}
           alt="Afrilink Corporation"
           className="h-10 w-auto object-contain"
-          onError={e => { e.target.src = '/afrilink-logo-white.png'; }}
+          onError={e => { e.target.src = withBase('/afrilink-logo-white.png'); }}
         />
       </div>
     );
@@ -25,13 +26,13 @@ export default function AfrilinkLogo({ className = '', variant = 'full', light =
       title="Afrilink Corporation (Pty) Ltd — Making Diaspora Work"
     >
       <img
-        src={light ? '/afrilink-logo-white.png' : '/afrilink-logo.png'}
+        src={light ? withBase('/afrilink-logo-white.png') : withBase('/afrilink-logo.png')}
         alt="Afrilink Corporation"
         className="h-10 w-auto object-contain"
         onError={e => {
           // try the other one
           e.target.onerror = null;
-          e.target.src = light ? '/afrilink-logo.png' : '/afrilink-logo-white.png';
+          e.target.src = light ? withBase('/afrilink-logo.png') : withBase('/afrilink-logo-white.png');
         }}
       />
     </div>
