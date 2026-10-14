@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --open",
     "build": "astro build",
     "lint": "oxlint",
-    "preview": "astro preview",
+    "preview": "astro preview --open",
     "astro": "astro"
   },
   "dependencies": {
