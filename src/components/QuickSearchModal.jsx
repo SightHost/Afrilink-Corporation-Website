@@ -51,9 +51,18 @@ export default function QuickSearchModal({ isOpen, onClose, onNavigate }) {
   );
 
   const quickLinks = [
-    { label: 'Dr Molefe M.D. Mokgatle (Founder & CEO)', route: 'about/ceo', category: 'Leadership', icon: User },
-    { label: 'Shareholding Structure & Capitalization', route: 'about/shareholders', category: 'About', icon: Building },
-    { label: 'Corporate Gallery & Milestones', route: 'about/gallery', category: 'Media', icon: Sparkles },
+    { label: 'Dr Molefe M.D. Mokgatle (Founder & CEO Profile)', route: 'about/ceo', category: 'Leadership', icon: User },
+    { label: 'Company Overview, Mission & Values', route: 'about/overview', category: 'About', icon: Building },
+    { label: 'Shareholding Structure & Capital Architecture', route: 'about/shareholders', category: 'About', icon: Building },
+    { label: 'Corporate Gallery & Project Archive', route: 'about/gallery', category: 'Media', icon: Sparkles },
+    { label: 'Level 1 B-BBEE Transformation & Certificate', route: 'governance/bbee', category: 'Governance', icon: FileText },
+    { label: 'Statutory Compliance, CIPC & SARS Tax PIN', route: 'governance/compliance', category: 'Governance', icon: FileText },
+    { label: 'COIDA Letter of Good Standing & Labour', route: 'governance/good-standing', category: 'Governance', icon: FileText },
+    { label: 'Sector: Mining & Commodities (Botswana & SA)', route: 'investments/mining', category: 'Sectors', icon: Briefcase },
+    { label: 'Sector: Infrastructure, Water & Civils', route: 'investments/infrastructure', category: 'Sectors', icon: Briefcase },
+    { label: 'Sector: Digital Engineering & Tech Talent', route: 'investments/digital', category: 'Sectors', icon: Briefcase },
+    { label: 'Sector: Human Capital Academy (Daveyton)', route: 'investments/human-capital', category: 'Sectors', icon: Briefcase },
+    { label: 'Sector: Strategic Manufacturing & ELO AI', route: 'investments/strategic', category: 'Sectors', icon: Briefcase },
     { label: 'Partner With Us Briefing Form', route: 'partner', category: 'Investment CTA', icon: Briefcase },
     { label: 'Johannesburg Corporate Office & Contacts', route: 'contact', category: 'Contact', icon: Building }
   ].filter(l => l.label.toLowerCase().includes(normalizedQuery));

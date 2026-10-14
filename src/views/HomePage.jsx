@@ -21,9 +21,9 @@ function HeroSection({ onNavigate }) {
           className="absolute inset-0 w-full h-full object-cover object-center animate-hero-pan select-none"
         />
         {/* Directional gradients: ensures pristine text readability while highlighting the bronze insignia */}
-        <div className="absolute inset-0 bg-gradient-to-r from-afrilink-ink/90 via-afrilink-ink/70 to-afrilink-ink/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-afrilink-ink via-transparent to-afrilink-ink/40" />
-        <div className="absolute inset-0 bg-afrilink-navy/20 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-r from-afrilink-ink/70 via-afrilink-ink/30 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-afrilink-ink to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-afrilink-ink/50 to-transparent" />
         {/* Subtle brand orange ambient glow */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-afrilink-orange/15 rounded-full blur-[120px] pointer-events-none" />
       </div>

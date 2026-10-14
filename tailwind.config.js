@@ -3,7 +3,7 @@
 // white/cream surfaces, deep navy text, Afrilink orange accents, gold highlights.
 export default {
   content: [
-    "./index.html",
+    "./src/**/*.astro",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -47,6 +47,9 @@ export default {
       boxShadow: {
         'card': '0 2px 18px rgba(4, 9, 34, 0.06)',
         'card-hover': '0 10px 34px rgba(4, 9, 34, 0.12)',
+      },
+      opacity: {
+        '85': '0.85',
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

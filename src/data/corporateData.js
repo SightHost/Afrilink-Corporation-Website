@@ -4,7 +4,7 @@ export const ceoProfile = {
   name: 'Dr Molefe M.D. Mokgatle',
   title: 'Founder, Chairman & Chief Executive Officer',
   credentials: 'DBA (Paris School of Business); Hon. D. Prof Management (CIMS, USA); MBA (Cardiff Business School, Wales); M.A. Development Economics (London); B.A. Economics (USA); FCD (USA); FCMI (UK); FCIM (UK); Cert. Dir (SA)',
-  image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+  image: '/dr-mokgatle.jpg',
   quote: "Broad-based economic transformation is not merely a social imperative; it is the single greatest engine for durable, sustainable commercial wealth creation in Africa.",
   overview: "A seasoned pan-African corporate titan with over 39 years of top-tier executive leadership across consumer giants, state utilities, financial institutions, and heavy infrastructure conglomerates.",
   sections: [
@@ -53,16 +53,8 @@ export const ceoProfile = {
   ]
 };
 
-export const boardMembers = [
-  {
-    name: 'Mr Sipho Mampe',
-    title: 'Director — Financial Management',
-    credentials: 'B Com Finance (UJ) · Registered Tax Practitioner · Business Accountant in Practice (CIBA)',
-    experience: '16+ years senior financial management',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
-    bio: 'Mr Sipho Mampe directs financial governance, capital allocation, and statutory tax compliance across Afrilink Corporation and its portfolio investments. With over 16 years of senior corporate financial management across mining, logistics, and professional services, he ensures pristine balance sheet integrity and alignment with King IV governance protocols.'
-  }
-];
+export const boardMembers = [];
+
 
 export const shareholdersData = {
   philosophy: "Afrilink Corporation operates on a philosophy of patient, empowerment-driven institutional capital. Our equity architecture balances strong entrepreneurial leadership with enduring broad-based community trusts, employee share ownership, and qualified institutional co-investors.",

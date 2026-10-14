@@ -41,7 +41,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
       id: 'about',
       hasDropdown: true,
       children: [
-        { label: 'Company Overview & Values', route: 'about', desc: 'Mission, vision, milestones & partnerships' },
+        { label: 'Company Overview & Values', route: 'about/overview', desc: 'Mission, vision, milestones & partnerships' },
         { label: 'Founder & CEO Profile', route: 'about/ceo', desc: 'Dr Molefe M.D. Mokgatle (39 yrs leadership)' },
         { label: 'Shareholders & Capital', route: 'about/shareholders', desc: 'Empowerment equity & institutional structure' },
         { label: 'Corporate Gallery', route: 'about/gallery', desc: 'Projects, UN address & milestones' }
@@ -52,9 +52,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
       id: 'governance',
       hasDropdown: true,
       children: [
-        { label: 'B-BBEE Transformation', route: 'governance/bbee', desc: 'Empowerment ratings & certified credentials' },
-        { label: 'Statutory Compliance & SARS', route: 'governance/compliance', desc: 'CIPC, POPIA, Tax PIN & King IV adherence' },
-        { label: 'Letter of Good Standing (COIDA)', route: 'governance/good-standing', desc: 'Workplace safety & Department of Labour status' }
+        { label: 'Governance Hub & Standards', route: 'governance', desc: 'King IV compliance & executive oversight' },
+        { label: 'B-BBEE Transformation', route: 'governance/bbee', desc: 'Level 1 status & 100% black ownership credentials' },
+        { label: 'Statutory Compliance & SARS', route: 'governance/compliance', desc: 'CIPC registration, Tax PIN & POPIA data officer' },
+        { label: 'Letter of Good Standing (COIDA)', route: 'governance/good-standing', desc: 'Department of Labour workplace safety status' }
       ]
     },
     {
@@ -62,13 +63,12 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
       id: 'investments',
       hasDropdown: true,
       children: [
-        { label: 'All Investment Holdings', route: 'investments', desc: 'Diversified portfolio across SADC' },
-        { label: 'Afrilink MG — Botswana 🇧🇼', route: 'investments/afrilink-mg', desc: 'Gold, diamonds & manganese prospecting' },
-        { label: 'Afrilink Mining — South Africa 🇿🇦', route: 'investments/afrilink-mining', desc: 'Chrome, vanadium & community participation' },
-        { label: 'Afrilink Buildings & Civils', route: 'investments/afrilink-buildings', desc: 'Water, sanitation & civic engineering' },
-        { label: 'Strider Digital', route: 'investments/strider-digital', desc: 'Tier-1 UX & QA digital engineering talent' },
-        { label: 'Mahlori Group', route: 'investments/mahlori-group', desc: 'Daveyton training & human capital academy' },
-        { label: 'Strategic Ventures Portfolio', route: 'investments/strategic-ventures', desc: 'Vacuform 2000, EdTech & ELO AI alliance' }
+        { label: 'All Investment Holdings', route: 'investments', desc: 'Diversified portfolio across South Africa & Botswana' },
+        { label: 'Sector: Mining & Commodities', route: 'investments/mining', desc: 'Gold, diamonds, manganese, chrome & vanadium' },
+        { label: 'Sector: Infrastructure & Civils', route: 'investments/infrastructure', desc: 'Bulk water, civic engineering & municipal PPPs' },
+        { label: 'Sector: Digital Engineering', route: 'investments/digital', desc: 'Strider Digital tier-1 bank UX & QA engineering' },
+        { label: 'Sector: Human Capital Academy', route: 'investments/human-capital', desc: 'Mahlori Group youth upskilling & SETA certifications' },
+        { label: 'Sector: Strategic Manufacturing', route: 'investments/strategic', desc: 'Vacuform 2000 automotive parts & German ELO AI alliance' }
       ]
     },
     { label: 'Contact Us', route: 'contact' }
@@ -90,11 +90,6 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
             variant="full"
           />
 
-          {/* Tagline Pill (desktop only) */}
-          <div className="hidden 2xl:flex items-center gap-2 px-3 py-1 rounded-full whitespace-nowrap bg-afrilink-butter text-[13px] font-semibold text-afrilink-navy">
-            <span className="w-1.5 h-1.5 rounded-full bg-afrilink-orange animate-pulse" />
-            <span>Making Diaspora Work</span>
-          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
@@ -275,9 +270,6 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
 
           {/* Bottom Pinned Mobile CTA & Info */}
           <div className="pt-6 border-t border-afrilink-grey-light space-y-4">
-            <div className="text-center text-[13px] font-semibold text-afrilink-orange">
-              Tagline: "Making Diaspora Work"
-            </div>
             <CTAButton
               variant="orange"
               size="lg"

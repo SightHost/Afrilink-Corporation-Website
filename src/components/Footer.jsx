@@ -38,7 +38,15 @@ const Instagram = ({ className }) => (
 
 export default function Footer({ onNavigate, onOpenLegal }) {
   return (
-    <footer className="relative bg-afrilink-orange text-white/60 overflow-hidden">
+    <footer className="relative bg-afrilink-orange text-white/85 overflow-hidden">
+      {/* Pan-African symbol wall background */}
+      <img
+        src="/footer-bg.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover object-center opacity-85 pointer-events-none select-none"
+      />
+      <div className="absolute inset-0 bg-afrilink-ink/30 pointer-events-none" />
 
       {/* Main Footer Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
@@ -165,37 +173,37 @@ export default function Footer({ onNavigate, onOpenLegal }) {
             {/* Investments Column */}
             <div>
               <h4 className="text-base font-heading font-semibold text-white mb-4">
-                Investments
+                Sectors & Holdings
               </h4>
               <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <button onClick={() => onNavigate?.('investments/afrilink-mg')} className="hover:text-afrilink-gold transition-colors">
-                    Afrilink MG (Botswana)
+                  <button onClick={() => onNavigate?.('investments/mining')} className="hover:text-afrilink-gold transition-colors">
+                    Mining & Commodities
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/afrilink-mining')} className="hover:text-afrilink-gold transition-colors">
-                    Afrilink Mining (SA)
+                  <button onClick={() => onNavigate?.('investments/infrastructure')} className="hover:text-afrilink-gold transition-colors">
+                    Infrastructure & Civils
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/afrilink-buildings')} className="hover:text-afrilink-gold transition-colors">
-                    Afrilink Buildings & Civils
+                  <button onClick={() => onNavigate?.('investments/digital')} className="hover:text-afrilink-gold transition-colors">
+                    Digital Engineering
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/strider-digital')} className="hover:text-afrilink-gold transition-colors">
-                    Strider Digital
+                  <button onClick={() => onNavigate?.('investments/human-capital')} className="hover:text-afrilink-gold transition-colors">
+                    Human Capital Academy
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/mahlori-group')} className="hover:text-afrilink-gold transition-colors">
-                    Mahlori Group
+                  <button onClick={() => onNavigate?.('investments/strategic')} className="hover:text-afrilink-gold transition-colors">
+                    Strategic Manufacturing
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/strategic-ventures')} className="hover:text-afrilink-gold transition-colors">
-                    Strategic Ventures
+                  <button onClick={() => onNavigate?.('investments')} className="text-afrilink-gold font-semibold hover:underline">
+                    All Holdings (6+) →
                   </button>
                 </li>
               </ul>
@@ -237,7 +245,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
         {/* Corporate Leadership Credit */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/80">
           <div>
-            <strong className="text-white font-semibold">Afrilink Corporation (Pty) Ltd</strong> · Chairman & CEO: <span className="text-white font-semibold">Dr Molefe M.D. Mokgatle</span> · Director (Financial Management): <span className="text-white">Sipho Mampe</span>
+            <strong className="text-white font-semibold">Afrilink Corporation (Pty) Ltd</strong> · Chairman & CEO: <span className="text-white font-semibold">Dr Molefe M.D. Mokgatle</span>
           </div>
           <div className="flex items-center gap-2 text-[13px] text-white/80">
             <ShieldCheck className="w-4 h-4 text-afrilink-gold" />

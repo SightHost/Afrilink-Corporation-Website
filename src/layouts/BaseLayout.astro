@@ -1,14 +1,42 @@
+---
+import '../index.css';
+
+interface Props {
+  title?: string;
+}
+
+const siteTitle = 'AFRILINK CORPORATION (Pty) Ltd | Making Diaspora Work — Investment Holding Company';
+const { title } = Astro.props;
+const pageTitle = title ? `${title} | AFRILINK CORPORATION` : siteTitle;
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Corporation',
+  name: 'Afrilink Corporation (Pty) Ltd',
+  alternateName: 'Afrilink Group',
+  slogan: 'Making Diaspora Work',
+  description: 'South African investment holding company committed to broad-based economic empowerment, sustainable business growth and strategic partnerships across South Africa and the African continent.',
+  founder: {
+    '@type': 'Person',
+    name: 'Dr Molefe M.D. Mokgatle',
+    jobTitle: 'Founder, Chairman & Chief Executive Officer',
+  },
+  areaServed: ['South Africa', 'Botswana', 'Sub-Saharan Africa'],
+  knowsAbout: ['Mining & Commodities', 'Resources & Infrastructure', 'Financial Services', 'Strategic Ventures & Digital Tech'],
+};
+---
+
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23040922'/%3E%3Cpath d='M14 36L24 12L34 36H28L24 24L20 36H14Z' fill='%23F37121'/%3E%3Ccircle cx='24' cy='12' r='3' fill='%23FFD177'/%3E%3Cpath d='M18 28H30' stroke='%23FFD177' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AFRILINK CORPORATION (Pty) Ltd | Making Diaspora Work — Investment Holding Company</title>
+    <title>{pageTitle}</title>
     <meta name="description" content="Afrilink Corporation is a premier South African investment holding company driving economic empowerment, mining, infrastructure, technology and diaspora capital across South Africa and Botswana. Tagline: Making Diaspora Work." />
     <meta name="keywords" content="investment holding company South Africa, African investment partner, B-BBEE investment company, Botswana mining investment, diaspora investment Africa, Dr Molefe Mokgatle, strategic ventures" />
     <meta name="author" content="Afrilink Corporation (Pty) Ltd" />
-    
+
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="AFRILINK CORPORATION | Making Diaspora Work" />
@@ -19,31 +47,14 @@
     <meta name="twitter:description" content="Strategic investments driving empowerment, governance and sustainable value in South Africa & Botswana." />
 
     <!-- Google Fonts: Plus Jakarta Sans (matches afrilinkbuilding.co.za) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
 
     <!-- Structured Data: Organization Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "Afrilink Corporation (Pty) Ltd",
-      "alternateName": "Afrilink Group",
-      "slogan": "Making Diaspora Work",
-      "description": "South African investment holding company committed to broad-based economic empowerment, sustainable business growth and strategic partnerships across South Africa and the African continent.",
-      "founder": {
-        "@type": "Person",
-        "name": "Dr Molefe M.D. Mokgatle",
-        "jobTitle": "Founder, Chairman & Chief Executive Officer"
-      },
-      "areaServed": ["South Africa", "Botswana", "Sub-Saharan Africa"],
-      "knowsAbout": ["Mining & Commodities", "Resources & Infrastructure", "Financial Services", "Strategic Ventures & Digital Tech"]
-    }
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
   </head>
   <body class="bg-white text-afrilink-navy font-sans antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <slot />
   </body>
 </html>
