@@ -13,23 +13,19 @@ function HeroSection({ onNavigate }) {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-afrilink-ink">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-afrilink-navy via-afrilink-navy/95 to-afrilink-ink" />
-        {/* African continent silhouette - decorative */}
-        <div className="absolute right-0 top-0 w-1/2 h-full opacity-5"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Cpath d='M200,20 C220,30 280,50 300,100 C320,150 340,200 330,280 C320,360 290,400 270,450 C250,500 240,550 220,570 C200,590 170,560 160,530 C150,500 130,460 120,420 C110,380 80,340 70,300 C60,260 80,220 90,180 C100,140 80,90 100,60 C120,30 180,10 200,20Z' fill='%23F37121'/%3E%3C/svg%3E")`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center right',
-            backgroundSize: 'contain'
-          }}
+      {/* Background with slight cinematic pan */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img
+          src="/hero-bg.jpg"
+          alt="Afrilink Pan-African Heritage and Insignia"
+          className="absolute inset-0 w-full h-full object-cover object-center animate-hero-pan select-none"
         />
-        {/* Geometric grid */}
-        <div className="absolute inset-0 bg-ndebele-pattern opacity-60" />
-        {/* Dark overlay + subtle orange glow */}
-        <div className="absolute inset-0 bg-gradient-to-t from-afrilink-ink/80 via-transparent to-transparent" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-afrilink-orange/10 rounded-full blur-[120px]" />
+        {/* Directional gradients: ensures pristine text readability while highlighting the bronze insignia */}
+        <div className="absolute inset-0 bg-gradient-to-r from-afrilink-ink/90 via-afrilink-ink/70 to-afrilink-ink/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-afrilink-ink via-transparent to-afrilink-ink/40" />
+        <div className="absolute inset-0 bg-afrilink-navy/20 mix-blend-multiply" />
+        {/* Subtle brand orange ambient glow */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-afrilink-orange/15 rounded-full blur-[120px] pointer-events-none" />
       </div>
 
       {/* Hero Content */}
@@ -84,9 +80,14 @@ function HeroSection({ onNavigate }) {
           <span>Scroll to explore</span>
         </div>
       </div>
+    </section>
+  );
+}
 
-      {/* Stat Bar */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pb-16">
+function StatBarSection() {
+  return (
+    <section className="bg-afrilink-ink py-16">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <StatCounter />
       </div>
     </section>
@@ -320,6 +321,7 @@ export default function HomePage({ onNavigate }) {
   return (
     <div>
       <HeroSection onNavigate={onNavigate} />
+      <StatBarSection />
       <FocusAreasSection onNavigate={onNavigate} />
       <FootprintSection onNavigate={onNavigate} />
       <InvestmentsPreview onNavigate={onNavigate} />
