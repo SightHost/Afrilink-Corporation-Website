@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import App from '../App.jsx';
+import { investmentsData } from '../data/investmentsData';
+
+export function getStaticPaths() {
+  // Every route the React app understands, prerendered as its own URL.
+  // Aliases (e.g. "about" → overview) resolve to the same page via App's parseRoute.
+  const routes = {
+    '': null,
+    'about': 'About',
+    'about/overview': 'About',
+    'about/ceo': 'Chairman & CEO',
+    'about/shareholders': 'Shareholders',
+    'about/gallery': 'Gallery',
+    'governance': 'Governance',
+    'governance/overview': 'Governance',
+    'governance/bbee': 'B-BBEE',
+    'governance/compliance': 'Statutory Compliance',
+    'governance/cipc': 'Statutory Compliance',
+    'governance/good-standing': 'Labour & Good Standing',
+    'governance/labour': 'Labour & Good Standing',
+    'investments': 'Holdings & Investments',
+    'investments/mining': 'Mining & Resources',
+    'investments/infrastructure': 'Infrastructure & Civils',
+    'investments/digital': 'Digital & Technology',
+    'investments/human-capital': 'Human Capital & Training',
+    'investments/strategic': 'Strategic Ventures',
+    'contact': 'Contact',
+    'partner': 'Partner With Us',
+    ...Object.fromEntries(investmentsData.map((inv) => [`investments/${inv.slug}`, inv.name])),
+  };
+
+  return Object.entries(routes).map(([route, title]) => ({
+    params: { route: route || undefined },
+    props: { title },
+  }));
+}
+
+const route = Astro.params.route ?? 'home';
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title ?? undefined}>
+  <App route={route} client:load />
+</BaseLayout>

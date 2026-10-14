@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-orange: #F37121;
+    --color-navy: #040922;
+    --color-gold: #FFD177;
+    --color-cream: #F9EFE0;
+    --color-grey: #D1D1D1;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #040922;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  ::selection {
+    background: #FFD177;
+    color: #040922;
+  }
+}
+
+@layer components {
+  /* Pill button with the reference site's radial orange gradient */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full text-white font-semibold transition-all duration-300;
+    padding: 11px 23px;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    line-height: 1.7;
+    background: radial-gradient(circle at center, #F18728 0%, #F18728 100%);
+  }
+  .btn-primary:hover {
+    background: radial-gradient(circle at center, #F27304 0%, #F27304 100%);
+  }
+
+  /* Form controls: 50px tall, 6px radius, grey outline, gold focus */
+  .form-input {
+    @apply w-full bg-white text-afrilink-navy placeholder:text-afrilink-navy-60/70 border border-afrilink-grey rounded-form px-4 outline-none transition-colors;
+    min-height: 50px;
+    font-size: 16px;
+  }
+  .form-input:focus {
+    border-color: #FFD177;
+    box-shadow: 0 0 0 3px rgba(255, 209, 119, 0.35);
+  }
+
+  /* Small sentence-case section label above headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-label text-afrilink-orange;
+  }
+}
+
+/* Subtle geometric texture for cream sections */
+.bg-ndebele-pattern {
+  background-image: radial-gradient(rgba(243, 113, 33, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.bg-weave-pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 2px, transparent 2px, transparent 14px),
+                    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 2px, transparent 2px, transparent 14px);
+}
+
+.bg-sand-weave {
+  background-image: repeating-linear-gradient(45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px),
+                    repeating-linear-gradient(-45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px);
+}
+
+/* Cards: clean white with soft navy shadow */
+.glass-card,
+.glass-card-light {
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
+}
+
+.glass-nav {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EDEDED;
+  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
+}
+
+.glow-orange {
+  box-shadow: 0 10px 30px -8px rgba(243, 113, 33, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 10px 30px -8px rgba(255, 209, 119, 0.5);
+}
+
+/* Highlighted word in headings (solid orange, as on the reference site) */
+.text-gold-gradient {
+  color: #F37121;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D1D1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F37121;
+}
+
+/* Hide scrollbar for horizontal card lists while keeping scroll capability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle cinematic hero background pan */
+@keyframes heroPan {
+  0% {
+    transform: scale(1.08) translate3d(0%, 0%, 0);
+  }
+  50% {
+    transform: scale(1.14) translate3d(-2.5%, -1.2%, 0);
+  }
+  100% {
+    transform: scale(1.10) translate3d(-1%, 1.5%, 0);
+  }
+}
+
+.animate-hero-pan {
+  animation: heroPan 24s ease-in-out infinite alternate;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-pan {
+    animation: none;
+    transform: scale(1.05);
+  }
+}
+
