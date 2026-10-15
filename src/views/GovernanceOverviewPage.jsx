@@ -19,14 +19,14 @@ export default function GovernanceOverviewPage({ onNavigate }) {
   const complianceMetrics = [
     { label: 'B-BBEE Status', value: 'Level 1', icon: ShieldCheck, color: '#F37121' },
     { label: 'Black Ownership', value: '100%', icon: CheckCircle2, color: '#F18728' },
-    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#2B3044' },
-    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#5A5E6E' },
+    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#C5C8D4' },
+    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#9196AA' },
     { label: 'King IV Adherence', value: 'Full', icon: ShieldCheck, color: '#F37121' },
     { label: 'COIDA Standing', value: 'Good Standing', icon: CheckCircle2, color: '#F18728' },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -64,10 +64,10 @@ export default function GovernanceOverviewPage({ onNavigate }) {
         {/* Compliance Metrics Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
           {complianceMetrics.map((m, i) => (
-            <div key={i} className="bg-white rounded-xl p-5 border border-afrilink-grey-light shadow-card text-center hover:shadow-card-hover transition-all">
+            <div key={i} className="bg-afrilink-surface rounded-xl p-5 border border-afrilink-grey-light shadow-card text-center hover:shadow-card-hover transition-all">
               <m.icon className="w-6 h-6 mx-auto mb-2" style={{ color: m.color }} />
-              <div className="font-heading font-semibold text-2xl text-afrilink-navy mb-1">{m.value}</div>
-              <div className="text-xs font-medium text-afrilink-navy-60">{m.label}</div>
+              <div className="font-heading font-semibold text-2xl text-afrilink-fg mb-1">{m.value}</div>
+              <div className="text-xs font-medium text-afrilink-fg-60">{m.label}</div>
             </div>
           ))}
         </div>
@@ -76,26 +76,26 @@ export default function GovernanceOverviewPage({ onNavigate }) {
         <div className="mb-20">
           <div className="max-w-2xl mb-10">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Statutory Pillars</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
               Dedicated Governance Pillars
             </h2>
-            <p className="text-afrilink-navy-60 text-base mt-2">
+            <p className="text-afrilink-fg-60 text-base mt-2">
               Explore each compliance domain on its own dedicated page with verified credential disclosures.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Pillar 1: B-BBEE */}
-            <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
+            <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-afrilink-orange/10 border border-afrilink-orange/20 flex items-center justify-center text-afrilink-orange mb-6">
                   <Award className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">Pillar 01</span>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mt-1 mb-3">
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mt-1 mb-3">
                   B-BBEE Transformation
                 </h3>
-                <p className="text-afrilink-navy-60 text-sm leading-relaxed mb-6">
+                <p className="text-afrilink-fg-60 text-sm leading-relaxed mb-6">
                   Level 1 contributor rating (135% procurement recognition), 100% black ownership, and 38.4% black women ownership certified by Empowerdex.
                 </p>
               </div>
@@ -105,16 +105,16 @@ export default function GovernanceOverviewPage({ onNavigate }) {
             </div>
 
             {/* Pillar 2: Statutory Compliance */}
-            <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
+            <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-afrilink-navy/10 border border-afrilink-navy/20 flex items-center justify-center text-afrilink-navy mb-6">
+                <div className="w-12 h-12 rounded-xl bg-afrilink-fg/10 border border-afrilink-fg/20 flex items-center justify-center text-afrilink-fg mb-6">
                   <FileCheck className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">Pillar 02</span>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mt-1 mb-3">
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mt-1 mb-3">
                   Statutory & SARS Status
                 </h3>
-                <p className="text-afrilink-navy-60 text-sm leading-relaxed mb-6">
+                <p className="text-afrilink-fg-60 text-sm leading-relaxed mb-6">
                   Official CIPC incorporation (2001/014920/07), active annual returns, SARS Tax Compliance Status PIN, and registered POPIA Information Officer.
                 </p>
               </div>
@@ -124,16 +124,16 @@ export default function GovernanceOverviewPage({ onNavigate }) {
             </div>
 
             {/* Pillar 3: COIDA */}
-            <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
+            <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/40 transition-all flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-afrilink-gold/20 border border-afrilink-gold/40 flex items-center justify-center text-afrilink-navy mb-6">
+                <div className="w-12 h-12 rounded-xl bg-afrilink-gold/20 border border-afrilink-gold/40 flex items-center justify-center text-afrilink-fg mb-6">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">Pillar 03</span>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mt-1 mb-3">
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mt-1 mb-3">
                   Letter of Good Standing
                 </h3>
-                <p className="text-afrilink-navy-60 text-sm leading-relaxed mb-6">
+                <p className="text-afrilink-fg-60 text-sm leading-relaxed mb-6">
                   Compensation Fund (COIDA) certification issued by the Department of Employment and Labour, valid through April 2027 with clear audit standing.
                 </p>
               </div>
@@ -176,11 +176,11 @@ export default function GovernanceOverviewPage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Document Registry</span>
-              <h2 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
                 Verified Compliance Documents
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Click any certificate card to inspect verified metadata, registration codes, and preview the disclosure file.
             </p>
           </div>

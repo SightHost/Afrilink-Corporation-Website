@@ -80,7 +80,7 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Page Header */}
       <div className="relative pt-36 pb-16 lg:pt-40 lg:pb-20 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -119,16 +119,16 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
       />
 
       {/* Dedicated Sector Hub Cards */}
-      <section className="bg-white">
+      <section className="bg-afrilink-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Sector Breakdown</span>
-              <h2 className="font-heading text-3xl lg:text-[40px] leading-[1.2] font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl lg:text-[40px] leading-[1.2] font-semibold text-afrilink-fg mt-1">
                 Explore Dedicated Sector Pages
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Each sector has its own dedicated page with deep industry context, thesis, and asset factsheets.
             </p>
           </div>
@@ -138,21 +138,21 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
               <div
                 key={i}
                 onClick={() => onNavigate(sc.route)}
-                className="group cursor-pointer bg-white rounded-xl p-7 border border-afrilink-grey-light hover:border-afrilink-orange/50 shadow-card hover:shadow-card-hover transition-all flex flex-col justify-between"
+                className="group cursor-pointer bg-afrilink-surface rounded-xl p-7 border border-afrilink-grey-light hover:border-afrilink-orange/50 shadow-card hover:shadow-card-hover transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className="w-11 h-11 rounded-lg bg-afrilink-orange/10 flex items-center justify-center text-afrilink-orange group-hover:bg-afrilink-orange group-hover:text-white transition-colors">
                       <sc.icon className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-afrilink-cream text-afrilink-navy border border-afrilink-grey-light">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-afrilink-cream text-afrilink-fg border border-afrilink-grey-light">
                       {sc.count}
                     </span>
                   </div>
-                  <h3 className="font-heading font-semibold text-xl text-afrilink-navy group-hover:text-afrilink-orange transition-colors mb-2">
+                  <h3 className="font-heading font-semibold text-xl text-afrilink-fg group-hover:text-afrilink-orange transition-colors mb-2">
                     {sc.title}
                   </h3>
-                  <p className="text-afrilink-navy-60 text-sm leading-relaxed mb-4">
+                  <p className="text-afrilink-fg-60 text-sm leading-relaxed mb-4">
                     {sc.desc}
                   </p>
                 </div>
@@ -172,14 +172,14 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Portfolio Grid</span>
-              <h2 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
                 All Investment Holdings
               </h2>
             </div>
 
             {/* Sector Filter */}
             <div className="flex flex-wrap items-center gap-2">
-              <Filter className="w-4 h-4 text-afrilink-navy-60 mr-1" />
+              <Filter className="w-4 h-4 text-afrilink-fg-60 mr-1" />
               {SECTORS.map(sector => (
                 <button
                   key={sector}
@@ -187,7 +187,7 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
                   className={`px-4 py-1.5 rounded-full text-xs font-semibold border transition-all ${
                     activeSector === sector
                       ? 'bg-afrilink-orange text-white border-afrilink-orange shadow-sm'
-                      : 'bg-white text-afrilink-navy border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
+                      : 'bg-afrilink-surface text-afrilink-fg border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
                   }`}
                 >
                   {sector}

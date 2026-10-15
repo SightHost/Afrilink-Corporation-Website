@@ -25,7 +25,7 @@ export default function SectorDigitalPage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -63,25 +63,25 @@ export default function SectorDigitalPage({ onNavigate }) {
         {/* Metric Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-20">
           {stats.map((s, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-6 border border-afrilink-grey-light shadow-card text-center hover:shadow-card-hover transition-all">
-              <span className="text-xs text-afrilink-navy-60 font-medium">{s.label}</span>
+            <div key={idx} className="bg-afrilink-surface rounded-2xl p-6 border border-afrilink-grey-light shadow-card text-center hover:shadow-card-hover transition-all">
+              <span className="text-xs text-afrilink-fg-60 font-medium">{s.label}</span>
               <div className="font-heading text-3xl sm:text-4xl font-bold text-afrilink-orange mt-2 mb-1">{s.value}</div>
-              <div className="text-xs text-afrilink-navy-80 font-semibold">{s.desc}</div>
+              <div className="text-xs text-afrilink-fg-80 font-semibold">{s.desc}</div>
             </div>
           ))}
         </div>
 
         {/* Digital Value Proposition */}
-        <div className="bg-gradient-to-br from-afrilink-cream to-white rounded-2xl p-8 sm:p-12 border border-afrilink-orange/20 mb-20">
+        <div className="bg-gradient-to-br from-afrilink-cream to-afrilink-surface rounded-2xl p-8 sm:p-12 border border-afrilink-orange/20 mb-20">
           <div className="max-w-3xl">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Solving The Talent Deficit</span>
-            <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mt-1 mb-4">
+            <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mt-1 mb-4">
               Bank-Grade Quality Assurance & UX Design
             </h2>
-            <p className="text-afrilink-navy-80 text-base leading-relaxed mb-6">
+            <p className="text-afrilink-fg-80 text-base leading-relaxed mb-6">
               Major financial institutions face an acute deficit of senior, autonomous digital engineering talent. Through <strong>Strider Digital</strong>, Afrilink Corporation provides structured placement, bespoke squad models, and continuous talent care. With an extraordinary client Net Promoter Score exceeding 9.6/10, Strider is the trusted talent engine powering South Africa's modern banking platforms.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-afrilink-navy">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-afrilink-fg">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-afrilink-orange shrink-0" />
                 <span>Automated regression testing frameworks</span>
@@ -107,11 +107,11 @@ export default function SectorDigitalPage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Portfolio Company</span>
-              <h2 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
                 Strider Digital
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Specialist digital product engineering partner trusted by tier-1 banks and insurance corporations.
             </p>
           </div>

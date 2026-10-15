@@ -7,13 +7,14 @@
     --color-orange: #F37121;
     --color-navy: #040922;
     --color-gold: #FFD177;
-    --color-cream: #F9EFE0;
-    --color-grey: #D1D1D1;
+    --color-cream: #10162E;
+    --color-grey: #303957;
   }
 
   body {
-    background-color: #FFFFFF;
-    color: #040922;
+    background-color: #0B1022;
+    color: #F1F2F6;
+    color-scheme: dark;
     font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -54,7 +55,7 @@
 
   /* Form controls: 50px tall, 6px radius, grey outline, gold focus */
   .form-input {
-    @apply w-full bg-white text-afrilink-navy placeholder:text-afrilink-navy-60/70 border border-afrilink-grey rounded-form px-4 outline-none transition-colors;
+    @apply w-full bg-afrilink-surface text-afrilink-fg placeholder:text-afrilink-fg-60/70 border border-afrilink-grey rounded-form px-4 outline-none transition-colors;
     min-height: 50px;
     font-size: 16px;
   }
@@ -81,22 +82,22 @@
 }
 
 .bg-sand-weave {
-  background-image: repeating-linear-gradient(45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px),
-                    repeating-linear-gradient(-45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px);
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.025) 0px, rgba(255, 255, 255, 0.025) 1.5px, transparent 1.5px, transparent 12px),
+                    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.025) 0px, rgba(255, 255, 255, 0.025) 1.5px, transparent 1.5px, transparent 12px);
 }
 
-/* Cards: clean white with soft navy shadow */
+/* Cards: raised navy panel with soft shadow */
 .glass-card,
 .glass-card-light {
-  background: #FFFFFF;
-  border: 1px solid #EDEDED;
-  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
+  background: #121A38;
+  border: 1px solid #1F2740;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
 }
 
 .glass-nav {
-  background: #FFFFFF;
-  border-bottom: 1px solid #EDEDED;
-  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
+  background: #0B1022;
+  border-bottom: 1px solid #1F2740;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
 }
 
 .glow-orange {
@@ -119,11 +120,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F4F4;
+  background: #0B1022;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D1D1D1;
+  background: #303957;
   border-radius: 4px;
 }
 

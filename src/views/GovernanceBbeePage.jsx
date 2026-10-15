@@ -25,7 +25,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -61,7 +61,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         {/* Verification Certificate Summary Card */}
-        <div className="bg-white rounded-2xl p-8 sm:p-12 border-2 border-afrilink-orange/30 shadow-card mb-16 relative overflow-hidden">
+        <div className="bg-afrilink-surface rounded-2xl p-8 sm:p-12 border-2 border-afrilink-orange/30 shadow-card mb-16 relative overflow-hidden">
           <div className="absolute -top-12 -right-12 w-48 h-48 bg-afrilink-orange/10 rounded-full blur-2xl" />
 
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-8 pb-8 border-b border-afrilink-grey-light">
@@ -73,11 +73,11 @@ export default function GovernanceBbeePage({ onNavigate }) {
                 <span className="text-xs uppercase font-bold tracking-widest text-afrilink-orange">
                   SANAS Accredited Verification
                 </span>
-                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-navy mt-1">
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-fg mt-1">
                   Level 1 Contributor (135% Recognition)
                 </h2>
-                <p className="text-afrilink-navy-60 text-sm mt-1">
-                  Certificate No: <strong className="text-afrilink-navy">BEE-AFR-2026-9041</strong> · Verified by Empowerdex Rating Agency
+                <p className="text-afrilink-fg-60 text-sm mt-1">
+                  Certificate No: <strong className="text-afrilink-fg">BEE-AFR-2026-9041</strong> · Verified by Empowerdex Rating Agency
                 </p>
               </div>
             </div>
@@ -96,28 +96,28 @@ export default function GovernanceBbeePage({ onNavigate }) {
           {/* Quick Metrics Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div className="bg-afrilink-cream p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs text-afrilink-navy-60 font-medium">Black Ownership</span>
-              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-navy mt-1">100%</div>
-              <div className="text-[11px] text-green-700 font-semibold mt-1 flex items-center gap-1">
+              <span className="text-xs text-afrilink-fg-60 font-medium">Black Ownership</span>
+              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-fg mt-1">100%</div>
+              <div className="text-[11px] text-emerald-400 font-semibold mt-1 flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3" /> Fully Verified
               </div>
             </div>
             <div className="bg-afrilink-cream p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs text-afrilink-navy-60 font-medium">Black Women Ownership</span>
-              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-navy mt-1">38.4%</div>
-              <div className="text-[11px] text-green-700 font-semibold mt-1 flex items-center gap-1">
+              <span className="text-xs text-afrilink-fg-60 font-medium">Black Women Ownership</span>
+              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-fg mt-1">38.4%</div>
+              <div className="text-[11px] text-emerald-400 font-semibold mt-1 flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3" /> Qualifying Criteria
               </div>
             </div>
             <div className="bg-afrilink-cream p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs text-afrilink-navy-60 font-medium">Procurement Recognition</span>
+              <span className="text-xs text-afrilink-fg-60 font-medium">Procurement Recognition</span>
               <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-orange mt-1">135%</div>
-              <div className="text-[11px] text-afrilink-navy-60 font-medium mt-1">Preferential Multiplier</div>
+              <div className="text-[11px] text-afrilink-fg-60 font-medium mt-1">Preferential Multiplier</div>
             </div>
             <div className="bg-afrilink-cream p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs text-afrilink-navy-60 font-medium">Empowering Supplier</span>
-              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-navy mt-1">Yes</div>
-              <div className="text-[11px] text-green-700 font-semibold mt-1 flex items-center gap-1">
+              <span className="text-xs text-afrilink-fg-60 font-medium">Empowering Supplier</span>
+              <div className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-fg mt-1">Yes</div>
+              <div className="text-[11px] text-emerald-400 font-semibold mt-1 flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3" /> Designated Group
               </div>
             </div>
@@ -128,10 +128,10 @@ export default function GovernanceBbeePage({ onNavigate }) {
         <div className="mb-20">
           <div className="max-w-2xl mb-10">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Detailed Breakdown</span>
-            <h3 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+            <h3 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
               B-BBEE Scorecard Performance
             </h3>
-            <p className="text-afrilink-navy-60 text-sm mt-2">
+            <p className="text-afrilink-fg-60 text-sm mt-2">
               Our holistic scoring reflects deep-rooted empowerment across every element of our operational and corporate structure.
             </p>
           </div>
@@ -140,18 +140,18 @@ export default function GovernanceBbeePage({ onNavigate }) {
             {scorecardPillars.map((p, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl p-6 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+                className="bg-afrilink-surface rounded-xl p-6 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
               >
                 <div>
                   <div className="flex items-center gap-3">
-                    <h4 className="font-heading text-xl font-semibold text-afrilink-navy">{p.name}</h4>
-                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 font-bold">
+                    <h4 className="font-heading text-xl font-semibold text-afrilink-fg">{p.name}</h4>
+                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 font-bold">
                       {p.status}
                     </span>
                   </div>
-                  <p className="text-afrilink-navy-60 text-sm mt-1">{p.desc}</p>
+                  <p className="text-afrilink-fg-60 text-sm mt-1">{p.desc}</p>
                 </div>
-                <div className="font-heading text-2xl font-bold text-afrilink-navy shrink-0">
+                <div className="font-heading text-2xl font-bold text-afrilink-fg shrink-0">
                   {p.score}
                 </div>
               </div>

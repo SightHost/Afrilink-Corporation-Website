@@ -99,7 +99,7 @@ export default function App({ route = 'home' }) {
   const { page, sub } = parseRoute(currentRoute);
 
   return (
-    <div className="min-h-screen bg-white text-afrilink-navy font-sans antialiased">
+    <div className="min-h-screen bg-afrilink-surface text-afrilink-fg font-sans antialiased">
       {/* Sticky Navigation */}
       <Navbar
         currentRoute={currentRoute}

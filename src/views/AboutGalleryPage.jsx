@@ -22,7 +22,7 @@ export default function AboutGalleryPage({ onNavigate }) {
     : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -59,7 +59,7 @@ export default function AboutGalleryPage({ onNavigate }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         {/* Category Filter Pills */}
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-4 mb-10 border-b border-afrilink-grey-light">
-          <span className="text-xs uppercase tracking-wider font-semibold text-afrilink-navy-60 mr-2 shrink-0">
+          <span className="text-xs uppercase tracking-wider font-semibold text-afrilink-fg-60 mr-2 shrink-0">
             Filter:
           </span>
           {CATEGORIES.map(cat => (
@@ -69,7 +69,7 @@ export default function AboutGalleryPage({ onNavigate }) {
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all shrink-0 border ${
                 selectedCategory === cat
                   ? 'bg-afrilink-orange text-white border-afrilink-orange shadow-card'
-                  : 'bg-white text-afrilink-navy border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
+                  : 'bg-afrilink-surface text-afrilink-fg border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
               }`}
             >
               {cat}
@@ -83,7 +83,7 @@ export default function AboutGalleryPage({ onNavigate }) {
             <div
               key={item.id}
               onClick={() => setActiveModalItem(item)}
-              className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-afrilink-grey-light hover:border-afrilink-orange/40 transition-all duration-300 hover:-translate-y-1.5 shadow-card hover:shadow-card-hover flex flex-col justify-between"
+              className="group cursor-pointer rounded-2xl overflow-hidden bg-afrilink-surface border border-afrilink-grey-light hover:border-afrilink-orange/40 transition-all duration-300 hover:-translate-y-1.5 shadow-card hover:shadow-card-hover flex flex-col justify-between"
             >
               <div className="relative aspect-[16/11] overflow-hidden bg-afrilink-cream">
                 <img
@@ -95,7 +95,7 @@ export default function AboutGalleryPage({ onNavigate }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-afrilink-navy/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
                 <div className="absolute top-3 left-3">
-                  <span className="px-2.5 py-1 rounded bg-white/90 backdrop-blur-md text-xs font-semibold text-afrilink-orange shadow-sm">
+                  <span className="px-2.5 py-1 rounded bg-afrilink-surface/90 backdrop-blur-md text-xs font-semibold text-afrilink-orange shadow-sm">
                     {item.category}
                   </span>
                 </div>
@@ -109,14 +109,14 @@ export default function AboutGalleryPage({ onNavigate }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center gap-1.5 text-xs font-medium text-afrilink-navy-60 mb-2">
+                  <div className="flex items-center gap-1.5 text-xs font-medium text-afrilink-fg-60 mb-2">
                     <MapPin className="w-3.5 h-3.5 text-afrilink-orange" />
                     <span>{item.year}</span>
                   </div>
-                  <h3 className="font-heading text-lg font-semibold text-afrilink-navy group-hover:text-afrilink-orange transition-colors mb-2">
+                  <h3 className="font-heading text-lg font-semibold text-afrilink-fg group-hover:text-afrilink-orange transition-colors mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-afrilink-navy-60 text-xs sm:text-sm leading-relaxed line-clamp-3">
+                  <p className="text-afrilink-fg-60 text-xs sm:text-sm leading-relaxed line-clamp-3">
                     {item.caption}
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export default function AboutGalleryPage({ onNavigate }) {
             onClick={() => setActiveModalItem(null)}
           >
             <div
-              className="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative border border-white/20 animate-fade-in"
+              className="bg-afrilink-surface rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative border border-white/20 animate-fade-in"
               onClick={e => e.stopPropagation()}
             >
               <button
@@ -155,14 +155,14 @@ export default function AboutGalleryPage({ onNavigate }) {
                   <span className="text-xs font-bold px-2.5 py-1 rounded bg-afrilink-orange/10 text-afrilink-orange">
                     {activeModalItem.category}
                   </span>
-                  <span className="text-xs text-afrilink-navy-60 font-medium">
+                  <span className="text-xs text-afrilink-fg-60 font-medium">
                     {activeModalItem.year}
                   </span>
                 </div>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-3">
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-3">
                   {activeModalItem.title}
                 </h3>
-                <p className="text-afrilink-navy-80 text-sm sm:text-base leading-relaxed">
+                <p className="text-afrilink-fg-80 text-sm sm:text-base leading-relaxed">
                   {activeModalItem.caption}
                 </p>
               </div>
@@ -174,10 +174,10 @@ export default function AboutGalleryPage({ onNavigate }) {
         <div className="bg-afrilink-cream rounded-2xl p-8 sm:p-12 border border-afrilink-grey-light flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="text-xs font-bold text-afrilink-orange uppercase tracking-wider">Explore Further</span>
-            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mt-1">
+            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mt-1">
               Connect With Our Executive Team
             </h3>
-            <p className="text-afrilink-navy-60 text-sm mt-1 max-w-xl">
+            <p className="text-afrilink-fg-60 text-sm mt-1 max-w-xl">
               Submit an investment brief or schedule a direct engagement with Dr Molefe Mokgatle and the board.
             </p>
           </div>

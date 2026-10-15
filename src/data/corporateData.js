@@ -63,7 +63,7 @@ export const shareholdersData = {
   segments: [
     { name: 'Founders & Executive Management (Mokgatle Family Trust)', percentage: 52, color: '#F37121', description: 'Long-term voting control and strategic executive stewardship.' },
     { name: 'Broad-Based Community & Employee Trust', percentage: 26, color: '#FFD177', description: 'Host community trusts adjacent to mining concessions and employee share schemes.' },
-    { name: 'Strategic Black Institutional & Diaspora Capital Partners', percentage: 22, color: '#040922', description: 'Institutional co-investors, high-net-worth diaspora partners, and empowerment funds.' }
+    { name: 'Strategic Black Institutional & Diaspora Capital Partners', percentage: 22, color: '#C5C8D4', description: 'Institutional co-investors, high-net-worth diaspora partners, and empowerment funds.' }
   ]
 };
 

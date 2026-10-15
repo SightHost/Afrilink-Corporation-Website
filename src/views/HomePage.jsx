@@ -106,13 +106,13 @@ function FocusAreasSection({ onNavigate }) {
 
   const areas = focusAreasData || [
     { title: 'Mining & Resources', icon: 'mining', description: 'Strategic mineral tenure, prospecting and offtake across Botswana and South Africa.', color: '#F37121' },
-    { title: 'Infrastructure & Civils', icon: 'infra', description: 'Water, sanitation, civic engineering and essential public infrastructure delivery.', color: '#040922' },
-    { title: 'Digital & Technology', icon: 'digital', description: 'UX engineering, QA assurance and enterprise digital transformation through Strider Digital.', color: '#5A5E6E' },
-    { title: 'Human Capital & Training', icon: 'human', description: 'Skills development, learnerships and workforce transformation through Mahlori Group.', color: '#2B3044' },
+    { title: 'Infrastructure & Civils', icon: 'infra', description: 'Water, sanitation, civic engineering and essential public infrastructure delivery.', color: '#FFD177' },
+    { title: 'Digital & Technology', icon: 'digital', description: 'UX engineering, QA assurance and enterprise digital transformation through Strider Digital.', color: '#9196AA' },
+    { title: 'Human Capital & Training', icon: 'human', description: 'Skills development, learnerships and workforce transformation through Mahlori Group.', color: '#C5C8D4' },
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-white relative">
+    <section className="py-20 lg:py-28 bg-afrilink-surface relative">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="eyebrow mb-4">
@@ -120,10 +120,10 @@ function FocusAreasSection({ onNavigate }) {
             Core Focus Areas
             <span className="w-8 h-px bg-afrilink-orange" />
           </div>
-          <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy">
+          <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg">
             Where Afrilink <span className="text-afrilink-orange">Creates Value</span>
           </h2>
-          <p className="mt-4 text-afrilink-navy-60 max-w-2xl mx-auto text-[17px] leading-[1.7]">
+          <p className="mt-4 text-afrilink-fg-60 max-w-2xl mx-auto text-[17px] leading-[1.7]">
             Diversified across high-impact sectors driving Africa's sovereign economic transformation.
           </p>
         </div>
@@ -133,17 +133,17 @@ function FocusAreasSection({ onNavigate }) {
             const Icon = iconMap[area.title] || TrendingUp;
             return (
               <div key={area.title}
-                className="group bg-white border border-afrilink-grey-light shadow-card hover:shadow-card-hover rounded-lg p-6 hover:border-afrilink-orange/40 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                className="group bg-afrilink-surface border border-afrilink-grey-light shadow-card hover:shadow-card-hover rounded-lg p-6 hover:border-afrilink-orange/40 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
                 onClick={() => onNavigate('investments')}
               >
                 <div className="w-12 h-12 rounded-md flex items-center justify-center mb-5 bg-afrilink-butter text-afrilink-orange"
                   style={area.color ? { background: `${area.color}20`, border: `1px solid ${area.color}40` } : undefined}>
                   <Icon className="w-6 h-6 text-afrilink-orange" style={area.color ? { color: area.color } : undefined} />
                 </div>
-                <h3 className="font-heading font-semibold text-afrilink-navy text-xl mb-2 group-hover:text-afrilink-orange transition-colors">
+                <h3 className="font-heading font-semibold text-afrilink-fg text-xl mb-2 group-hover:text-afrilink-orange transition-colors">
                   {area.title}
                 </h3>
-                <p className="text-afrilink-navy-60 text-[15px] leading-[1.7]">
+                <p className="text-afrilink-fg-60 text-[15px] leading-[1.7]">
                   {area.summary || area.description}
                 </p>
                 <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-afrilink-orange opacity-0 group-hover:opacity-100 transition-opacity">
@@ -170,11 +170,11 @@ function FootprintSection({ onNavigate }) {
               <span className="w-8 h-px bg-afrilink-orange" />
               Geographic Footprint
             </div>
-            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy mb-6">
+            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg mb-6">
               Pan-African Reach,<br />
               <span className="text-afrilink-orange">Diaspora Connected</span>
             </h2>
-            <p className="text-afrilink-navy-80 text-[17px] leading-[1.7] mb-8">
+            <p className="text-afrilink-fg-80 text-[17px] leading-[1.7] mb-8">
               Headquartered in Sandton, Johannesburg, Afrilink Corporation operates active investment platforms in South Africa and Botswana, with strategic partnerships and diaspora capital conduits extending to the United Kingdom, Europe, and North America.
             </p>
             <div className="space-y-3">
@@ -184,10 +184,10 @@ function FootprintSection({ onNavigate }) {
                 { flag: '🇬🇧', label: 'United Kingdom — Diaspora Capital & Partnerships', primary: false },
                 { flag: '🌍', label: 'Europe & North America — Diaspora Conduits', primary: false },
               ].map(loc => (
-                <div key={loc.label} className={`flex items-center gap-3 p-3 rounded-md ${loc.primary ? 'bg-white border border-afrilink-grey-light shadow-card' : 'opacity-70'}`}>
+                <div key={loc.label} className={`flex items-center gap-3 p-3 rounded-md ${loc.primary ? 'bg-afrilink-surface border border-afrilink-grey-light shadow-card' : 'opacity-70'}`}>
                   <span className="text-xl">{loc.flag}</span>
-                  <span className="text-sm font-medium text-afrilink-navy-80">{loc.label}</span>
-                  {loc.primary && <span className="ml-auto text-[11px] font-semibold text-afrilink-navy bg-afrilink-butter px-2 py-0.5 rounded">Active</span>}
+                  <span className="text-sm font-medium text-afrilink-fg-80">{loc.label}</span>
+                  {loc.primary && <span className="ml-auto text-[11px] font-semibold text-afrilink-fg bg-afrilink-butter px-2 py-0.5 rounded">Active</span>}
                 </div>
               ))}
             </div>
@@ -208,7 +208,7 @@ function FootprintSection({ onNavigate }) {
 
 function InvestmentsPreview({ onNavigate }) {
   return (
-    <section className="py-20 lg:py-28 bg-white relative">
+    <section className="py-20 lg:py-28 bg-afrilink-surface relative">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
@@ -216,7 +216,7 @@ function InvestmentsPreview({ onNavigate }) {
               <span className="w-8 h-px bg-afrilink-orange" />
               Investment Portfolio
             </div>
-            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy">
+            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg">
               Holdings & <span className="text-afrilink-orange">Ventures</span>
             </h2>
           </div>
@@ -249,7 +249,7 @@ function MilestonesSection() {
             Corporate Timeline
             <span className="w-8 h-px bg-afrilink-orange" />
           </div>
-          <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy">
+          <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg">
             39 Years of <span className="text-afrilink-orange">Leadership</span>
           </h2>
         </div>
@@ -262,10 +262,10 @@ function MilestonesSection() {
             {(milestonesData || []).slice(0, 6).map((m, i) => (
               <div key={m.year + i} className={`lg:flex items-center gap-8 lg:gap-0 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                 <div className={`lg:w-1/2 ${i % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                  <div className="bg-white rounded-lg p-5 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all">
+                  <div className="bg-afrilink-surface rounded-lg p-5 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all">
                     <div className="text-afrilink-orange font-heading font-semibold text-2xl mb-1">{m.year}</div>
-                    <div className="text-afrilink-navy font-semibold text-lg mb-1">{m.title}</div>
-                    <div className="text-afrilink-navy-60 text-[15px] leading-[1.7]">{m.description}</div>
+                    <div className="text-afrilink-fg font-semibold text-lg mb-1">{m.title}</div>
+                    <div className="text-afrilink-fg-60 text-[15px] leading-[1.7]">{m.description}</div>
                   </div>
                 </div>
                 {/* Center dot */}

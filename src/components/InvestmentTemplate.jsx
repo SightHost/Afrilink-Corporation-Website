@@ -34,7 +34,7 @@ export default function InvestmentTemplate({
   };
 
   return (
-    <div className="min-h-screen bg-white text-afrilink-navy">
+    <div className="min-h-screen bg-afrilink-surface text-afrilink-fg">
       {/* Navy hero banner (top padding clears the ~94px white header) */}
       <section className="bg-afrilink-navy text-white pt-[130px] pb-14">
         {/* Back breadcrumb bar */}
@@ -117,13 +117,13 @@ export default function InvestmentTemplate({
       {metrics && metrics.length > 0 && (
         <section className="bg-afrilink-cream py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 rounded-lg bg-white border border-afrilink-grey-light shadow-card">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 rounded-lg bg-afrilink-surface border border-afrilink-grey-light shadow-card">
               {metrics.map((m, idx) => (
                 <div key={idx} className="text-center sm:text-left sm:border-r last:border-r-0 border-afrilink-grey-light sm:px-4">
                   <div className="text-[13px] text-afrilink-orange font-semibold mb-1">
                     {m.label}
                   </div>
-                  <div className="text-xl sm:text-2xl font-heading font-semibold text-afrilink-navy">
+                  <div className="text-xl sm:text-2xl font-heading font-semibold text-afrilink-fg">
                     {m.value}
                   </div>
                 </div>
@@ -134,17 +134,17 @@ export default function InvestmentTemplate({
       )}
 
       {/* Main Content Layout: Overview & Key Facts Side by Side */}
-      <section className="bg-white py-16">
+      <section className="bg-afrilink-surface py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             {/* Main Deep-dive Article (8 cols) */}
             <div className="lg:col-span-8 space-y-8">
-              <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
-                <h2 className="font-heading font-semibold text-2xl text-afrilink-navy mb-6 flex items-center gap-3">
+              <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+                <h2 className="font-heading font-semibold text-2xl text-afrilink-fg mb-6 flex items-center gap-3">
                   <span className="w-3 h-3 rounded-sm bg-afrilink-orange" />
                   Operational Overview & Strategic Thesis
                 </h2>
-                <div className="prose max-w-none text-afrilink-navy-80 leading-[1.7] space-y-4 text-[17px] whitespace-pre-line">
+                <div className="prose max-w-none text-afrilink-fg-80 leading-[1.7] space-y-4 text-[17px] whitespace-pre-line">
                   {description}
                 </div>
               </div>
@@ -156,16 +156,16 @@ export default function InvestmentTemplate({
                     <ShieldCheck className="w-4 h-4" />
                     Partnership Syndicate Brief
                   </div>
-                  <h3 className="font-heading font-semibold text-2xl text-afrilink-navy mb-4">
+                  <h3 className="font-heading font-semibold text-2xl text-afrilink-fg mb-4">
                     {opportunity.headline}
                   </h3>
-                  <p className="text-base text-afrilink-navy-80 leading-[1.7] mb-6">
+                  <p className="text-base text-afrilink-fg-80 leading-[1.7] mb-6">
                     {opportunity.description}
                   </p>
 
                   <div className="space-y-3 mb-8">
                     {opportunity.points.map((pt, i) => (
-                      <div key={i} className="flex items-start gap-3 text-base text-afrilink-navy-80">
+                      <div key={i} className="flex items-start gap-3 text-base text-afrilink-fg-80">
                         <div className="w-5 h-5 rounded-full bg-afrilink-orange/10 text-afrilink-orange flex items-center justify-center shrink-0 mt-1 border border-afrilink-orange/40">
                           <CheckCircle className="w-3.5 h-3.5" />
                         </div>
@@ -175,7 +175,7 @@ export default function InvestmentTemplate({
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-afrilink-grey">
-                    <div className="text-sm text-afrilink-navy-60">
+                    <div className="text-sm text-afrilink-fg-60">
                       Direct access to technical geological files & NDA briefings
                     </div>
                     <CTAButton
@@ -192,8 +192,8 @@ export default function InvestmentTemplate({
 
             {/* Key Facts Panel Sidebar (4 cols) */}
             <div className="lg:col-span-4 space-y-6">
-              <div className="bg-white rounded-lg p-6 border border-afrilink-grey-light sticky top-28 shadow-card">
-                <h3 className="font-heading font-semibold text-xl text-afrilink-navy mb-4 pb-3 border-b border-afrilink-grey-light flex items-center justify-between">
+              <div className="bg-afrilink-surface rounded-lg p-6 border border-afrilink-grey-light sticky top-28 shadow-card">
+                <h3 className="font-heading font-semibold text-xl text-afrilink-fg mb-4 pb-3 border-b border-afrilink-grey-light flex items-center justify-between">
                   <span>Key Facts & Parameters</span>
                   <span className="text-[13px] text-afrilink-orange font-semibold font-sans">Verified Profile</span>
                 </h3>
@@ -201,10 +201,10 @@ export default function InvestmentTemplate({
                 <div className="space-y-4">
                   {facts?.map((f, idx) => (
                     <div key={idx} className="pb-3 border-b border-afrilink-grey-light last:border-b-0">
-                      <div className="text-[13px] text-afrilink-navy-60 mb-0.5">
+                      <div className="text-[13px] text-afrilink-fg-60 mb-0.5">
                         {f.label}
                       </div>
-                      <div className="text-base font-semibold text-afrilink-navy">
+                      <div className="text-base font-semibold text-afrilink-fg">
                         {f.value}
                       </div>
                     </div>
@@ -234,7 +234,7 @@ export default function InvestmentTemplate({
             <div className="mb-6 flex items-center justify-between">
               <div>
                 <div className="eyebrow">Visual Portfolio</div>
-                <h3 className="font-heading font-semibold text-2xl lg:text-3xl text-afrilink-navy">Operational Facilities & Assets</h3>
+                <h3 className="font-heading font-semibold text-2xl lg:text-3xl text-afrilink-fg">Operational Facilities & Assets</h3>
               </div>
             </div>
 
@@ -243,7 +243,7 @@ export default function InvestmentTemplate({
                 <div
                   key={i}
                   onClick={() => onOpenLightbox?.({ image: img, title: `${name} — Facility Asset 0${i + 1}` })}
-                  className="group relative rounded-lg overflow-hidden aspect-[4/3] bg-white cursor-pointer border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/50 transition-all duration-300"
+                  className="group relative rounded-lg overflow-hidden aspect-[4/3] bg-afrilink-surface cursor-pointer border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/50 transition-all duration-300"
                 >
                   <img
                     src={img}
@@ -265,7 +265,7 @@ export default function InvestmentTemplate({
       )}
 
       {/* Bottom Conversion Banner */}
-      <section className="bg-white py-16">
+      <section className="bg-afrilink-surface py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-lg bg-afrilink-orange p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-card-hover">
             <div className="max-w-2xl text-center md:text-left">

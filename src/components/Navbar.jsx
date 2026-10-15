@@ -78,14 +78,15 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-card border-b border-afrilink-grey-light py-3.5'
-          : 'bg-white border-b border-afrilink-grey-light py-6'
+          ? 'bg-afrilink-surface shadow-card border-b border-afrilink-grey-light py-3.5'
+          : 'bg-afrilink-surface border-b border-afrilink-grey-light py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <AfrilinkLogo
+            light
             onClick={() => handleNavClick('home')}
             variant="full"
           />
@@ -103,7 +104,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                     className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap transition-colors duration-200 border-b-[3px] ${
                       isActive
                         ? 'text-afrilink-orange border-afrilink-gold'
-                        : 'text-afrilink-navy border-transparent hover:text-afrilink-orange'
+                        : 'text-afrilink-fg border-transparent hover:text-afrilink-orange'
                     }`}
                   >
                     {item.label}
@@ -127,7 +128,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                     className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap transition-colors duration-200 border-b-[3px] inline-flex items-center gap-1.5 ${
                       isSubActive
                         ? 'text-afrilink-orange border-afrilink-gold'
-                        : 'text-afrilink-navy border-transparent hover:text-afrilink-orange'
+                        : 'text-afrilink-fg border-transparent hover:text-afrilink-orange'
                     }`}
                   >
                     <span>{item.label}</span>
@@ -136,7 +137,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
 
                   {/* Dropdown Card */}
                   {isOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-72 lg:w-80 rounded-lg bg-white border border-afrilink-grey-light shadow-card-hover p-2.5 z-50 animate-fade-in">
+                    <div className="absolute top-full left-0 mt-1 w-72 lg:w-80 rounded-lg bg-afrilink-surface border border-afrilink-grey-light shadow-card-hover p-2.5 z-50 animate-fade-in">
                       <div className="text-[13px] font-semibold text-afrilink-orange px-3 py-1.5 border-b border-afrilink-grey-light mb-1">
                         {item.label} Directory
                       </div>
@@ -147,10 +148,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                             onClick={() => handleNavClick(sub.route)}
                             className="w-full text-left p-2.5 rounded-md hover:bg-afrilink-cream group transition-all"
                           >
-                            <div className="text-sm font-semibold text-afrilink-navy group-hover:text-afrilink-orange transition-colors">
+                            <div className="text-sm font-semibold text-afrilink-fg group-hover:text-afrilink-orange transition-colors">
                               {sub.label}
                             </div>
-                            <div className="text-xs text-afrilink-navy-60 leading-snug mt-0.5">
+                            <div className="text-xs text-afrilink-fg-60 leading-snug mt-0.5">
                               {sub.desc}
                             </div>
                           </button>
@@ -168,12 +169,12 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
             {/* Quick Search Button */}
             <button
               onClick={onOpenSearch}
-              className="p-2 rounded-md bg-white hover:bg-afrilink-cream text-afrilink-navy-80 hover:text-afrilink-navy border border-afrilink-grey transition-colors hidden sm:flex items-center gap-2 text-xs"
+              className="p-2 rounded-md bg-afrilink-surface hover:bg-afrilink-cream text-afrilink-fg-80 hover:text-afrilink-fg border border-afrilink-grey transition-colors hidden sm:flex items-center gap-2 text-xs"
               title="Quick Search (Ctrl+K)"
             >
               <Search className="w-4 h-4 text-afrilink-orange" />
-              <span className="hidden md:inline text-afrilink-navy-60 text-[13px]">Search</span>
-              <kbd className="hidden lg:inline bg-afrilink-cream px-1.5 py-0.5 rounded text-[10px] text-afrilink-navy-60">⌘K</kbd>
+              <span className="hidden md:inline text-afrilink-fg-60 text-[13px]">Search</span>
+              <kbd className="hidden lg:inline bg-afrilink-cream px-1.5 py-0.5 rounded text-[10px] text-afrilink-fg-60">⌘K</kbd>
             </button>
 
             {/* Pinned Primary Header CTA: Partner With Us */}
@@ -189,7 +190,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-md bg-white hover:bg-afrilink-cream text-afrilink-navy border border-afrilink-grey transition-colors"
+              className="lg:hidden p-2 rounded-md bg-afrilink-surface hover:bg-afrilink-cream text-afrilink-fg border border-afrilink-grey transition-colors"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -200,7 +201,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
 
       {/* Mobile Drawer (Full screen with accordion dropdowns and pinned CTA) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[72px] bottom-0 bg-white z-50 overflow-y-auto border-t border-afrilink-grey-light p-6 flex flex-col justify-between animate-fade-in">
+        <div className="lg:hidden fixed inset-x-0 top-[72px] bottom-0 bg-afrilink-surface z-50 overflow-y-auto border-t border-afrilink-grey-light p-6 flex flex-col justify-between animate-fade-in">
           <div className="space-y-4">
             {/* Search Bar in Mobile Menu */}
             <button
@@ -208,13 +209,13 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                 setMobileMenuOpen(false);
                 onOpenSearch();
               }}
-              className="w-full flex items-center justify-between p-3.5 rounded-md bg-afrilink-cream border border-afrilink-grey-light text-afrilink-navy-80 text-sm"
+              className="w-full flex items-center justify-between p-3.5 rounded-md bg-afrilink-cream border border-afrilink-grey-light text-afrilink-fg-80 text-sm"
             >
               <span className="flex items-center gap-2">
                 <Search className="w-4 h-4 text-afrilink-orange" />
                 <span>Search holdings, documents, CEO...</span>
               </span>
-              <kbd className="bg-white border border-afrilink-grey-light px-2 py-0.5 rounded text-[11px] text-afrilink-navy-60">Open</kbd>
+              <kbd className="bg-afrilink-surface border border-afrilink-grey-light px-2 py-0.5 rounded text-[11px] text-afrilink-fg-60">Open</kbd>
             </button>
 
             {/* Nav list */}
@@ -228,7 +229,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                       className={`w-full text-left p-3 rounded-md text-base font-semibold ${
                         currentRoute === item.route
                           ? 'bg-afrilink-orange text-white'
-                          : 'text-afrilink-navy hover:bg-afrilink-cream hover:text-afrilink-orange'
+                          : 'text-afrilink-fg hover:bg-afrilink-cream hover:text-afrilink-orange'
                       }`}
                     >
                       {item.label}
@@ -239,10 +240,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                 const isAccordionOpen = mobileAccordions[item.id];
 
                 return (
-                  <div key={item.label} className="border border-afrilink-grey-light rounded-md overflow-hidden bg-white">
+                  <div key={item.label} className="border border-afrilink-grey-light rounded-md overflow-hidden bg-afrilink-surface">
                     <button
                       onClick={() => toggleMobileAccordion(item.id)}
-                      className="w-full flex items-center justify-between p-3.5 text-base font-semibold text-afrilink-navy"
+                      className="w-full flex items-center justify-between p-3.5 text-base font-semibold text-afrilink-fg"
                     >
                       <span>{item.label}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform ${isAccordionOpen ? 'rotate-180 text-afrilink-orange' : ''}`} />
@@ -254,10 +255,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                           <button
                             key={sub.route}
                             onClick={() => handleNavClick(sub.route)}
-                            className="w-full text-left p-2.5 rounded hover:bg-white text-sm font-medium text-afrilink-navy hover:text-afrilink-orange"
+                            className="w-full text-left p-2.5 rounded hover:bg-afrilink-surface text-sm font-medium text-afrilink-fg hover:text-afrilink-orange"
                           >
                             <div className="font-semibold">{sub.label}</div>
-                            <div className="text-xs text-afrilink-navy-60">{sub.desc}</div>
+                            <div className="text-xs text-afrilink-fg-60">{sub.desc}</div>
                           </button>
                         ))}
                       </div>
@@ -278,7 +279,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
             >
               Partner With Us →
             </CTAButton>
-            <div className="text-center text-xs text-afrilink-navy-60">
+            <div className="text-center text-xs text-afrilink-fg-60">
               Johannesburg · Gaborone · London · Diaspora Conduits
             </div>
           </div>

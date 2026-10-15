@@ -25,7 +25,7 @@ export default function SectorInfrastructurePage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -64,19 +64,19 @@ export default function SectorInfrastructurePage({ onNavigate }) {
         <div className="mb-20">
           <div className="max-w-2xl mb-10">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Core Competencies</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
               Civil Delivery & Water Security
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {capabilities.map((c, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all">
+              <div key={i} className="bg-afrilink-surface rounded-xl p-6 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all">
                 <div className="w-10 h-10 rounded-lg bg-afrilink-orange/10 flex items-center justify-center text-afrilink-orange mb-4">
                   <CheckCircle2 className="w-5 h-5" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-afrilink-navy mb-2">{c.title}</h3>
-                <p className="text-afrilink-navy-60 text-xs sm:text-sm leading-relaxed">{c.desc}</p>
+                <h3 className="font-heading text-lg font-semibold text-afrilink-fg mb-2">{c.title}</h3>
+                <p className="text-afrilink-fg-60 text-xs sm:text-sm leading-relaxed">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -87,11 +87,11 @@ export default function SectorInfrastructurePage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Portfolio Company</span>
-              <h2 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
                 Afrilink Buildings & Civils
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Our flagship civil engineering contractor delivering essential public assets across South Africa.
             </p>
           </div>

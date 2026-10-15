@@ -47,7 +47,7 @@ export default function GovernanceCompliancePage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -87,26 +87,26 @@ export default function GovernanceCompliancePage({ onNavigate }) {
           {statutoryItems.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6"
+              className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6"
             >
               <div className="flex items-start gap-6">
-                <div className="w-14 h-14 rounded-xl bg-afrilink-navy/10 border border-afrilink-navy/20 flex items-center justify-center text-afrilink-navy shrink-0 mt-1">
+                <div className="w-14 h-14 rounded-xl bg-afrilink-fg/10 border border-afrilink-fg/20 flex items-center justify-center text-afrilink-fg shrink-0 mt-1">
                   <FileCheck className="w-7 h-7" />
                 </div>
                 <div>
                   <div className="flex items-center gap-3">
-                    <h3 className="font-heading text-2xl font-semibold text-afrilink-navy">{item.title}</h3>
-                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 font-bold">
+                    <h3 className="font-heading text-2xl font-semibold text-afrilink-fg">{item.title}</h3>
+                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 font-bold">
                       {item.status}
                     </span>
                   </div>
                   <div className="text-sm font-semibold text-afrilink-orange mt-1">
                     Reference / Ref No: {item.regNo}
                   </div>
-                  <p className="text-afrilink-navy-60 text-sm mt-2 max-w-2xl leading-relaxed">
+                  <p className="text-afrilink-fg-60 text-sm mt-2 max-w-2xl leading-relaxed">
                     {item.desc}
                   </p>
-                  <div className="text-xs text-afrilink-navy-60 font-medium mt-2">
+                  <div className="text-xs text-afrilink-fg-60 font-medium mt-2">
                     Authority: {item.agency}
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function GovernanceCompliancePage({ onNavigate }) {
               {item.doc && (
                 <button
                   onClick={() => setSelectedDoc(item.doc)}
-                  className="px-5 py-2.5 rounded-lg bg-afrilink-cream border border-afrilink-grey-light hover:border-afrilink-orange text-afrilink-navy hover:text-afrilink-orange text-sm font-semibold transition-all shrink-0 flex items-center gap-2"
+                  className="px-5 py-2.5 rounded-lg bg-afrilink-cream border border-afrilink-grey-light hover:border-afrilink-orange text-afrilink-fg hover:text-afrilink-orange text-sm font-semibold transition-all shrink-0 flex items-center gap-2"
                 >
                   <Eye className="w-4 h-4" />
                   <span>Preview Document</span>
@@ -127,33 +127,33 @@ export default function GovernanceCompliancePage({ onNavigate }) {
 
         {/* Corporate Details Registry Table */}
         <div className="bg-afrilink-cream rounded-2xl p-8 sm:p-12 border border-afrilink-grey-light mb-20">
-          <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-6">
+          <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-6">
             Official Corporate Registry Details
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">Registered Entity Name</span>
-              <div className="font-semibold text-afrilink-navy mt-1">AFRILINK CORPORATION (PTY) LTD</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">Registered Entity Name</span>
+              <div className="font-semibold text-afrilink-fg mt-1">AFRILINK CORPORATION (PTY) LTD</div>
             </div>
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">CIPC Registration Number</span>
-              <div className="font-semibold text-afrilink-navy mt-1">2001/014920/07</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">CIPC Registration Number</span>
+              <div className="font-semibold text-afrilink-fg mt-1">2001/014920/07</div>
             </div>
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">SARS Tax Reference</span>
-              <div className="font-semibold text-afrilink-navy mt-1">9482019482</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">SARS Tax Reference</span>
+              <div className="font-semibold text-afrilink-fg mt-1">9482019482</div>
             </div>
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">Active TCS PIN</span>
-              <div className="font-semibold text-afrilink-navy mt-1">9812401824-OK</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">Active TCS PIN</span>
+              <div className="font-semibold text-afrilink-fg mt-1">9812401824-OK</div>
             </div>
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">Corporate Domicile</span>
-              <div className="font-semibold text-afrilink-navy mt-1">Sandton, Johannesburg, South Africa</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">Corporate Domicile</span>
+              <div className="font-semibold text-afrilink-fg mt-1">Sandton, Johannesburg, South Africa</div>
             </div>
-            <div className="bg-white p-5 rounded-xl border border-afrilink-grey-light">
-              <span className="text-xs font-semibold text-afrilink-navy-60 uppercase tracking-wider">Botswana Subsidiary</span>
-              <div className="font-semibold text-afrilink-navy mt-1">Afrilink MG (Gaborone, Botswana)</div>
+            <div className="bg-afrilink-surface p-5 rounded-xl border border-afrilink-grey-light">
+              <span className="text-xs font-semibold text-afrilink-fg-60 uppercase tracking-wider">Botswana Subsidiary</span>
+              <div className="font-semibold text-afrilink-fg mt-1">Afrilink MG (Gaborone, Botswana)</div>
             </div>
           </div>
         </div>

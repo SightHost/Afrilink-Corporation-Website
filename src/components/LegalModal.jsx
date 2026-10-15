@@ -74,7 +74,7 @@ export default function LegalModal({ type, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-afrilink-navy/60 backdrop-blur-sm animate-fade-in">
       <div 
-        className="relative w-full max-w-2xl bg-white border border-afrilink-grey-light text-afrilink-navy rounded-lg shadow-card-hover overflow-hidden flex flex-col max-h-[85vh]"
+        className="relative w-full max-w-2xl bg-afrilink-surface border border-afrilink-grey-light text-afrilink-fg rounded-lg shadow-card-hover overflow-hidden flex flex-col max-h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -84,7 +84,7 @@ export default function LegalModal({ type, onClose }) {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-heading font-semibold text-xl text-afrilink-navy">
+              <h3 className="font-heading font-semibold text-xl text-afrilink-fg">
                 {activeContent.title}
               </h3>
               <p className="text-[13px] text-afrilink-orange font-semibold mt-0.5">
@@ -94,20 +94,20 @@ export default function LegalModal({ type, onClose }) {
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-md bg-white hover:bg-afrilink-grey-light text-afrilink-navy-60 hover:text-afrilink-navy border border-afrilink-grey-light transition-colors"
+            className="p-1.5 rounded-md bg-afrilink-surface hover:bg-afrilink-grey-light text-afrilink-fg-60 hover:text-afrilink-fg border border-afrilink-grey-light transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 md:p-8 overflow-y-auto space-y-6 text-[15px] text-afrilink-navy-80 leading-[1.7]">
+        <div className="p-6 md:p-8 overflow-y-auto space-y-6 text-[15px] text-afrilink-fg-80 leading-[1.7]">
           {activeContent.sections.map((sec, idx) => (
             <div key={idx} className="space-y-1.5">
-              <h4 className="font-heading font-semibold text-afrilink-navy text-base">
+              <h4 className="font-heading font-semibold text-afrilink-fg text-base">
                 {sec.heading}
               </h4>
-              <p className="text-afrilink-navy-80 leading-[1.7]">
+              <p className="text-afrilink-fg-80 leading-[1.7]">
                 {sec.body}
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function LegalModal({ type, onClose }) {
         </div>
 
         {/* Footer */}
-        <div className="p-4 bg-white border-t border-afrilink-grey-light flex items-center justify-between gap-4 text-xs text-afrilink-navy-60">
+        <div className="p-4 bg-afrilink-surface border-t border-afrilink-grey-light flex items-center justify-between gap-4 text-xs text-afrilink-fg-60">
           <span>Afrilink Corporation (Pty) Ltd · Regulatory Registry</span>
           <button
             onClick={onClose}

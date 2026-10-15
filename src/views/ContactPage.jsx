@@ -37,7 +37,7 @@ export default function ContactPage({ onNavigate }) {
   };
 
   return (
-    <div className="min-h-screen bg-afrilink-cream text-afrilink-navy">
+    <div className="min-h-screen bg-afrilink-cream text-afrilink-fg">
       {/* Page Header (navy hero; top padding clears the ~94px white header) */}
       <div className="relative pt-[150px] pb-16 bg-afrilink-navy overflow-hidden">
         <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-afrilink-orange/10 rounded-full blur-[80px]" />
@@ -57,7 +57,7 @@ export default function ContactPage({ onNavigate }) {
           {/* Contact Info */}
           <div className="space-y-6">
             <div>
-              <h2 className="font-heading text-2xl font-semibold text-afrilink-navy mb-6">Head Office</h2>
+              <h2 className="font-heading text-2xl font-semibold text-afrilink-fg mb-6">Head Office</h2>
               <div className="space-y-5">
                 {[
                   {
@@ -78,28 +78,28 @@ export default function ContactPage({ onNavigate }) {
                     label: 'Telephone',
                     value: '+27 (0) 11 000 0000',
                     href: 'tel:+27110000000',
-                    color: '#040922'
+                    color: '#FFD177'
                   },
                   {
                     icon: Clock,
                     label: 'Office Hours',
                     value: 'Mon–Fri: 08:00–17:00 SAST\nSat: By appointment only',
-                    color: '#5A5E6E'
+                    color: '#9196AA'
                   },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white rounded-lg p-4 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow flex items-start gap-4">
+                  <div key={i} className="bg-afrilink-surface rounded-lg p-4 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow flex items-start gap-4">
                     <div className="w-9 h-9 rounded-md flex items-center justify-center shrink-0"
                       style={{ background: `${item.color}14`, border: `1px solid ${item.color}33` }}>
                       <item.icon className="w-4 h-4" style={{ color: item.color }} />
                     </div>
                     <div>
-                      <div className="text-[13px] font-semibold text-afrilink-navy-60 mb-1">{item.label}</div>
+                      <div className="text-[13px] font-semibold text-afrilink-fg-60 mb-1">{item.label}</div>
                       {item.href ? (
-                        <a href={item.href} className="text-afrilink-navy text-base font-medium hover:text-afrilink-orange transition-colors whitespace-pre-line">
+                        <a href={item.href} className="text-afrilink-fg text-base font-medium hover:text-afrilink-orange transition-colors whitespace-pre-line">
                           {item.value}
                         </a>
                       ) : (
-                        <div className="text-afrilink-navy text-base font-medium whitespace-pre-line">{item.value}</div>
+                        <div className="text-afrilink-fg text-base font-medium whitespace-pre-line">{item.value}</div>
                       )}
                     </div>
                   </div>
@@ -108,12 +108,12 @@ export default function ContactPage({ onNavigate }) {
             </div>
 
             {/* Botswana Office */}
-            <div className="bg-white rounded-lg p-5 border border-afrilink-grey-light shadow-card">
+            <div className="bg-afrilink-surface rounded-lg p-5 border border-afrilink-grey-light shadow-card">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">🇧🇼</span>
-                <div className="text-afrilink-navy text-base font-semibold">Botswana Representative Office</div>
+                <div className="text-afrilink-fg text-base font-semibold">Botswana Representative Office</div>
               </div>
-              <div className="text-afrilink-navy-60 text-sm leading-relaxed">
+              <div className="text-afrilink-fg-60 text-sm leading-relaxed">
                 Gaborone, Republic of Botswana<br />
                 For mining and mineral tenure enquiries.
               </div>
@@ -121,8 +121,8 @@ export default function ContactPage({ onNavigate }) {
 
             {/* Partner CTA */}
             <div className="bg-afrilink-butter rounded-lg p-5 border border-afrilink-orange/30 shadow-card">
-              <div className="text-afrilink-navy font-semibold text-base mb-2">Submit a Partnership Brief</div>
-              <p className="text-afrilink-navy-80 text-sm mb-4 leading-relaxed">
+              <div className="text-afrilink-fg font-semibold text-base mb-2">Submit a Partnership Brief</div>
+              <p className="text-afrilink-fg-80 text-sm mb-4 leading-relaxed">
                 For structured investment enquiries, joint ventures or DFI partnerships, please use our dedicated Partner Brief form.
               </p>
               <CTAButton variant="orange" size="sm" onClick={() => onNavigate('partner')}>
@@ -134,10 +134,10 @@ export default function ContactPage({ onNavigate }) {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             {submitted ? (
-              <div className="bg-white rounded-lg p-12 border border-afrilink-grey-light shadow-card flex flex-col items-center justify-center text-center h-full min-h-[500px]">
+              <div className="bg-afrilink-surface rounded-lg p-12 border border-afrilink-grey-light shadow-card flex flex-col items-center justify-center text-center h-full min-h-[500px]">
                 <CheckCircle2 className="w-16 h-16 text-afrilink-orange mb-6" />
-                <h3 className="font-heading text-3xl font-semibold text-afrilink-navy mb-3">Message Received</h3>
-                <p className="text-afrilink-navy-80 text-base leading-[1.7] max-w-md mb-8">
+                <h3 className="font-heading text-3xl font-semibold text-afrilink-fg mb-3">Message Received</h3>
+                <p className="text-afrilink-fg-80 text-base leading-[1.7] max-w-md mb-8">
                   Thank you for reaching out to Afrilink Corporation. Our executive team will review your enquiry and respond within 2 business days.
                 </p>
                 <CTAButton variant="outline" size="md" onClick={() => setSubmitted(false)}>
@@ -145,12 +145,12 @@ export default function ContactPage({ onNavigate }) {
                 </CTAButton>
               </div>
             ) : (
-              <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
-                <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-afrilink-navy mb-6">Send an Enquiry</h2>
+              <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+                <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-afrilink-fg mb-6">Send an Enquiry</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Full Name *</label>
+                      <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Full Name *</label>
                       <input
                         name="name"
                         value={form.name}
@@ -161,7 +161,7 @@ export default function ContactPage({ onNavigate }) {
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Email Address *</label>
+                      <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Email Address *</label>
                       <input
                         name="email"
                         type="email"
@@ -173,7 +173,7 @@ export default function ContactPage({ onNavigate }) {
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Company / Organisation</label>
+                      <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Company / Organisation</label>
                       <input
                         name="company"
                         value={form.company}
@@ -183,7 +183,7 @@ export default function ContactPage({ onNavigate }) {
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Phone Number</label>
+                      <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Phone Number</label>
                       <input
                         name="phone"
                         value={form.phone}
@@ -195,7 +195,7 @@ export default function ContactPage({ onNavigate }) {
                   </div>
 
                   <div>
-                    <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Enquiry Type</label>
+                    <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Enquiry Type</label>
                     <div className="relative">
                       <select
                         name="type"
@@ -208,12 +208,12 @@ export default function ContactPage({ onNavigate }) {
                           <option key={t} value={t}>{t}</option>
                         ))}
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-afrilink-navy-60 pointer-events-none" />
+                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-afrilink-fg-60 pointer-events-none" />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Message *</label>
+                    <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Message *</label>
                     <textarea
                       name="message"
                       value={form.message}
@@ -225,7 +225,7 @@ export default function ContactPage({ onNavigate }) {
                     />
                   </div>
 
-                  <div className="text-sm text-afrilink-navy-60 leading-relaxed">
+                  <div className="text-sm text-afrilink-fg-60 leading-relaxed">
                     By submitting this form, you consent to your personal information being processed by Afrilink Corporation (Pty) Ltd in accordance with our Privacy Policy (POPIA) for the purpose of responding to your enquiry.
                   </div>
 

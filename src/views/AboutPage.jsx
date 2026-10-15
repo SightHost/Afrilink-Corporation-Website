@@ -14,7 +14,7 @@ function TabNav({ tabs, active, onSelect }) {
           className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all ${
             active === t.id
               ? 'bg-afrilink-orange text-white border-afrilink-orange shadow-card'
-              : 'bg-white text-afrilink-navy border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
+              : 'bg-afrilink-surface text-afrilink-fg border-afrilink-grey hover:border-afrilink-orange hover:text-afrilink-orange'
           }`}
         >
           {t.label}
@@ -32,14 +32,14 @@ function OverviewTab({ onNavigate }) {
         {[
           { label: 'Mission', icon: Globe, color: '#F37121', text: 'To be the pre-eminent pan-African investment holding company, channelling diaspora capital and expertise into transformative economic opportunities across Africa, in service of a prosperous, self-reliant continent.' },
           { label: 'Vision', icon: Award, color: '#F18728', text: 'To create sustainable, broad-based wealth through strategic investment in mining, infrastructure, technology, and human capital — ensuring every community in our footprint participates in and benefits from our growth.' },
-          { label: 'Values', icon: Users, color: '#2B3044', text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not aspirations — they are our operating principles.' },
+          { label: 'Values', icon: Users, color: '#C5C8D4', text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not aspirations — they are our operating principles.' },
         ].map(item => (
-          <div key={item.label} className="bg-white rounded-lg p-7 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow">
+          <div key={item.label} className="bg-afrilink-surface rounded-lg p-7 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow">
             <div className="w-11 h-11 rounded-md flex items-center justify-center mb-5" style={{ background: `${item.color}20`, border: `1px solid ${item.color}40` }}>
               <item.icon className="w-5 h-5" style={{ color: item.color }} />
             </div>
-            <div className="font-heading text-xl font-semibold text-afrilink-navy mb-3">{item.label}</div>
-            <p className="text-afrilink-navy-80 text-base leading-[1.7]">{item.text}</p>
+            <div className="font-heading text-xl font-semibold text-afrilink-fg mb-3">{item.label}</div>
+            <p className="text-afrilink-fg-80 text-base leading-[1.7]">{item.text}</p>
           </div>
         ))}
       </div>
@@ -47,17 +47,17 @@ function OverviewTab({ onNavigate }) {
       {/* Partnerships */}
       {strategicPartnersData && strategicPartnersData.length > 0 && (
         <div className="mb-14">
-          <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-6">Strategic Alliances & Partnerships</h3>
+          <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-6">Strategic Alliances & Partnerships</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {strategicPartnersData.map((p, i) => (
-              <div key={i} className="bg-white rounded-lg p-5 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all">
+              <div key={i} className="bg-afrilink-surface rounded-lg p-5 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-md bg-afrilink-orange/10 border border-afrilink-orange/20 flex items-center justify-center shrink-0">
                     <Globe className="w-5 h-5 text-afrilink-orange" />
                   </div>
                   <div>
-                    <div className="font-semibold text-afrilink-navy text-base mb-1">{p.name}</div>
-                    <div className="text-afrilink-navy-60 text-sm leading-relaxed">{p.description}</div>
+                    <div className="font-semibold text-afrilink-fg text-base mb-1">{p.name}</div>
+                    <div className="text-afrilink-fg-60 text-sm leading-relaxed">{p.description}</div>
                     {p.country && <div className="text-afrilink-orange text-[13px] font-semibold mt-1">{p.country}</div>}
                   </div>
                 </div>
@@ -80,7 +80,7 @@ function CEOTab() {
   return (
     <div>
       {/* CEO Header */}
-      <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card mb-10">
+      <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card mb-10">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="relative shrink-0">
             <img
@@ -93,11 +93,11 @@ function CEOTab() {
           </div>
           <div className="flex-1">
             <div className="eyebrow mb-2">Founder, Chairman & Chief Executive Officer</div>
-            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy mb-3">{ceoProfile.name}</h2>
-            <div className="text-afrilink-navy-80 text-base leading-[1.7] mb-4 max-w-2xl">{ceoProfile.overview}</div>
+            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg mb-3">{ceoProfile.name}</h2>
+            <div className="text-afrilink-fg-80 text-base leading-[1.7] mb-4 max-w-2xl">{ceoProfile.overview}</div>
             <div className="flex flex-wrap gap-2">
               {(ceoProfile.credentials || '').split(';').map(c => c.trim()).filter(Boolean).map((cred, i) => (
-                <span key={i} className="text-xs font-medium bg-afrilink-butter text-afrilink-navy px-3 py-1 rounded-full">{cred}</span>
+                <span key={i} className="text-xs font-medium bg-afrilink-butter text-afrilink-fg px-3 py-1 rounded-full">{cred}</span>
               ))}
             </div>
           </div>
@@ -106,7 +106,7 @@ function CEOTab() {
         {/* Quote */}
         {ceoProfile.quote && (
           <div className="mt-6 pt-6 border-t border-afrilink-grey-light">
-            <blockquote className="text-afrilink-navy text-lg italic leading-[1.6] font-medium border-l-4 border-afrilink-orange pl-5">
+            <blockquote className="text-afrilink-fg text-lg italic leading-[1.6] font-medium border-l-4 border-afrilink-orange pl-5">
               "{ceoProfile.quote}"
             </blockquote>
           </div>
@@ -116,16 +116,16 @@ function CEOTab() {
       {/* Accordion Sections */}
       <div className="space-y-4">
         {(ceoProfile.sections || []).map((section, i) => (
-          <div key={i} className="bg-white rounded-lg border border-afrilink-grey-light shadow-card overflow-hidden">
+          <div key={i} className="bg-afrilink-surface rounded-lg border border-afrilink-grey-light shadow-card overflow-hidden">
             <button
               onClick={() => setOpenSection(openSection === i ? -1 : i)}
               className="w-full flex items-center justify-between p-5 text-left hover:bg-afrilink-cream transition-colors"
             >
-              <span className="font-heading font-semibold text-afrilink-navy text-lg">{section.title}</span>
-              {openSection === i ? <ChevronUp className="w-4 h-4 text-afrilink-orange" /> : <ChevronDown className="w-4 h-4 text-afrilink-navy-60" />}
+              <span className="font-heading font-semibold text-afrilink-fg text-lg">{section.title}</span>
+              {openSection === i ? <ChevronUp className="w-4 h-4 text-afrilink-orange" /> : <ChevronDown className="w-4 h-4 text-afrilink-fg-60" />}
             </button>
             {openSection === i && (
-              <div className="px-5 pb-5 text-afrilink-navy-80 text-base leading-[1.7]">
+              <div className="px-5 pb-5 text-afrilink-fg-80 text-base leading-[1.7]">
                 <div className="pt-4 border-t border-afrilink-grey-light whitespace-pre-line">
                   {section.content.replace(/\*\*(.*?)\*\*/g, '$1')}
                 </div>
@@ -142,9 +142,9 @@ function ShareholdersTab() {
   const total = (shareholdersData?.segments || []).reduce((s, seg) => s + seg.percentage, 0);
   return (
     <div>
-      <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card mb-8">
-        <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-4">Shareholding Structure</h3>
-        <p className="text-afrilink-navy-80 text-base leading-[1.7] mb-8">{shareholdersData?.philosophy}</p>
+      <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card mb-8">
+        <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-4">Shareholding Structure</h3>
+        <p className="text-afrilink-fg-80 text-base leading-[1.7] mb-8">{shareholdersData?.philosophy}</p>
 
         {/* Visual bar */}
         <div className="flex rounded-full overflow-hidden h-4 mb-8 bg-afrilink-grey-light">
@@ -164,10 +164,10 @@ function ShareholdersTab() {
               <div className="w-3 h-3 rounded-full mt-1 shrink-0" style={{ background: seg.color }} />
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-semibold text-afrilink-navy text-base">{seg.name}</span>
+                  <span className="font-semibold text-afrilink-fg text-base">{seg.name}</span>
                   <span className="font-heading font-semibold text-xl" style={{ color: seg.color }}>{seg.percentage}%</span>
                 </div>
-                <p className="text-afrilink-navy-60 text-sm leading-relaxed">{seg.description}</p>
+                <p className="text-afrilink-fg-60 text-sm leading-relaxed">{seg.description}</p>
               </div>
             </div>
           ))}
@@ -175,7 +175,7 @@ function ShareholdersTab() {
       </div>
 
       <div className="rounded-lg p-5 border border-afrilink-gold bg-afrilink-butter/50">
-        <p className="text-afrilink-navy-80 text-sm leading-relaxed italic">{shareholdersData?.disclaimer}</p>
+        <p className="text-afrilink-fg-80 text-sm leading-relaxed italic">{shareholdersData?.disclaimer}</p>
       </div>
     </div>
   );
@@ -194,7 +194,7 @@ function GalleryTab() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {galleryItems.map((item, i) => (
-        <div key={i} className="bg-white rounded-lg overflow-hidden border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all group">
+        <div key={i} className="bg-afrilink-surface rounded-lg overflow-hidden border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all group">
           <div className="h-40 flex items-center justify-center bg-afrilink-cream">
             <div className="text-center">
               <div className="text-4xl font-heading font-semibold text-afrilink-orange/40">{item.year}</div>
@@ -202,8 +202,8 @@ function GalleryTab() {
             </div>
           </div>
           <div className="p-5">
-            <h4 className="font-semibold text-afrilink-navy text-lg mb-2 group-hover:text-afrilink-orange transition-colors">{item.title}</h4>
-            <p className="text-afrilink-navy-60 text-sm leading-relaxed">{item.desc}</p>
+            <h4 className="font-semibold text-afrilink-fg text-lg mb-2 group-hover:text-afrilink-orange transition-colors">{item.title}</h4>
+            <p className="text-afrilink-fg-60 text-sm leading-relaxed">{item.desc}</p>
           </div>
         </div>
       ))}
@@ -222,7 +222,7 @@ export default function AboutPage({ currentTab, onNavigate }) {
   const activeTab = currentTab || 'overview';
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Page Header */}
       <div className="relative pt-36 pb-16 lg:pt-40 lg:pb-20 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />

@@ -13,7 +13,7 @@ const ABOUT_PAGES = [
 
 export default function AboutCeoPage({ onNavigate }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -79,11 +79,11 @@ export default function AboutCeoPage({ onNavigate }) {
               <div className="grid grid-cols-2 gap-4 mt-6">
                 <div className="bg-afrilink-cream p-4 rounded-xl border border-afrilink-grey-light text-center">
                   <div className="font-heading text-3xl font-bold text-afrilink-orange">39+</div>
-                  <div className="text-xs font-medium text-afrilink-navy-60 mt-1">Years Leadership</div>
+                  <div className="text-xs font-medium text-afrilink-fg-60 mt-1">Years Leadership</div>
                 </div>
                 <div className="bg-afrilink-cream p-4 rounded-xl border border-afrilink-grey-light text-center">
                   <div className="font-heading text-3xl font-bold text-afrilink-orange">7+</div>
-                  <div className="text-xs font-medium text-afrilink-navy-60 mt-1">Blue-Chip Entities</div>
+                  <div className="text-xs font-medium text-afrilink-fg-60 mt-1">Blue-Chip Entities</div>
                 </div>
               </div>
             </div>
@@ -91,14 +91,14 @@ export default function AboutCeoPage({ onNavigate }) {
 
           <div className="lg:col-span-7 space-y-10">
             {/* Executive Quote */}
-            <div className="relative bg-gradient-to-br from-afrilink-cream to-white rounded-2xl p-8 sm:p-10 border border-afrilink-orange/20 shadow-card">
+            <div className="relative bg-gradient-to-br from-afrilink-cream to-afrilink-surface rounded-2xl p-8 sm:p-10 border border-afrilink-orange/20 shadow-card">
               <Quote className="w-10 h-10 text-afrilink-orange/30 absolute top-6 right-6" />
-              <p className="font-heading text-xl sm:text-2xl text-afrilink-navy font-medium italic leading-relaxed mb-4">
+              <p className="font-heading text-xl sm:text-2xl text-afrilink-fg font-medium italic leading-relaxed mb-4">
                 "{ceoProfile.quote}"
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-afrilink-grey-light">
                 <div className="w-3 h-3 rounded-full bg-afrilink-orange" />
-                <span className="text-sm font-semibold text-afrilink-navy">
+                <span className="text-sm font-semibold text-afrilink-fg">
                   Dr Molefe Mokgatle — Founder & CEO
                 </span>
               </div>
@@ -106,10 +106,10 @@ export default function AboutCeoPage({ onNavigate }) {
 
             {/* Overview Summary */}
             <div>
-              <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mb-4">
+              <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mb-4">
                 Executive Biography
               </h2>
-              <p className="text-afrilink-navy-80 text-base sm:text-lg leading-relaxed">
+              <p className="text-afrilink-fg-80 text-base sm:text-lg leading-relaxed">
                 {ceoProfile.overview}
               </p>
             </div>
@@ -119,15 +119,15 @@ export default function AboutCeoPage({ onNavigate }) {
               {ceoProfile.sections.map((section, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl p-6 sm:p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all"
+                  className="bg-afrilink-surface rounded-xl p-6 sm:p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all"
                 >
-                  <h3 className="font-heading text-xl sm:text-2xl font-semibold text-afrilink-navy mb-4 flex items-center gap-3">
+                  <h3 className="font-heading text-xl sm:text-2xl font-semibold text-afrilink-fg mb-4 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-afrilink-orange/10 text-afrilink-orange flex items-center justify-center text-sm font-bold">
                       {idx + 1}
                     </span>
                     {section.title}
                   </h3>
-                  <div className="text-afrilink-navy-80 text-sm sm:text-base leading-relaxed space-y-2 whitespace-pre-line">
+                  <div className="text-afrilink-fg-80 text-sm sm:text-base leading-relaxed space-y-2 whitespace-pre-line">
                     {section.content}
                   </div>
                 </div>
@@ -140,10 +140,10 @@ export default function AboutCeoPage({ onNavigate }) {
         <div className="bg-afrilink-cream rounded-2xl p-8 sm:p-12 border border-afrilink-grey-light flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="text-xs font-bold text-afrilink-orange uppercase tracking-wider">Next in About</span>
-            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mt-1">
+            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mt-1">
               Shareholding Structure & Board Governance
             </h3>
-            <p className="text-afrilink-navy-60 text-sm mt-1 max-w-xl">
+            <p className="text-afrilink-fg-60 text-sm mt-1 max-w-xl">
               Explore how Afrilink balances entrepreneurial leadership with broad-based community trust equity.
             </p>
           </div>

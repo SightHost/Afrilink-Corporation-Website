@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-// Design language aligned with afrilinkbuilding.co.za (Avada theme tokens):
-// white/cream surfaces, deep navy text, Afrilink orange accents, gold highlights.
+// Dark theme: deep navy surfaces, light text, Afrilink orange accents, gold highlights.
+// `navy` stays the brand colour (dark sections, text on gold); body text uses `fg`.
 export default {
   content: [
     "./src/**/*.astro",
@@ -14,14 +14,16 @@ export default {
           'orange-hover': '#F27304', // button hover
           'orange-soft': '#F29257',  // dividers on orange, secondary accent
           'orange-btn': '#F18728',   // button gradient
-          navy: '#040922',           // headings, body text, copyright bar
-          'navy-80': '#2B3044',      // secondary text
-          'navy-60': '#5A5E6E',      // muted text
+          navy: '#040922',           // darkest sections, copyright bar, text on gold
+          surface: '#0B1022',        // page and card background
+          fg: '#F1F2F6',             // headings, body text
+          'fg-80': '#C5C8D4',        // secondary text
+          'fg-60': '#9196AA',        // muted text
           gold: '#FFD177',           // hover highlight, top bar, nav underline
-          butter: '#FFE9B3',         // soft highlight background
-          cream: '#F9EFE0',          // alternate section background
-          grey: '#D1D1D1',           // borders, form outlines
-          'grey-light': '#EDEDED',   // hairlines on white
+          butter: '#2A2113',         // soft warm highlight background
+          cream: '#10162E',          // alternate section background
+          grey: '#303957',           // borders, form outlines
+          'grey-light': '#1F2740',   // hairlines on dark
           ink: '#161616',            // dark image-overlay sections
           'ink-soft': '#1F1F1F',
         }
@@ -45,8 +47,8 @@ export default {
         'form': '6px',
       },
       boxShadow: {
-        'card': '0 2px 18px rgba(4, 9, 34, 0.06)',
-        'card-hover': '0 10px 34px rgba(4, 9, 34, 0.12)',
+        'card': '0 2px 18px rgba(0, 0, 0, 0.35)',
+        'card-hover': '0 10px 34px rgba(0, 0, 0, 0.55)',
       },
       opacity: {
         '85': '0.85',

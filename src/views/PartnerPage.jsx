@@ -51,7 +51,7 @@ export default function PartnerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-afrilink-cream text-afrilink-navy">
+    <div className="min-h-screen bg-afrilink-cream text-afrilink-fg">
       {/* Page Header (navy hero; top padding clears the ~94px white header) */}
       <div className="relative pt-[150px] pb-16 bg-afrilink-navy overflow-hidden">
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-afrilink-orange/10 rounded-full blur-[80px]" />
@@ -69,20 +69,20 @@ export default function PartnerPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {submitted ? (
           /* Success State */
-          <div className="bg-white rounded-lg p-12 border border-afrilink-grey-light shadow-card flex flex-col items-center justify-center text-center">
+          <div className="bg-afrilink-surface rounded-lg p-12 border border-afrilink-grey-light shadow-card flex flex-col items-center justify-center text-center">
             <div className="w-20 h-20 rounded-full bg-afrilink-orange/10 border-2 border-afrilink-orange/40 flex items-center justify-center mb-6">
               <CheckCircle2 className="w-10 h-10 text-afrilink-orange" />
             </div>
-            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-navy mb-3">Brief Received</h2>
-            <p className="text-afrilink-navy-80 text-[17px] leading-[1.7] max-w-lg mx-auto mb-6">
+            <h2 className="font-heading text-3xl lg:text-[42px] leading-[1.2] font-semibold text-afrilink-fg mb-3">Brief Received</h2>
+            <p className="text-afrilink-fg-80 text-[17px] leading-[1.7] max-w-lg mx-auto mb-6">
               Thank you, {form.name || 'Partner'}. Your partnership brief has been submitted to the Afrilink Corporation executive office.
             </p>
             <div className="bg-afrilink-cream rounded-lg p-5 border border-afrilink-grey-light mb-8 w-full max-w-sm">
-              <div className="text-[13px] font-semibold text-afrilink-navy-60 mb-2">Your Reference Code</div>
+              <div className="text-[13px] font-semibold text-afrilink-fg-60 mb-2">Your Reference Code</div>
               <div className="font-heading font-semibold text-3xl text-afrilink-orange">{refCode}</div>
-              <div className="text-afrilink-navy-60 text-sm mt-2">Quote this in all correspondence with our team.</div>
+              <div className="text-afrilink-fg-60 text-sm mt-2">Quote this in all correspondence with our team.</div>
             </div>
-            <div className="space-y-2 text-base text-afrilink-navy-80 max-w-md mx-auto mb-8">
+            <div className="space-y-2 text-base text-afrilink-fg-80 max-w-md mx-auto mb-8">
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-afrilink-orange shrink-0" /> Confirmation email sent to {form.email}</div>
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-afrilink-orange shrink-0" /> Your brief has been logged with the Investment Office</div>
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-afrilink-orange shrink-0" /> Expected response within 48 business hours</div>
@@ -97,9 +97,9 @@ export default function PartnerPage() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-10">
             {/* Step 1: Partnership Type */}
-            <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
-              <div className="font-heading font-semibold text-afrilink-navy text-2xl mb-2">1. Partnership Category</div>
-              <p className="text-afrilink-navy-60 text-base mb-6">Select the type of partnership or investment you are proposing.</p>
+            <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+              <div className="font-heading font-semibold text-afrilink-fg text-2xl mb-2">1. Partnership Category</div>
+              <p className="text-afrilink-fg-60 text-base mb-6">Select the type of partnership or investment you are proposing.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {PARTNERSHIP_TYPES.map(type => (
                   <button
@@ -109,21 +109,21 @@ export default function PartnerPage() {
                     className={`p-5 rounded-lg border text-left transition-all ${
                       selectedType === type.id
                         ? 'border-afrilink-orange bg-afrilink-butter shadow-card-hover'
-                        : 'border-afrilink-grey-light hover:border-afrilink-grey bg-afrilink-cream hover:bg-white hover:shadow-card'
+                        : 'border-afrilink-grey-light hover:border-afrilink-grey bg-afrilink-cream hover:bg-afrilink-surface hover:shadow-card'
                     }`}
                   >
-                    <type.icon className={`w-6 h-6 mb-3 ${selectedType === type.id ? 'text-afrilink-orange' : 'text-afrilink-navy-60'}`} />
-                    <div className="font-semibold text-afrilink-navy text-base mb-1">{type.label}</div>
-                    <div className="text-afrilink-navy-60 text-sm leading-relaxed">{type.desc}</div>
+                    <type.icon className={`w-6 h-6 mb-3 ${selectedType === type.id ? 'text-afrilink-orange' : 'text-afrilink-fg-60'}`} />
+                    <div className="font-semibold text-afrilink-fg text-base mb-1">{type.label}</div>
+                    <div className="text-afrilink-fg-60 text-sm leading-relaxed">{type.desc}</div>
                   </button>
                 ))}
               </div>
             </div>
 
             {/* Step 2: Your Details */}
-            <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
-              <div className="font-heading font-semibold text-afrilink-navy text-2xl mb-2">2. Your Details</div>
-              <p className="text-afrilink-navy-60 text-base mb-6">Tell us about yourself and your organisation.</p>
+            <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+              <div className="font-heading font-semibold text-afrilink-fg text-2xl mb-2">2. Your Details</div>
+              <p className="text-afrilink-fg-60 text-base mb-6">Tell us about yourself and your organisation.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {[
                   { name: 'name', label: 'Full Name *', placeholder: 'Your full name', required: true },
@@ -134,7 +134,7 @@ export default function PartnerPage() {
                   { name: 'phone', label: 'Phone Number', placeholder: '+27...' },
                 ].map(field => (
                   <div key={field.name}>
-                    <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">{field.label}</label>
+                    <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">{field.label}</label>
                     <input
                       name={field.name}
                       type={field.type || 'text'}
@@ -150,13 +150,13 @@ export default function PartnerPage() {
             </div>
 
             {/* Step 3: Partnership Detail */}
-            <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
-              <div className="font-heading font-semibold text-afrilink-navy text-2xl mb-2">3. Partnership Parameters</div>
-              <p className="text-afrilink-navy-60 text-base mb-6">Help us understand the scale and scope of your proposed engagement.</p>
+            <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+              <div className="font-heading font-semibold text-afrilink-fg text-2xl mb-2">3. Partnership Parameters</div>
+              <p className="text-afrilink-fg-60 text-base mb-6">Help us understand the scale and scope of your proposed engagement.</p>
               <div className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Investment Scale</label>
+                    <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Investment Scale</label>
                     <div className="relative">
                       <select
                         name="scale"
@@ -169,11 +169,11 @@ export default function PartnerPage() {
                           <option key={s} value={s}>{s}</option>
                         ))}
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-afrilink-navy-60 pointer-events-none" />
+                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-afrilink-fg-60 pointer-events-none" />
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Proposed Timeline</label>
+                    <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Proposed Timeline</label>
                     <input
                       name="timeline"
                       value={form.timeline}
@@ -184,7 +184,7 @@ export default function PartnerPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Partner Background *</label>
+                  <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Partner Background *</label>
                   <textarea
                     name="background"
                     value={form.background}
@@ -196,7 +196,7 @@ export default function PartnerPage() {
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">Partnership Proposal *</label>
+                  <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">Partnership Proposal *</label>
                   <textarea
                     name="proposal"
                     value={form.proposal}
@@ -208,7 +208,7 @@ export default function PartnerPage() {
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-semibold text-afrilink-navy mb-1.5 block">How did you hear about Afrilink?</label>
+                  <label className="text-sm font-semibold text-afrilink-fg mb-1.5 block">How did you hear about Afrilink?</label>
                   <input
                     name="referral"
                     value={form.referral}
@@ -221,10 +221,10 @@ export default function PartnerPage() {
             </div>
 
             {/* Trust & Submit */}
-            <div className="bg-white rounded-lg p-8 border border-afrilink-grey-light shadow-card">
+            <div className="bg-afrilink-surface rounded-lg p-8 border border-afrilink-grey-light shadow-card">
               <div className="flex items-start gap-3 mb-6 p-4 rounded-md bg-afrilink-cream border border-afrilink-orange/20">
                 <Shield className="w-5 h-5 text-afrilink-orange shrink-0 mt-0.5" />
-                <p className="text-afrilink-navy-80 text-sm leading-relaxed">
+                <p className="text-afrilink-fg-80 text-sm leading-relaxed">
                   All information shared via this form is treated as strictly confidential and used exclusively for the evaluation of potential partnership opportunities. Afrilink Corporation operates under POPIA and maintains robust data governance standards.
                 </p>
               </div>
@@ -243,7 +243,7 @@ export default function PartnerPage() {
                   <><Send className="w-5 h-5" /> Submit Partnership Brief</>
                 )}
               </button>
-              <div className="mt-4 text-center text-sm text-afrilink-navy-60">
+              <div className="mt-4 text-center text-sm text-afrilink-fg-60">
                 Response guaranteed within 48 business hours · Reference code issued on submission
               </div>
             </div>

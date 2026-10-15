@@ -36,7 +36,7 @@ export default function SectorStrategicPage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -75,7 +75,7 @@ export default function SectorStrategicPage({ onNavigate }) {
         <div className="space-y-6 mb-20">
           <div className="max-w-2xl mb-8">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Industrial Champions</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
               High-Barrier Industrial Platforms
             </h2>
           </div>
@@ -83,18 +83,18 @@ export default function SectorStrategicPage({ onNavigate }) {
           {ventures.map((v, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all"
+              className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all"
             >
               <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
                 <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-afrilink-orange/10 text-afrilink-orange">
                   {v.badge}
                 </span>
-                <span className="text-xs text-afrilink-navy-60 font-medium">Strategic Holding & Alliance</span>
+                <span className="text-xs text-afrilink-fg-60 font-medium">Strategic Holding & Alliance</span>
               </div>
-              <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-3">
+              <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-3">
                 {v.title}
               </h3>
-              <p className="text-afrilink-navy-80 text-base leading-relaxed">
+              <p className="text-afrilink-fg-80 text-base leading-relaxed">
                 {v.desc}
               </p>
             </div>
@@ -106,11 +106,11 @@ export default function SectorStrategicPage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Portfolio Company</span>
-              <h2 className="font-heading text-3xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl font-semibold text-afrilink-fg mt-1">
                 Strategic Ventures Portfolio
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Review our specialized investment vehicle housing industrial manufacturing and software assets.
             </p>
           </div>

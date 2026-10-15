@@ -24,7 +24,7 @@ export default function GovernanceLabourPage({ onNavigate }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -60,7 +60,7 @@ export default function GovernanceLabourPage({ onNavigate }) {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         {/* Verification Summary Card */}
-        <div className="bg-white rounded-2xl p-8 sm:p-12 border-2 border-afrilink-gold/40 shadow-card mb-16 relative overflow-hidden">
+        <div className="bg-afrilink-surface rounded-2xl p-8 sm:p-12 border-2 border-afrilink-gold/40 shadow-card mb-16 relative overflow-hidden">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-8 pb-8 border-b border-afrilink-grey-light">
             <div className="flex items-center gap-6">
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-afrilink-navy text-afrilink-gold flex items-center justify-center shadow-md shrink-0">
@@ -70,11 +70,11 @@ export default function GovernanceLabourPage({ onNavigate }) {
                 <span className="text-xs uppercase font-bold tracking-widest text-afrilink-orange">
                   Department of Employment & Labour
                 </span>
-                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-navy mt-1">
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-afrilink-fg mt-1">
                   Unconditional Good Standing
                 </h2>
-                <p className="text-afrilink-navy-60 text-sm mt-1">
-                  Compensation Fund Ref: <strong className="text-afrilink-navy">CF-993847201</strong> · Certificate Ref: <strong className="text-afrilink-navy">COIDA-9938472-REF-2026</strong>
+                <p className="text-afrilink-fg-60 text-sm mt-1">
+                  Compensation Fund Ref: <strong className="text-afrilink-fg">CF-993847201</strong> · Certificate Ref: <strong className="text-afrilink-fg">COIDA-9938472-REF-2026</strong>
                 </p>
               </div>
             </div>
@@ -92,9 +92,9 @@ export default function GovernanceLabourPage({ onNavigate }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {safetyMetrics.map((m, i) => (
               <div key={i} className="bg-afrilink-cream p-5 rounded-xl border border-afrilink-grey-light">
-                <span className="text-xs text-afrilink-navy-60 font-medium">{m.label}</span>
-                <div className="font-heading text-xl sm:text-2xl font-bold text-afrilink-navy mt-1">{m.value}</div>
-                <div className="text-[11px] text-green-700 font-semibold mt-1 flex items-center gap-1">
+                <span className="text-xs text-afrilink-fg-60 font-medium">{m.label}</span>
+                <div className="font-heading text-xl sm:text-2xl font-bold text-afrilink-fg mt-1">{m.value}</div>
+                <div className="text-[11px] text-emerald-400 font-semibold mt-1 flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3" /> {m.desc}
                 </div>
               </div>
@@ -104,17 +104,17 @@ export default function GovernanceLabourPage({ onNavigate }) {
 
         {/* Workplace Safety & Human Capital Protocols */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          <div className="bg-white rounded-xl p-8 border border-afrilink-grey-light shadow-card">
+          <div className="bg-afrilink-surface rounded-xl p-8 border border-afrilink-grey-light shadow-card">
             <div className="w-10 h-10 rounded-lg bg-afrilink-orange/10 flex items-center justify-center text-afrilink-orange mb-4">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-3">
+            <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-3">
               Occupational Health & Safety (OHS)
             </h3>
-            <p className="text-afrilink-navy-80 text-sm leading-relaxed mb-4">
+            <p className="text-afrilink-fg-80 text-sm leading-relaxed mb-4">
               All personnel deployed across mining exploration concessions, civil engineering sites, and industrial manufacturing plants are bound by mandatory OHS safety induction, continuous hazard identification, and verified medical surveillance.
             </p>
-            <ul className="space-y-2 text-xs text-afrilink-navy-60 font-medium">
+            <ul className="space-y-2 text-xs text-afrilink-fg-60 font-medium">
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-afrilink-orange shrink-0" />
                 <span>Zero lost-time injuries benchmark maintained across holdings</span>
@@ -130,17 +130,17 @@ export default function GovernanceLabourPage({ onNavigate }) {
             </ul>
           </div>
 
-          <div className="bg-white rounded-xl p-8 border border-afrilink-grey-light shadow-card">
-            <div className="w-10 h-10 rounded-lg bg-afrilink-navy/10 flex items-center justify-center text-afrilink-navy mb-4">
+          <div className="bg-afrilink-surface rounded-xl p-8 border border-afrilink-grey-light shadow-card">
+            <div className="w-10 h-10 rounded-lg bg-afrilink-fg/10 flex items-center justify-center text-afrilink-fg mb-4">
               <HeartHandshake className="w-5 h-5" />
             </div>
-            <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-3">
+            <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-3">
               Fair Labour & Employee Welfare
             </h3>
-            <p className="text-afrilink-navy-80 text-sm leading-relaxed mb-4">
+            <p className="text-afrilink-fg-80 text-sm leading-relaxed mb-4">
               Afrilink Corporation enforces equitable remuneration, fair collective engagement, and zero tolerance for workplace discrimination. In addition, our 26% Broad-Based Community & Employee Trust provides structural equity participation for staff.
             </p>
-            <ul className="space-y-2 text-xs text-afrilink-navy-60 font-medium">
+            <ul className="space-y-2 text-xs text-afrilink-fg-60 font-medium">
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-afrilink-orange shrink-0" />
                 <span>UIF & Compensation Commissioner levies paid on time</span>

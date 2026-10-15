@@ -13,7 +13,7 @@ const ABOUT_PAGES = [
 
 export default function AboutOverviewPage({ onNavigate }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -53,7 +53,7 @@ export default function AboutOverviewPage({ onNavigate }) {
         <div className="mb-20">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Foundational Principles</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-2">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-2">
               The Bedrock of Our Strategy
             </h2>
           </div>
@@ -75,13 +75,13 @@ export default function AboutOverviewPage({ onNavigate }) {
               {
                 label: 'Our Values',
                 icon: Users,
-                color: '#2B3044',
+                color: '#C5C8D4',
                 text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not corporate slogans; they are the governing principles behind every board decision and capital allocation.'
               },
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-white rounded-xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all duration-300"
+                className="bg-afrilink-surface rounded-xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all duration-300"
               >
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center mb-6"
@@ -89,8 +89,8 @@ export default function AboutOverviewPage({ onNavigate }) {
                 >
                   <item.icon className="w-6 h-6" style={{ color: item.color }} />
                 </div>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mb-4">{item.label}</h3>
-                <p className="text-afrilink-navy-80 text-base leading-relaxed">{item.text}</p>
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mb-4">{item.label}</h3>
+                <p className="text-afrilink-fg-80 text-base leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -136,11 +136,11 @@ export default function AboutOverviewPage({ onNavigate }) {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
               <div>
                 <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Global Ecosystem</span>
-                <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1">
+                <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
                   Strategic Alliances & Partnerships
                 </h2>
               </div>
-              <p className="text-afrilink-navy-60 text-sm max-w-md">
+              <p className="text-afrilink-fg-60 text-sm max-w-md">
                 Afrilink collaborates with premier academic institutions, multinational technology enterprises, and industry councils.
               </p>
             </div>
@@ -149,20 +149,20 @@ export default function AboutOverviewPage({ onNavigate }) {
               {strategicPartnersData.map((p, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-xl p-6 sm:p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all flex flex-col justify-between"
+                  className="bg-afrilink-surface rounded-xl p-6 sm:p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover hover:border-afrilink-orange/30 transition-all flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-start justify-between gap-4 mb-4">
                       <span className="text-xs font-semibold px-2.5 py-1 rounded bg-afrilink-orange/10 text-afrilink-orange border border-afrilink-orange/20">
                         {p.badge}
                       </span>
-                      <span className="text-xs text-afrilink-navy-60 font-medium">{p.location}</span>
+                      <span className="text-xs text-afrilink-fg-60 font-medium">{p.location}</span>
                     </div>
-                    <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-2">{p.name}</h3>
-                    <p className="text-afrilink-navy-80 text-sm leading-relaxed mb-4">{p.description}</p>
+                    <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-2">{p.name}</h3>
+                    <p className="text-afrilink-fg-80 text-sm leading-relaxed mb-4">{p.description}</p>
                   </div>
-                  <div className="pt-4 border-t border-afrilink-grey-light flex items-center justify-between text-xs text-afrilink-navy-60">
-                    <span className="font-semibold text-afrilink-navy">{p.type}</span>
+                  <div className="pt-4 border-t border-afrilink-grey-light flex items-center justify-between text-xs text-afrilink-fg-60">
+                    <span className="font-semibold text-afrilink-fg">{p.type}</span>
                     <span className="text-afrilink-orange font-medium">{p.logoText}</span>
                   </div>
                 </div>
@@ -176,10 +176,10 @@ export default function AboutOverviewPage({ onNavigate }) {
           <div className="mb-20">
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Track Record</span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-2">
+              <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-2">
                 Two Decades of Impact
               </h2>
-              <p className="text-afrilink-navy-60 text-base mt-3">
+              <p className="text-afrilink-fg-60 text-base mt-3">
                 Key milestones shaping the evolution of Afrilink Corporation across the continent.
               </p>
             </div>
@@ -187,12 +187,12 @@ export default function AboutOverviewPage({ onNavigate }) {
             <div className="relative border-l-2 border-afrilink-orange/30 ml-4 sm:ml-8 space-y-12">
               {milestonesData.map((m, i) => (
                 <div key={i} className="relative pl-8 sm:pl-10">
-                  <div className="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-white border-4 border-afrilink-orange shadow" />
+                  <div className="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-afrilink-surface border-4 border-afrilink-orange shadow" />
                   <div className="inline-block px-3 py-1 rounded bg-afrilink-orange text-white text-xs font-bold tracking-wide mb-2">
                     {m.year}
                   </div>
-                  <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-2">{m.title}</h3>
-                  <p className="text-afrilink-navy-80 text-sm sm:text-base leading-relaxed max-w-3xl">{m.description}</p>
+                  <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-2">{m.title}</h3>
+                  <p className="text-afrilink-fg-80 text-sm sm:text-base leading-relaxed max-w-3xl">{m.description}</p>
                 </div>
               ))}
             </div>
@@ -203,10 +203,10 @@ export default function AboutOverviewPage({ onNavigate }) {
         <div className="bg-afrilink-cream rounded-2xl p-8 sm:p-12 border border-afrilink-grey-light flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="text-xs font-bold text-afrilink-orange uppercase tracking-wider">Next in About</span>
-            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mt-1">
+            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mt-1">
               Explore Executive Leadership & Capital
             </h3>
-            <p className="text-afrilink-navy-60 text-sm mt-1 max-w-xl">
+            <p className="text-afrilink-fg-60 text-sm mt-1 max-w-xl">
               Discover Dr Molefe M.D. Mokgatle’s 39-year career, our broad-based shareholding structure, and corporate gallery.
             </p>
           </div>

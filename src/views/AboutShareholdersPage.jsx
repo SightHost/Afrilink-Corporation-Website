@@ -13,7 +13,7 @@ const ABOUT_PAGES = [
 
 export default function AboutShareholdersPage({ onNavigate }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -52,16 +52,16 @@ export default function AboutShareholdersPage({ onNavigate }) {
         <div className="mb-20">
           <div className="max-w-3xl mb-12">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Equity Distribution</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1 mb-4">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1 mb-4">
               Balanced, Transformation-Driven Capital
             </h2>
-            <p className="text-afrilink-navy-80 text-base sm:text-lg leading-relaxed">
+            <p className="text-afrilink-fg-80 text-base sm:text-lg leading-relaxed">
               {shareholdersData.philosophy}
             </p>
           </div>
 
           {/* Interactive Visual Bar */}
-          <div className="bg-white rounded-2xl p-6 sm:p-10 border border-afrilink-grey-light shadow-card mb-12">
+          <div className="bg-afrilink-surface rounded-2xl p-6 sm:p-10 border border-afrilink-grey-light shadow-card mb-12">
             <div className="h-6 w-full rounded-full overflow-hidden flex shadow-inner mb-6 bg-afrilink-grey-light">
               {shareholdersData.segments.map((seg, idx) => (
                 <div
@@ -87,14 +87,14 @@ export default function AboutShareholdersPage({ onNavigate }) {
                         {seg.percentage}%
                       </span>
                     </div>
-                    <h3 className="font-heading text-lg font-semibold text-afrilink-navy mb-2">
+                    <h3 className="font-heading text-lg font-semibold text-afrilink-fg mb-2">
                       {seg.name}
                     </h3>
-                    <p className="text-afrilink-navy-60 text-sm leading-relaxed">
+                    <p className="text-afrilink-fg-60 text-sm leading-relaxed">
                       {seg.description}
                     </p>
                   </div>
-                  <div className="pt-4 mt-4 border-t border-afrilink-grey-light text-xs font-semibold text-afrilink-navy-60 flex items-center gap-1.5">
+                  <div className="pt-4 mt-4 border-t border-afrilink-grey-light text-xs font-semibold text-afrilink-fg-60 flex items-center gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-afrilink-orange" />
                     <span>Voting & Board Representation</span>
                   </div>
@@ -128,17 +128,17 @@ export default function AboutShareholdersPage({ onNavigate }) {
         <div className="mb-20">
           <div className="max-w-2xl mb-12">
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Governance & Stewardship</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1 mb-3">
+            <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1 mb-3">
               Board of Directors
             </h2>
-            <p className="text-afrilink-navy-60 text-base">
+            <p className="text-afrilink-fg-60 text-base">
               Independent oversight and disciplined capital allocation adhering to the King IV corporate governance code.
             </p>
           </div>
 
           <div className={boardMembers.length > 0 ? "grid grid-cols-1 md:grid-cols-2 gap-8" : "max-w-3xl"}>
             {/* Dr Mokgatle as Chairman & CEO */}
-            <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row gap-6">
+            <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row gap-6">
               <img
                 src={ceoProfile.image}
                 alt="Dr Molefe Mokgatle"
@@ -148,13 +148,13 @@ export default function AboutShareholdersPage({ onNavigate }) {
                 <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">
                   Board Chairman & CEO
                 </span>
-                <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mt-1">
+                <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mt-1">
                   Dr Molefe M.D. Mokgatle
                 </h3>
-                <p className="text-xs text-afrilink-navy-60 mt-1 mb-3">
+                <p className="text-xs text-afrilink-fg-60 mt-1 mb-3">
                   DBA (Paris) · MBA (Cardiff) · M.A. (London) · Cert. Dir (SA)
                 </p>
-                <p className="text-afrilink-navy-80 text-sm leading-relaxed mb-4">
+                <p className="text-afrilink-fg-80 text-sm leading-relaxed mb-4">
                   Over 39 years steering large-scale commercial strategy and restructuring across blue-chip multinationals including SABC, AfriSam, Aveng Grinaker-LTA, and Nedbank.
                 </p>
                 <button
@@ -170,7 +170,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
             {boardMembers.map((member, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row gap-6"
+                className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-all flex flex-col sm:flex-row gap-6"
               >
                 <img
                   src={member.image}
@@ -181,16 +181,16 @@ export default function AboutShareholdersPage({ onNavigate }) {
                   <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">
                     Executive Director
                   </span>
-                  <h3 className="font-heading text-2xl font-semibold text-afrilink-navy mt-1">
+                  <h3 className="font-heading text-2xl font-semibold text-afrilink-fg mt-1">
                     {member.name}
                   </h3>
-                  <p className="text-xs text-afrilink-navy-60 mt-1 mb-3">
+                  <p className="text-xs text-afrilink-fg-60 mt-1 mb-3">
                     {member.credentials}
                   </p>
-                  <p className="text-afrilink-navy-80 text-sm leading-relaxed">
+                  <p className="text-afrilink-fg-80 text-sm leading-relaxed">
                     {member.bio}
                   </p>
-                  <div className="mt-4 pt-3 border-t border-afrilink-grey-light text-xs font-semibold text-afrilink-navy flex items-center gap-2">
+                  <div className="mt-4 pt-3 border-t border-afrilink-grey-light text-xs font-semibold text-afrilink-fg flex items-center gap-2">
                     <UserCheck className="w-3.5 h-3.5 text-afrilink-orange" />
                     <span>{member.experience}</span>
                   </div>
@@ -204,10 +204,10 @@ export default function AboutShareholdersPage({ onNavigate }) {
         <div className="bg-afrilink-cream rounded-2xl p-8 sm:p-12 border border-afrilink-grey-light flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="text-xs font-bold text-afrilink-orange uppercase tracking-wider">Next in About</span>
-            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-navy mt-1">
+            <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-afrilink-fg mt-1">
               Explore Corporate Project Gallery
             </h3>
-            <p className="text-afrilink-navy-60 text-sm mt-1 max-w-xl">
+            <p className="text-afrilink-fg-60 text-sm mt-1 max-w-xl">
               Inspect project photographs, mining exploration surveys, and international diplomatic engagements.
             </p>
           </div>

@@ -18,7 +18,7 @@ export default function SectorMiningPage({ onNavigate }) {
   const miningHoldings = investmentsData.filter(i => i.category === 'Mining');
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-afrilink-surface">
       {/* Hero */}
       <div className="relative pt-36 pb-20 lg:pt-44 lg:pb-24 bg-afrilink-navy overflow-hidden">
         <div className="absolute inset-0 bg-ndebele-pattern opacity-40" />
@@ -55,38 +55,38 @@ export default function SectorMiningPage({ onNavigate }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         {/* Sector Thesis Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-          <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
+          <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
             <div className="w-12 h-12 rounded-xl bg-afrilink-orange/10 flex items-center justify-center text-afrilink-orange mb-6">
               <Globe className="w-6 h-6" />
             </div>
-            <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-3">
+            <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-3">
               Dual-Jurisdiction Strength
             </h3>
-            <p className="text-afrilink-navy-60 text-sm leading-relaxed">
+            <p className="text-afrilink-fg-60 text-sm leading-relaxed">
               Operating within the world-class, sovereign rule-of-law environment of Botswana, combined with premier mineral endowments and community royalty frameworks in South Africa.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
-            <div className="w-12 h-12 rounded-xl bg-afrilink-navy/10 flex items-center justify-center text-afrilink-navy mb-6">
+          <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
+            <div className="w-12 h-12 rounded-xl bg-afrilink-fg/10 flex items-center justify-center text-afrilink-fg mb-6">
               <TrendingUp className="w-6 h-6" />
             </div>
-            <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-3">
+            <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-3">
               Critical Energy Transition Minerals
             </h3>
-            <p className="text-afrilink-navy-60 text-sm leading-relaxed">
+            <p className="text-afrilink-fg-60 text-sm leading-relaxed">
               Targeted focus on battery-grade manganese, industrial vanadium, and high-purity chrome essential for global renewable infrastructure and specialty alloys.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
-            <div className="w-12 h-12 rounded-xl bg-afrilink-gold/20 flex items-center justify-center text-afrilink-navy mb-6">
+          <div className="bg-afrilink-surface rounded-2xl p-8 border border-afrilink-grey-light shadow-card">
+            <div className="w-12 h-12 rounded-xl bg-afrilink-gold/20 flex items-center justify-center text-afrilink-fg mb-6">
               <Shield className="w-6 h-6" />
             </div>
-            <h3 className="font-heading text-xl font-semibold text-afrilink-navy mb-3">
+            <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-3">
               Broad-Based Community Equity
             </h3>
-            <p className="text-afrilink-navy-60 text-sm leading-relaxed">
+            <p className="text-afrilink-fg-60 text-sm leading-relaxed">
               Every mining concession operates in direct alignment with host community trusts, securing durable social license to operate, local employment, and shared prosperity.
             </p>
           </div>
@@ -97,11 +97,11 @@ export default function SectorMiningPage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Active Platforms</span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-navy mt-1">
+              <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
                 Mining Portfolio Holdings
               </h2>
             </div>
-            <p className="text-afrilink-navy-60 text-sm max-w-md">
+            <p className="text-afrilink-fg-60 text-sm max-w-md">
               Select an asset below to review detailed concession factsheets, operational stages, and investment tranches.
             </p>
           </div>

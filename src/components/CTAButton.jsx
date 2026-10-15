@@ -25,10 +25,10 @@ export default function CTAButton({
   const variantStyles = {
     orange: 'bg-afrilink-orange-btn text-white hover:bg-afrilink-orange-hover border border-transparent',
     // outline-light is for use on dark/orange backgrounds
-    outline: 'bg-transparent text-afrilink-navy border border-afrilink-navy/25 hover:border-afrilink-orange hover:text-afrilink-orange',
+    outline: 'bg-transparent text-afrilink-fg border border-afrilink-fg/25 hover:border-afrilink-orange hover:text-afrilink-orange',
     'outline-light': 'bg-transparent text-white border border-white/60 hover:bg-white hover:text-afrilink-navy',
-    gold: 'bg-afrilink-gold text-afrilink-navy hover:bg-afrilink-butter border border-transparent',
-    ghost: 'bg-transparent text-afrilink-navy hover:text-afrilink-orange border border-transparent'
+    gold: 'bg-afrilink-gold text-afrilink-navy hover:bg-afrilink-gold/85 border border-transparent',
+    ghost: 'bg-transparent text-afrilink-fg hover:text-afrilink-orange border border-transparent'
   };
 
   const content = (
