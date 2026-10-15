@@ -21,4 +21,4 @@ The site is a static Astro build served by Cloudflare Workers (config in `wrangl
 
 - **From your machine:** `npx wrangler login` once, then `npm run deploy`.
 - **From GitHub (auto-deploy on push):** Cloudflare dashboard → Workers & Pages → Create → Import a repository → pick this repo.
-  Build command: `npm run build` · Deploy command: `npx wrangler deploy`.
+  Deploy command: `npx wrangler deploy` (it runs the build itself via `wrangler.jsonc`).

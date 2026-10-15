@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "astro preview --open",
     "astro": "astro",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.1",
