@@ -236,7 +236,9 @@ export default function Footer({ onNavigate, onOpenLegal }) {
                   </a>
                 </li>
                 <li>
-                  <span className="text-white/80 block text-[13px]">011 568 5357</span>
+                  <a href="tel:+27115685357" className="text-white/80 hover:text-afrilink-gold transition-colors block text-[13px]">
+                    011 568 5357
+                  </a>
                 </li>
               </ul>
             </div>
