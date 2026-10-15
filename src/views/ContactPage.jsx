@@ -76,8 +76,8 @@ export default function ContactPage({ onNavigate }) {
                   {
                     icon: Phone,
                     label: 'Telephone',
-                    value: '+27 (0) 11 000 0000',
-                    href: 'tel:+27110000000',
+                    value: '011 568 5357',
+                    href: 'tel:+27115685357',
                     color: '#FFD177'
                   },
                   {

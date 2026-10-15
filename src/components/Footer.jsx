@@ -236,7 +236,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
                   </a>
                 </li>
                 <li>
-                  <span className="text-white/80 block text-[13px]">+27 (0) 11 000 0000</span>
+                  <span className="text-white/80 block text-[13px]">011 568 5357</span>
                 </li>
               </ul>
             </div>
