@@ -101,10 +101,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                   <button
                     key={item.label}
                     onClick={() => handleNavClick(item.route)}
-                    className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap transition-colors duration-200 border-b-[3px] ${
+                    className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap relative transition-colors duration-200 border-b-[3px] border-transparent after:absolute after:inset-x-0 after:-bottom-[3px] after:h-[3px] after:rounded-full ${
                       isActive
-                        ? 'text-afrilink-orange border-afrilink-gold'
-                        : 'text-afrilink-fg border-transparent hover:text-afrilink-orange'
+                        ? 'text-afrilink-orange after:bg-afrilink-gold'
+                        : 'text-afrilink-fg hover:text-afrilink-orange'
                     }`}
                   >
                     {item.label}
@@ -125,10 +125,10 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
                 >
                   <button
                     onClick={() => handleNavClick(item.id)}
-                    className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap transition-colors duration-200 border-b-[3px] inline-flex items-center gap-1.5 ${
+                    className={`px-3 xl:px-3.5 py-2 text-[15px] xl:text-base font-semibold whitespace-nowrap relative transition-colors duration-200 border-b-[3px] border-transparent after:absolute after:inset-x-0 after:-bottom-[3px] after:h-[3px] after:rounded-full inline-flex items-center gap-1.5 ${
                       isSubActive
-                        ? 'text-afrilink-orange border-afrilink-gold'
-                        : 'text-afrilink-fg border-transparent hover:text-afrilink-orange'
+                        ? 'text-afrilink-orange after:bg-afrilink-gold'
+                        : 'text-afrilink-fg hover:text-afrilink-orange'
                     }`}
                   >
                     <span>{item.label}</span>
