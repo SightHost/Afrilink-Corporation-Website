@@ -182,7 +182,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
               variant="orange"
               size="sm"
               onClick={() => handleNavClick('partner')}
-              className="shadow-md whitespace-nowrap"
+              className="whitespace-nowrap"
             >
               Partner With Us
             </CTAButton>

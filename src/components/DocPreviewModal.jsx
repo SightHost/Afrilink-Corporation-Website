@@ -158,13 +158,13 @@ export default function DocPreviewModal({ doc, onClose, onDownload }) {
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <button
               onClick={onClose}
-              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full border border-afrilink-fg text-sm font-semibold text-afrilink-fg hover:bg-afrilink-navy hover:text-white transition-colors"
+              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full btn-glass text-sm font-semibold"
             >
               Close
             </button>
             <button
               onClick={() => onDownload?.(doc)}
-              className="flex-1 sm:flex-none px-5 py-2.5 bg-afrilink-orange-btn hover:bg-afrilink-orange-hover text-white text-sm font-semibold rounded-full shadow-md flex items-center justify-center gap-2 transition-all"
+              className="flex-1 sm:flex-none px-5 py-2.5 btn-glass btn-glass-orange text-white text-sm font-semibold rounded-full flex items-center justify-center gap-2"
             >
               <Download className="w-4 h-4" />
               <span>Download PDF File</span>

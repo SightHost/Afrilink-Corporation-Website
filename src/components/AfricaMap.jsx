@@ -350,7 +350,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               else if (activeNode === 'za') onNavigate?.('investments');
               else onNavigate?.('partner');
             }}
-            className="w-full py-3 px-5 rounded-full bg-afrilink-orange-btn hover:bg-afrilink-orange-hover text-white text-sm font-semibold transition-all shadow-card flex items-center justify-center gap-2"
+            className="w-full py-3 px-5 rounded-full btn-glass btn-glass-orange text-white text-sm font-semibold flex items-center justify-center gap-2"
           >
             <span>Explore {currentData.name} Engagements</span>
             <ArrowUpRight className="w-4 h-4" />

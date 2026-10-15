@@ -13,7 +13,7 @@ export default function CTAButton({
   type = 'button'
 }) {
   // Pill buttons, sentence case, 600 weight: matches afrilinkbuilding.co.za
-  const baseStyles = 'inline-flex items-center justify-center font-semibold tracking-[0.015em] transition-all duration-300 rounded-full group relative overflow-hidden text-center';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold tracking-[0.015em] rounded-full group relative overflow-hidden text-center';
 
   const sizeStyles = {
     sm: 'text-sm px-4 py-2 gap-2',
@@ -23,12 +23,12 @@ export default function CTAButton({
   };
 
   const variantStyles = {
-    orange: 'bg-afrilink-orange-btn text-white hover:bg-afrilink-orange-hover border border-transparent',
-    // outline-light is for use on dark/orange backgrounds
-    outline: 'bg-transparent text-afrilink-fg border border-afrilink-fg/25 hover:border-afrilink-orange hover:text-afrilink-orange',
-    'outline-light': 'bg-transparent text-white border border-white/60 hover:bg-white hover:text-afrilink-navy',
-    gold: 'bg-afrilink-gold text-afrilink-navy hover:bg-afrilink-gold/85 border border-transparent',
-    ghost: 'bg-transparent text-afrilink-fg hover:text-afrilink-orange border border-transparent'
+    // Liquid frosted-glass styles (see .btn-glass in index.css)
+    orange: 'btn-glass btn-glass-orange',
+    outline: 'btn-glass text-afrilink-fg',
+    'outline-light': 'btn-glass',
+    gold: 'btn-glass btn-glass-gold',
+    ghost: 'bg-transparent text-afrilink-fg hover:text-afrilink-orange border border-transparent transition-colors duration-300'
   };
 
   const content = (

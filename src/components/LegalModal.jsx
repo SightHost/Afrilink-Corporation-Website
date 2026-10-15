@@ -119,7 +119,7 @@ export default function LegalModal({ type, onClose }) {
           <span>Afrilink Corporation (Pty) Ltd · Regulatory Registry</span>
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-full bg-afrilink-orange-btn hover:bg-afrilink-orange-hover text-white text-sm font-semibold transition-colors shrink-0"
+            className="px-5 py-2 rounded-full btn-glass btn-glass-orange text-white text-sm font-semibold shrink-0"
           >
             Acknowledge & Close
           </button>

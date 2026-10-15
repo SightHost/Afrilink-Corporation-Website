@@ -37,7 +37,7 @@ export default function CookieBanner({ onOpenLegal }) {
             <div className="flex items-center gap-3">
               <button
                 onClick={handleAccept}
-                className="px-4 py-1.5 bg-afrilink-orange-btn hover:bg-afrilink-orange-hover text-white text-[13px] font-semibold rounded-full transition-colors"
+                className="px-4 py-1.5 btn-glass btn-glass-orange text-white text-[13px] font-semibold rounded-full"
               >
                 Accept & Proceed
               </button>

@@ -97,7 +97,7 @@ export default function GovernanceDocCard({ doc, onPreview, onDownload }) {
           </button>
           <button
             onClick={() => onDownload?.(doc)}
-            className="w-full py-2.5 px-3 rounded-full bg-afrilink-orange-btn hover:bg-afrilink-orange-hover text-white text-sm font-semibold border border-transparent transition-all flex items-center justify-center gap-1.5"
+            className="w-full py-2.5 px-3 rounded-full btn-glass btn-glass-orange text-white text-sm font-semibold flex items-center justify-center gap-1.5"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Download</span>

@@ -74,7 +74,7 @@ export default function InvestmentTemplate({
                   href={website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white hover:text-afrilink-navy text-[13px] font-semibold text-white border border-white/30 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full btn-glass text-[13px] font-semibold text-white"
                 >
                   <span>Visit Portal</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -102,7 +102,7 @@ export default function InvestmentTemplate({
                 </CTAButton>
                 <button
                   onClick={handleShare}
-                  className="px-[23px] py-[11px] rounded-full bg-transparent hover:bg-white hover:text-afrilink-navy text-base font-semibold text-white border border-white/60 transition-all flex items-center gap-2"
+                  className="px-[23px] py-[11px] rounded-full btn-glass text-base font-semibold text-white flex items-center gap-2"
                 >
                   <Share2 className="w-4 h-4 text-afrilink-gold" />
                   <span>{copied ? 'Link Copied!' : 'Share Portfolio Asset'}</span>
