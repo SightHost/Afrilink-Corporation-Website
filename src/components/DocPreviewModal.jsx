@@ -158,7 +158,7 @@ export default function DocPreviewModal({ doc, onClose, onDownload }) {
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <button
               onClick={onClose}
-              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full btn-glass text-sm font-semibold"
+              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full btn-glass btn-glass-light text-sm font-semibold"
             >
               Close
             </button>

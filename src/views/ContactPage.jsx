@@ -78,7 +78,7 @@ export default function ContactPage({ onNavigate }) {
                     label: 'Telephone',
                     value: '011 568 5357',
                     href: 'tel:+27115685357',
-                    color: '#FFD177'
+                    color: '#B7791F'
                   },
                   {
                     icon: Clock,

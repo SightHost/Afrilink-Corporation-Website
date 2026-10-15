@@ -25,7 +25,7 @@ export default function CTAButton({
   const variantStyles = {
     // Liquid frosted-glass styles (see .btn-glass in index.css)
     orange: 'btn-glass btn-glass-orange',
-    outline: 'btn-glass text-afrilink-fg',
+    outline: 'btn-glass btn-glass-light',
     'outline-light': 'btn-glass',
     gold: 'btn-glass btn-glass-gold',
     ghost: 'bg-transparent text-afrilink-fg hover:text-afrilink-orange border border-transparent transition-colors duration-300'
