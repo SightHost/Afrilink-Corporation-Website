@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, ShieldCheck, CheckCircle2, Download, Eye, FileText, ArrowRight, ExternalLink } from 'lucide-react';
+import { Award, ShieldCheck, CheckCircle2, Download, Eye, FileText, ExternalLink } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import DocPreviewModal from '../components/DocPreviewModal';
@@ -171,7 +171,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
             </p>
             <div className="flex flex-wrap gap-4">
               <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-                Initiate Procurement Partnership <ArrowRight className="w-4 h-4 ml-1" />
+                Initiate Procurement Partnership
               </CTAButton>
               <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('governance/compliance')}>
                 View Tax & CIPC Filings

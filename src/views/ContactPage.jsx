@@ -84,7 +84,7 @@ export default function ContactPage({ onNavigate }) {
                     icon: Clock,
                     label: 'Office Hours',
                     value: 'Mon–Fri: 08:00–17:00 SAST\nSat: By appointment only',
-                    color: '#9196AA'
+                    color: '#5A5E6E'
                   },
                 ].map((item, i) => (
                   <div key={i} className="bg-afrilink-surface rounded-lg p-4 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow flex items-start gap-4">

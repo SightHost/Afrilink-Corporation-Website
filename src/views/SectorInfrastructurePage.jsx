@@ -1,5 +1,5 @@
 import React from 'react';
-import { Droplet, Building2, Wrench, Shield, ArrowRight, CheckCircle2, MapPin } from 'lucide-react';
+import { Droplet, Building2, Wrench, Shield, CheckCircle2, MapPin } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import InvestmentCard from '../components/InvestmentCard';
@@ -42,7 +42,7 @@ export default function SectorInfrastructurePage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Submit Infrastructure Brief <ArrowRight className="w-4 h-4 ml-1" />
+              Submit Infrastructure Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
               View All Holdings
@@ -120,10 +120,10 @@ export default function SectorInfrastructurePage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments/digital')}>
-              Next: Digital Engineering <ArrowRight className="w-4 h-4 ml-1" />
+              Next: Digital Engineering
             </CTAButton>
           </div>
         </div>

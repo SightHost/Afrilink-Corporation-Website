@@ -76,7 +76,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
     <div className="relative w-full rounded-lg bg-afrilink-surface border border-afrilink-grey-light p-6 md:p-10 overflow-hidden shadow-card">
 
       {/* Header bar */}
-      <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-6 border-b border-afrilink-grey-light">
+      <div className="relative z-10 flex flex-col gap-4 mb-8 pb-6 border-b border-afrilink-grey-light">
         <div>
           <div className="eyebrow mb-2">
             <Globe className="w-3.5 h-3.5" />
@@ -109,9 +109,9 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
         </div>
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        {/* SVG Interactive Map Area (7 cols on lg) */}
-        <div className="lg:col-span-7 relative flex items-center justify-center min-h-[380px] md:min-h-[460px] bg-afrilink-cream/60 rounded-lg p-4 border border-afrilink-grey-light">
+      <div className="relative z-10 flex flex-col gap-6">
+        {/* SVG Interactive Map Area */}
+        <div className="relative flex items-center justify-center min-h-[340px] pb-14 bg-afrilink-cream/60 rounded-lg p-4 border border-afrilink-grey-light">
           <svg
             viewBox="0 0 700 560"
             className="w-full h-auto max-h-[500px] select-none"
@@ -119,7 +119,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
             xmlns="http://www.w3.org/2000/svg"
           >
             {/* Coordinate grid lines for avant-garde cartography aesthetic */}
-            <g opacity="0.14" stroke="#C5C8D4" strokeWidth="0.75" strokeDasharray="3 5">
+            <g opacity="0.14" stroke="#2B3044" strokeWidth="0.75" strokeDasharray="3 5">
               <line x1="80" y1="50" x2="620" y2="50" />
               <line x1="80" y1="150" x2="620" y2="150" />
               <line x1="80" y1="280" x2="620" y2="280" />
@@ -143,8 +143,8 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
                  C190 240, 160 220, 150 190 
                  C140 160, 170 140, 200 130 
                  C230 120, 270 95, 310 90 Z"
-              fill="#141B36"
-              stroke="#303957"
+              fill="#FFFFFF"
+              stroke="#D1D1D1"
               strokeWidth="1.5"
             />
 
@@ -173,7 +173,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
             <path
               d="M340 480 C320 320, 260 160, 220 50"
               fill="none"
-              stroke="#C5C8D4"
+              stroke="#2B3044"
               strokeWidth={activeNode === 'eu' || activeNode === 'za' ? "2.5" : "1.2"}
               strokeOpacity={activeNode === 'eu' || activeNode === 'za' ? "0.9" : "0.35"}
               strokeDasharray={activeNode === 'eu' ? "none" : "6 4"}
@@ -212,7 +212,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
             <path
               d="M305 460 C325 455, 365 455, 380 470 C375 500, 355 525, 335 525 C315 520, 290 490, 305 460 Z"
               fill="rgba(255, 209, 119, 0.55)"
-              stroke="#C5C8D4"
+              stroke="#2B3044"
               strokeWidth="1.5"
             />
 
@@ -222,10 +222,10 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               className="cursor-pointer group"
               onClick={() => setActiveNode('us')}
             >
-              <circle cx="50" cy="110" r="14" fill="#141B36" stroke="#F37121" strokeWidth="1.5" />
+              <circle cx="50" cy="110" r="14" fill="#FFFFFF" stroke="#F37121" strokeWidth="1.5" />
               <circle cx="50" cy="110" r="5" fill="#F37121" />
-              <text x="50" y="140" fill="#F1F2F6" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">USA</text>
-              <text x="50" y="153" fill="#9196AA" fontSize="9" textAnchor="middle">New York</text>
+              <text x="50" y="140" fill="#040922" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">USA</text>
+              <text x="50" y="153" fill="#5A5E6E" fontSize="9" textAnchor="middle">New York</text>
             </g>
 
             {/* London Node */}
@@ -233,10 +233,10 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               className="cursor-pointer group"
               onClick={() => setActiveNode('uk')}
             >
-              <circle cx="140" cy="60" r="14" fill="#141B36" stroke="#F37121" strokeWidth="1.5" />
+              <circle cx="140" cy="60" r="14" fill="#FFFFFF" stroke="#F37121" strokeWidth="1.5" />
               <circle cx="140" cy="60" r="5" fill="#F37121" />
-              <text x="140" y="38" fill="#F1F2F6" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">UK</text>
-              <text x="140" y="24" fill="#9196AA" fontSize="9" textAnchor="middle">London</text>
+              <text x="140" y="38" fill="#040922" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">UK</text>
+              <text x="140" y="24" fill="#5A5E6E" fontSize="9" textAnchor="middle">London</text>
             </g>
 
             {/* Europe Node */}
@@ -244,10 +244,10 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               className="cursor-pointer group"
               onClick={() => setActiveNode('eu')}
             >
-              <circle cx="220" cy="50" r="14" fill="#141B36" stroke="#C5C8D4" strokeWidth="1.5" />
+              <circle cx="220" cy="50" r="14" fill="#FFFFFF" stroke="#2B3044" strokeWidth="1.5" />
               <circle cx="220" cy="50" r="5" fill="#FFD177" />
-              <text x="220" y="32" fill="#F1F2F6" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">EUROPE</text>
-              <text x="220" y="18" fill="#9196AA" fontSize="9" textAnchor="middle">Stuttgart / Munich</text>
+              <text x="220" y="32" fill="#040922" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="Plus Jakarta Sans">EUROPE</text>
+              <text x="220" y="18" fill="#5A5E6E" fontSize="9" textAnchor="middle">Stuttgart / Munich</text>
             </g>
 
             {/* BOTSWANA NODE (Gaborone) */}
@@ -260,10 +260,10 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
                 <animate attributeName="r" values="8;24;8" dur="3s" repeatCount="indefinite" />
                 <animate attributeName="opacity" values="0.8;0;0.8" dur="3s" repeatCount="indefinite" />
               </circle>
-              <circle cx="330" cy="435" r="9" fill="#141B36" stroke="#F37121" strokeWidth="2.5" />
+              <circle cx="330" cy="435" r="9" fill="#FFFFFF" stroke="#F37121" strokeWidth="2.5" />
               <circle cx="330" cy="435" r="4.5" fill="#F37121" />
-              <rect x="345" y="420" width="95" height="26" rx="4" fill="#141B36" stroke="#F37121" strokeWidth="1" />
-              <text x="353" y="434" fill="#F1F2F6" fontSize="10" fontWeight="700">BOTSWANA 🇧🇼</text>
+              <rect x="345" y="420" width="95" height="26" rx="4" fill="#FFFFFF" stroke="#F37121" strokeWidth="1" />
+              <text x="353" y="434" fill="#040922" fontSize="10" fontWeight="700">BOTSWANA 🇧🇼</text>
               <text x="353" y="443" fill="#F37121" fontSize="8">Gaborone (Afrilink MG)</text>
             </g>
 
@@ -273,15 +273,15 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               onClick={() => setActiveNode('za')}
             >
               {/* Radar pulse */}
-              <circle cx="345" cy="485" r="22" fill="none" stroke="#C5C8D4" strokeWidth="1.5" opacity="0.7">
+              <circle cx="345" cy="485" r="22" fill="none" stroke="#2B3044" strokeWidth="1.5" opacity="0.7">
                 <animate attributeName="r" values="10;30;10" dur="2.5s" repeatCount="indefinite" />
                 <animate attributeName="opacity" values="0.9;0;0.9" dur="2.5s" repeatCount="indefinite" />
               </circle>
-              <circle cx="345" cy="485" r="11" fill="#141B36" stroke="#C5C8D4" strokeWidth="2.5" />
+              <circle cx="345" cy="485" r="11" fill="#FFFFFF" stroke="#2B3044" strokeWidth="2.5" />
               <circle cx="345" cy="485" r="5.5" fill="#FFD177" />
-              <rect x="365" y="475" width="125" height="28" rx="4" fill="#141B36" stroke="#C5C8D4" strokeWidth="1" />
-              <text x="373" y="489" fill="#F1F2F6" fontSize="10" fontWeight="700">SOUTH AFRICA 🇿🇦</text>
-              <text x="373" y="499" fill="#C5C8D4" fontSize="8">HQ, Civils, Mining, Tech</text>
+              <rect x="365" y="475" width="125" height="28" rx="4" fill="#FFFFFF" stroke="#2B3044" strokeWidth="1" />
+              <text x="373" y="489" fill="#040922" fontSize="10" fontWeight="700">SOUTH AFRICA 🇿🇦</text>
+              <text x="373" y="499" fill="#2B3044" fontSize="8">HQ, Civils, Mining, Tech</text>
             </g>
           </svg>
 
@@ -295,8 +295,8 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
           </div>
         </div>
 
-        {/* Selected Node Details Card (5 cols on lg) */}
-        <div className="lg:col-span-5 bg-afrilink-cream border border-afrilink-grey-light rounded-lg p-6 relative overflow-hidden">
+        {/* Selected Node Details panel, opens below the map */}
+        <div key={activeNode} className="bg-afrilink-cream border border-afrilink-grey-light rounded-lg p-6 relative overflow-hidden animate-fade-in">
           {/* Card Eyebrow & Title */}
           <div className="flex items-center justify-between gap-2 mb-2">
             <span className="text-[13px] font-semibold text-afrilink-orange flex items-center gap-1">
@@ -317,10 +317,11 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
           </p>
 
           {/* Operational entities list */}
-          <div className="space-y-2.5 mb-6">
-            <div className="text-[13px] font-semibold text-afrilink-fg-60 mb-2">
+          <div className="mb-6">
+            <div className="text-[13px] font-semibold text-afrilink-fg-60 mb-2.5">
               Key Operations & Synergies
             </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {currentData.companies.map((co, idx) => (
               <div
                 key={idx}
@@ -341,6 +342,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
                 <ArrowUpRight className="w-4 h-4 text-afrilink-fg-60 group-hover:text-afrilink-orange group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 mt-0.5" />
               </div>
             ))}
+            </div>
           </div>
 
           {/* Action Button */}

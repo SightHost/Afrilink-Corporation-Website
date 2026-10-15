@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, X, ExternalLink, Calendar, MapPin, ArrowRight, Tag, Eye } from 'lucide-react';
+import { Image, X, ExternalLink, Calendar, MapPin, Tag, Eye } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import { galleryItems } from '../data/corporateData';
@@ -39,7 +39,7 @@ export default function AboutGalleryPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('about/overview')}>
               Company Overview
@@ -183,7 +183,7 @@ export default function AboutGalleryPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline" size="md" onClick={() => onNavigate('about/overview')}>
               Overview

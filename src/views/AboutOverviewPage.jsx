@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Award, Users, Shield, TrendingUp, ArrowRight, CheckCircle2, Building2 } from 'lucide-react';
+import { Globe, Award, Users, Shield, TrendingUp, CheckCircle2, Building2 } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import { milestonesData, strategicPartnersData } from '../data/corporateData';
@@ -31,7 +31,7 @@ export default function AboutOverviewPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4 mt-8">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('about/ceo')}>
               Meet Our Founder & CEO
@@ -75,7 +75,7 @@ export default function AboutOverviewPage({ onNavigate }) {
               {
                 label: 'Our Values',
                 icon: Users,
-                color: '#C5C8D4',
+                color: '#2B3044',
                 text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not corporate slogans; they are the governing principles behind every board decision and capital allocation.'
               },
             ].map((item) => (
@@ -212,7 +212,7 @@ export default function AboutOverviewPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('about/ceo')}>
-              CEO Profile <ArrowRight className="w-4 h-4 ml-1" />
+              CEO Profile
             </CTAButton>
             <CTAButton variant="outline" size="md" onClick={() => onNavigate('about/shareholders')}>
               Shareholders

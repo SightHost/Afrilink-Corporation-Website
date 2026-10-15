@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, ChevronDown, Globe, TrendingUp, Shield, Users, Building2, Zap, Leaf, BookOpen, ArrowUpRight } from 'lucide-react';
+import { ChevronDown, Globe, TrendingUp, Shield, Users, Building2, Zap, Leaf, BookOpen, ArrowUpRight } from 'lucide-react';
 import AfricaMap from '../components/AfricaMap';
 import StatCounter from '../components/StatCounter';
 import InvestmentCard from '../components/InvestmentCard';
@@ -107,8 +107,8 @@ function FocusAreasSection({ onNavigate }) {
   const areas = focusAreasData || [
     { title: 'Mining & Resources', icon: 'mining', description: 'Strategic mineral tenure, prospecting and offtake across Botswana and South Africa.', color: '#F37121' },
     { title: 'Infrastructure & Civils', icon: 'infra', description: 'Water, sanitation, civic engineering and essential public infrastructure delivery.', color: '#FFD177' },
-    { title: 'Digital & Technology', icon: 'digital', description: 'UX engineering, QA assurance and enterprise digital transformation through Strider Digital.', color: '#9196AA' },
-    { title: 'Human Capital & Training', icon: 'human', description: 'Skills development, learnerships and workforce transformation through Mahlori Group.', color: '#C5C8D4' },
+    { title: 'Digital & Technology', icon: 'digital', description: 'UX engineering, QA assurance and enterprise digital transformation through Strider Digital.', color: '#5A5E6E' },
+    { title: 'Human Capital & Training', icon: 'human', description: 'Skills development, learnerships and workforce transformation through Mahlori Group.', color: '#2B3044' },
   ];
 
   return (
@@ -164,8 +164,9 @@ function FootprintSection({ onNavigate }) {
       <div className="absolute inset-0 bg-ndebele-pattern" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          {/* Pinned to the top so it stays put while the map's details panel changes height */}
+          <div className="lg:sticky lg:top-28">
             <div className="eyebrow mb-4">
               <span className="w-8 h-px bg-afrilink-orange" />
               Geographic Footprint
@@ -193,7 +194,7 @@ function FootprintSection({ onNavigate }) {
             </div>
             <div className="mt-8">
               <CTAButton variant="orange" size="md" onClick={() => onNavigate('about')}>
-                Our Story <ArrowRight className="w-4 h-4" />
+                Our Story
               </CTAButton>
             </div>
           </div>

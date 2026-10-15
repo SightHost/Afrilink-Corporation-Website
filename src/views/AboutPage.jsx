@@ -32,7 +32,7 @@ function OverviewTab({ onNavigate }) {
         {[
           { label: 'Mission', icon: Globe, color: '#F37121', text: 'To be the pre-eminent pan-African investment holding company, channelling diaspora capital and expertise into transformative economic opportunities across Africa, in service of a prosperous, self-reliant continent.' },
           { label: 'Vision', icon: Award, color: '#F18728', text: 'To create sustainable, broad-based wealth through strategic investment in mining, infrastructure, technology, and human capital — ensuring every community in our footprint participates in and benefits from our growth.' },
-          { label: 'Values', icon: Users, color: '#C5C8D4', text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not aspirations — they are our operating principles.' },
+          { label: 'Values', icon: Users, color: '#2B3044', text: 'Ubuntu · Integrity · Excellence · Transformation · Sustainability · Pan-African Solidarity. These are not aspirations — they are our operating principles.' },
         ].map(item => (
           <div key={item.label} className="bg-afrilink-surface rounded-lg p-7 border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow">
             <div className="w-11 h-11 rounded-md flex items-center justify-center mb-5" style={{ background: `${item.color}20`, border: `1px solid ${item.color}40` }}>

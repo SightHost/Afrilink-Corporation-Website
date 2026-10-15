@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pickaxe, Shield, Globe, TrendingUp, ArrowRight, CheckCircle2, MapPin, Award } from 'lucide-react';
+import { Pickaxe, Shield, Globe, TrendingUp, CheckCircle2, MapPin, Award } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import InvestmentCard from '../components/InvestmentCard';
@@ -35,7 +35,7 @@ export default function SectorMiningPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Offtake & JV Syndication Brief <ArrowRight className="w-4 h-4 ml-1" />
+              Offtake & JV Syndication Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
               View All Holdings
@@ -130,10 +130,10 @@ export default function SectorMiningPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments/infrastructure')}>
-              Next: Infrastructure <ArrowRight className="w-4 h-4 ml-1" />
+              Next: Infrastructure
             </CTAButton>
           </div>
         </div>

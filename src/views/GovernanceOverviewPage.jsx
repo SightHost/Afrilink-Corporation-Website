@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, FileCheck, CheckCircle2, Eye, Download, ExternalLink, AlertCircle, ArrowRight, Award, Lock, BookOpen } from 'lucide-react';
+import { ShieldCheck, FileCheck, CheckCircle2, Eye, Download, ExternalLink, AlertCircle, Award, Lock, BookOpen } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import GovernanceDocCard from '../components/GovernanceDocCard';
 import DocPreviewModal from '../components/DocPreviewModal';
@@ -19,8 +19,8 @@ export default function GovernanceOverviewPage({ onNavigate }) {
   const complianceMetrics = [
     { label: 'B-BBEE Status', value: 'Level 1', icon: ShieldCheck, color: '#F37121' },
     { label: 'Black Ownership', value: '100%', icon: CheckCircle2, color: '#F18728' },
-    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#C5C8D4' },
-    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#9196AA' },
+    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#2B3044' },
+    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#5A5E6E' },
     { label: 'King IV Adherence', value: 'Full', icon: ShieldCheck, color: '#F37121' },
     { label: 'COIDA Standing', value: 'Good Standing', icon: CheckCircle2, color: '#F18728' },
   ];
@@ -43,7 +43,7 @@ export default function GovernanceOverviewPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('governance/bbee')}>
-              Level 1 B-BBEE Certificate <ArrowRight className="w-4 h-4 ml-1" />
+              Level 1 B-BBEE Certificate
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('partner')}>
               Institutional Due Diligence Request
@@ -100,7 +100,7 @@ export default function GovernanceOverviewPage({ onNavigate }) {
                 </p>
               </div>
               <CTAButton variant="orange" size="sm" onClick={() => onNavigate('governance/bbee')}>
-                View B-BBEE Credentials <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                View B-BBEE Credentials
               </CTAButton>
             </div>
 
@@ -119,7 +119,7 @@ export default function GovernanceOverviewPage({ onNavigate }) {
                 </p>
               </div>
               <CTAButton variant="outline" size="sm" onClick={() => onNavigate('governance/compliance')}>
-                View Statutory Filings <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                View Statutory Filings
               </CTAButton>
             </div>
 
@@ -138,7 +138,7 @@ export default function GovernanceOverviewPage({ onNavigate }) {
                 </p>
               </div>
               <CTAButton variant="outline" size="sm" onClick={() => onNavigate('governance/good-standing')}>
-                View COIDA Record <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                View COIDA Record
               </CTAButton>
             </div>
           </div>

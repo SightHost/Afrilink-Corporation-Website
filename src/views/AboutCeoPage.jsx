@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Briefcase, Globe, BookOpen, Quote, Shield, CheckCircle2, ArrowRight, ExternalLink } from 'lucide-react';
+import { Award, Briefcase, Globe, BookOpen, Quote, Shield, CheckCircle2, ExternalLink } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import { ceoProfile } from '../data/corporateData';
@@ -33,7 +33,7 @@ export default function AboutCeoPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Initiate Partnership Brief <ArrowRight className="w-4 h-4 ml-1" />
+              Initiate Partnership Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('contact')}>
               Direct Executive Inquiry
@@ -149,7 +149,7 @@ export default function AboutCeoPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('about/shareholders')}>
-              Shareholders & Board <ArrowRight className="w-4 h-4 ml-1" />
+              Shareholders & Board
             </CTAButton>
             <CTAButton variant="outline" size="md" onClick={() => onNavigate('about/overview')}>
               Overview

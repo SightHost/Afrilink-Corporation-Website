@@ -7,14 +7,14 @@
     --color-orange: #F37121;
     --color-navy: #040922;
     --color-gold: #FFD177;
-    --color-cream: #10162E;
-    --color-grey: #303957;
+    --color-cream: #F9EFE0;
+    --color-grey: #D1D1D1;
   }
 
   body {
-    background-color: #0B1022;
-    color: #F1F2F6;
-    color-scheme: dark;
+    background-color: #FFFFFF;
+    color: #040922;
+    color-scheme: light;
     font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -191,22 +191,22 @@
 }
 
 .bg-sand-weave {
-  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.025) 0px, rgba(255, 255, 255, 0.025) 1.5px, transparent 1.5px, transparent 12px),
-                    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.025) 0px, rgba(255, 255, 255, 0.025) 1.5px, transparent 1.5px, transparent 12px);
+  background-image: repeating-linear-gradient(45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px),
+                    repeating-linear-gradient(-45deg, rgba(4, 9, 34, 0.025) 0px, rgba(4, 9, 34, 0.025) 1.5px, transparent 1.5px, transparent 12px);
 }
 
 /* Cards: raised navy panel with soft shadow */
 .glass-card,
 .glass-card-light {
-  background: #121A38;
-  border: 1px solid #1F2740;
-  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
 }
 
 .glass-nav {
-  background: #0B1022;
-  border-bottom: 1px solid #1F2740;
-  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  background: #FFFFFF;
+  border-bottom: 1px solid #EDEDED;
+  box-shadow: 0 2px 18px rgba(4, 9, 34, 0.06);
 }
 
 .glow-orange {
@@ -229,11 +229,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B1022;
+  background: #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #303957;
+  background: #D1D1D1;
   border-radius: 4px;
 }
 

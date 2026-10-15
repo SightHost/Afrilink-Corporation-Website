@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Users, GraduationCap, Award, ArrowRight, CheckCircle2, MapPin, HeartHandshake } from 'lucide-react';
+import { BookOpen, Users, GraduationCap, Award, CheckCircle2, MapPin, HeartHandshake } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import InvestmentCard from '../components/InvestmentCard';
@@ -42,7 +42,7 @@ export default function SectorHumanCapitalPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Sponsor Learnership Program <ArrowRight className="w-4 h-4 ml-1" />
+              Sponsor Learnership Program
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
               View All Holdings
@@ -120,10 +120,10 @@ export default function SectorHumanCapitalPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments/strategic')}>
-              Next: Strategic Ventures <ArrowRight className="w-4 h-4 ml-1" />
+              Next: Strategic Ventures
             </CTAButton>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Institutional Co-Investment Inquiry <ArrowRight className="w-4 h-4 ml-1" />
+              Institutional Co-Investment Inquiry
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('governance/bbee')}>
               View B-BBEE Credentials
@@ -213,7 +213,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('about/gallery')}>
-              Corporate Gallery <ArrowRight className="w-4 h-4 ml-1" />
+              Corporate Gallery
             </CTAButton>
             <CTAButton variant="outline" size="md" onClick={() => onNavigate('about/overview')}>
               Overview

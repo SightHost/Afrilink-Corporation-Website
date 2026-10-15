@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Users, Award, ShieldCheck, ArrowRight, CheckCircle2, TrendingUp, Sparkles } from 'lucide-react';
+import { Cpu, Users, Award, ShieldCheck, CheckCircle2, TrendingUp, Sparkles } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
 import InvestmentCard from '../components/InvestmentCard';
@@ -42,7 +42,7 @@ export default function SectorDigitalPage({ onNavigate }) {
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Deploy Digital Squads <ArrowRight className="w-4 h-4 ml-1" />
+              Deploy Digital Squads
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
               View All Holdings
@@ -140,10 +140,10 @@ export default function SectorDigitalPage({ onNavigate }) {
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us <ArrowRight className="w-4 h-4 ml-1" />
+              Partner With Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments/human-capital')}>
-              Next: Human Capital <ArrowRight className="w-4 h-4 ml-1" />
+              Next: Human Capital
             </CTAButton>
           </div>
         </div>

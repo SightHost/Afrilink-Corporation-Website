@@ -29,8 +29,8 @@ export default function GovernancePage({ currentSub, onNavigate }) {
   const complianceMetrics = [
     { label: 'B-BBEE Status', value: 'Level 1', icon: ShieldCheck, color: '#F37121' },
     { label: 'Black Ownership', value: '100%', icon: CheckCircle2, color: '#F18728' },
-    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#C5C8D4' },
-    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#9196AA' },
+    { label: 'CIPC Status', value: 'Active', icon: FileCheck, color: '#2B3044' },
+    { label: 'SARS Compliance', value: 'Compliant', icon: CheckCircle2, color: '#5A5E6E' },
     { label: 'King IV Adherence', value: 'Full', icon: ShieldCheck, color: '#F37121' },
     { label: 'COIDA Standing', value: 'Good Standing', icon: CheckCircle2, color: '#F18728' },
   ];
