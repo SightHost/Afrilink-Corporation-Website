@@ -157,7 +157,7 @@ export const galleryItems = [
     title: 'University of Botswana 5-Year MOU Signing Ceremony',
     category: 'Partnerships',
     year: 'Gaborone',
-    image: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80',
+    image: withBase('/gaborone-university.webp'),
     caption: 'High-level signing ceremony for the five-year strategic EdTech and digital transformation MOU between Afrilink Corporation and the University of Botswana.'
   },
   {
@@ -173,7 +173,7 @@ export const galleryItems = [
     title: 'Vacuform 2000 Precision Manufacturing Facility',
     category: 'Projects',
     year: 'Rosslyn, Pretoria',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80',
+    image: withBase('/vacuform-facility.webp'),
     caption: 'State-of-the-art 6,500 m² automotive component thermoforming and injection facility in Rosslyn, supplying BMW, Mercedes-Benz, Ford, and VW.'
   },
   {
@@ -181,7 +181,7 @@ export const galleryItems = [
     title: 'Motokolo Community Agricultural & Brickmaking Cooperative',
     category: 'Community',
     year: 'Limpopo',
-    image: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1000&q=80',
+    image: withBase('/motokolo-cooperative.webp'),
     caption: 'Empowerment projects initiated with the Motokolo community following the historic land claim victory, including brick making and commercial agriculture.'
   },
   {
