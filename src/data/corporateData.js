@@ -141,7 +141,7 @@ export const galleryItems = [
     title: 'Dr Mokgatle Addressing United Nations Assembly',
     category: 'Events',
     year: 'New York, USA',
-    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1000&q=80',
+    image: withBase('/un-headquarters.webp'),
     caption: 'Dr Molefe Mokgatle addressing the United Nations in New York on media transformation and communication infrastructure during South Africa’s transition.'
   },
   {
@@ -149,7 +149,7 @@ export const galleryItems = [
     title: 'Botswana Mineral Prospecting Concession Survey',
     category: 'Projects',
     year: 'Botswana',
-    image: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1000&q=80',
+    image: withBase('/botswana-surveyors.webp'),
     caption: 'Field exploration team conducting geological mapping and sampling across Afrilink MG licensed manganese and precious metal prospecting concessions.'
   },
   {
