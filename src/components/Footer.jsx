@@ -42,9 +42,11 @@ export default function Footer({ onNavigate, onOpenLegal }) {
     <footer className="relative bg-afrilink-orange text-white/85 overflow-hidden">
       {/* Pan-African symbol wall background */}
       <img
-        src={withBase('/footer-bg.png')}
+        src={withBase('/footer-bg.webp')}
         alt=""
         aria-hidden="true"
+        loading="lazy"
+        decoding="async"
         className="absolute inset-0 w-full h-full object-cover object-center opacity-85 pointer-events-none select-none"
       />
       <div className="absolute inset-0 bg-afrilink-ink/30 pointer-events-none" />
@@ -54,7 +56,9 @@ export default function Footer({ onNavigate, onOpenLegal }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16 border-b border-afrilink-orange-soft">
           {/* Brand Info & Tagline (lg: 4 cols) */}
           <div className="lg:col-span-4 space-y-5">
-            <AfrilinkLogo light={true} onClick={() => onNavigate?.('home')} />
+            <div>
+              <AfrilinkLogo light={true} imgClassName="h-[60px]" onClick={() => onNavigate?.('home')} />
+            </div>
             
             <div className="inline-block px-3 py-1 rounded-full bg-afrilink-gold text-[13px] font-heading font-semibold text-afrilink-navy">
               Making Diaspora Work
@@ -110,27 +114,27 @@ export default function Footer({ onNavigate, onOpenLegal }) {
               </h4>
               <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <button onClick={() => onNavigate?.('about')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('about')} className="text-left hover:text-afrilink-gold transition-colors">
                     Company Overview
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('about/ceo')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('about/ceo')} className="text-left hover:text-afrilink-gold transition-colors">
                     Dr Molefe Mokgatle (CEO)
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('about/shareholders')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('about/shareholders')} className="text-left hover:text-afrilink-gold transition-colors">
                     Shareholding Structure
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('about/gallery')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('about/gallery')} className="text-left hover:text-afrilink-gold transition-colors">
                     Corporate Gallery
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('about')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('about')} className="text-left hover:text-afrilink-gold transition-colors">
                     Strategic Alliances
                   </button>
                 </li>
@@ -144,27 +148,27 @@ export default function Footer({ onNavigate, onOpenLegal }) {
               </h4>
               <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <button onClick={() => onNavigate?.('governance/bbee')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('governance/bbee')} className="text-left hover:text-afrilink-gold transition-colors">
                     B-BBEE Verification
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('governance/compliance')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('governance/compliance')} className="text-left hover:text-afrilink-gold transition-colors">
                     CIPC Registration
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('governance/compliance')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('governance/compliance')} className="text-left hover:text-afrilink-gold transition-colors">
                     SARS Tax Pin
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('governance/compliance')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('governance/compliance')} className="text-left hover:text-afrilink-gold transition-colors">
                     King IV Governance
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('governance/good-standing')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('governance/good-standing')} className="text-left hover:text-afrilink-gold transition-colors">
                     COIDA Good Standing
                   </button>
                 </li>
@@ -178,27 +182,27 @@ export default function Footer({ onNavigate, onOpenLegal }) {
               </h4>
               <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <button onClick={() => onNavigate?.('investments/mining')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('investments/mining')} className="text-left hover:text-afrilink-gold transition-colors">
                     Mining & Commodities
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/infrastructure')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('investments/infrastructure')} className="text-left hover:text-afrilink-gold transition-colors">
                     Infrastructure & Civils
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/digital')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('investments/digital')} className="text-left hover:text-afrilink-gold transition-colors">
                     Digital Engineering
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/human-capital')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('investments/human-capital')} className="text-left hover:text-afrilink-gold transition-colors">
                     Human Capital Academy
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('investments/strategic')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('investments/strategic')} className="text-left hover:text-afrilink-gold transition-colors">
                     Strategic Manufacturing
                   </button>
                 </li>
@@ -223,7 +227,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate?.('contact')} className="hover:text-afrilink-gold transition-colors">
+                  <button onClick={() => onNavigate?.('contact')} className="text-left hover:text-afrilink-gold transition-colors">
                     Head Office Details
                   </button>
                 </li>

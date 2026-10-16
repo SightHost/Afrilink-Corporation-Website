@@ -143,6 +143,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
                 src={ceoProfile.image}
                 alt="Dr Molefe Mokgatle"
                 className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-top shrink-0 border border-afrilink-orange/30"
+                loading="lazy"
               />
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">
@@ -176,6 +177,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
                   src={member.image}
                   alt={member.name}
                   className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-top shrink-0 border border-afrilink-orange/30"
+                  loading="lazy"
                 />
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-afrilink-orange">

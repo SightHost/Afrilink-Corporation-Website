@@ -1,6 +1,9 @@
 import React from 'react';
 import { ArrowRight, MapPin, Tag } from 'lucide-react';
 
+// Unsplash images are stored at 1600px; cards only need a card-sized copy
+const cardImage = (url, width) => url?.replace(/([?&]w=)\d+/, `$1${width}`);
+
 export default function InvestmentCard({
   investment,
   onNavigate,
@@ -17,10 +20,13 @@ export default function InvestmentCard({
       {/* Image container */}
       <div className="relative aspect-[16/10] overflow-hidden bg-afrilink-cream">
         <img
-          src={heroImage}
+          src={cardImage(heroImage, 800)}
+          srcSet={`${cardImage(heroImage, 480)} 480w, ${cardImage(heroImage, 800)} 800w`}
+          sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
           alt={name}
           className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-afrilink-navy/30 via-transparent to-transparent" />
 

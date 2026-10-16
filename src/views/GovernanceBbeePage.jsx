@@ -41,7 +41,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => setShowModal(true)}>
+            <CTAButton variant="orange" size="md" onClick={() => setShowModal(true)} icon={false}>
               Preview Certificate <Eye className="w-4 h-4 ml-1" />
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('partner')}>

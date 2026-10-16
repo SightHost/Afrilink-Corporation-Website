@@ -277,7 +277,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
               className="w-full justify-center"
               onClick={() => handleNavClick('partner')}
             >
-              Partner With Us →
+              Partner With Us
             </CTAButton>
             <div className="text-center text-xs text-afrilink-fg-60">
               Johannesburg · Gaborone · London · Diaspora Conduits

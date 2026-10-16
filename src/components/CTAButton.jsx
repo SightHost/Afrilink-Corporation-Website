@@ -33,7 +33,7 @@ export default function CTAButton({
 
   const content = (
     <>
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10 inline-flex items-center">{children}</span>
       {icon && (
         <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5 relative z-10 shrink-0" />
       )}

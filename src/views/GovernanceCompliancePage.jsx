@@ -63,7 +63,7 @@ export default function GovernanceCompliancePage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => setSelectedDoc(cipcDoc)}>
+            <CTAButton variant="orange" size="md" onClick={() => setSelectedDoc(cipcDoc)} icon={false}>
               View CIPC Registration <Eye className="w-4 h-4 ml-1" />
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => setSelectedDoc(sarsDoc)}>

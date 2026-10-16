@@ -1,7 +1,7 @@
 import React from 'react';
 import { withBase } from '../lib/paths';
 
-export default function AfrilinkLogo({ className = '', variant = 'full', light = false, onClick }) {
+export default function AfrilinkLogo({ className = '', imgClassName = 'h-10', variant = 'full', light = false, onClick }) {
   if (variant === 'icon') {
     return (
       <div 
@@ -12,7 +12,7 @@ export default function AfrilinkLogo({ className = '', variant = 'full', light =
         <img
           src={withBase('/afrilink-logo.png')}
           alt="Afrilink Corporation"
-          className="h-10 w-auto object-contain"
+          className={`${imgClassName} w-auto object-contain`}
           onError={e => { e.target.src = withBase('/afrilink-logo-white.png'); }}
         />
       </div>
@@ -28,7 +28,7 @@ export default function AfrilinkLogo({ className = '', variant = 'full', light =
       <img
         src={light ? withBase('/afrilink-logo-white.png') : withBase('/afrilink-logo.png')}
         alt="Afrilink Corporation"
-        className="h-10 w-auto object-contain"
+        className={`${imgClassName} w-auto object-contain`}
         onError={e => {
           // try the other one
           e.target.onerror = null;

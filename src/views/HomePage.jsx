@@ -17,8 +17,10 @@ function HeroSection({ onNavigate }) {
       {/* Background with slight cinematic pan */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img
-          src={withBase('/hero-bg.jpg')}
+          src={withBase('/hero-bg.webp')}
           alt="Afrilink Pan-African Heritage and Insignia"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover object-center animate-hero-pan select-none"
         />
         {/* Directional gradients: ensures pristine text readability while highlighting the bronze insignia */}

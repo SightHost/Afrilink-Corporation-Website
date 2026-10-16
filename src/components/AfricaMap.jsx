@@ -73,7 +73,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
   const currentData = nodes[activeNode] || nodes.za;
 
   return (
-    <div className="relative w-full rounded-lg bg-afrilink-surface border border-afrilink-grey-light p-6 md:p-10 overflow-hidden shadow-card">
+    <div className="relative w-full rounded-lg bg-afrilink-surface border border-afrilink-grey-light p-4 sm:p-6 md:p-10 overflow-hidden shadow-card">
 
       {/* Header bar */}
       <div className="relative z-10 flex flex-col gap-4 mb-8 pb-6 border-b border-afrilink-grey-light">
@@ -111,7 +111,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
 
       <div className="relative z-10 flex flex-col gap-6">
         {/* SVG Interactive Map Area */}
-        <div className="relative flex items-center justify-center min-h-[340px] pb-14 bg-afrilink-cream/60 rounded-lg p-4 border border-afrilink-grey-light">
+        <div className="relative flex items-center justify-center min-h-[300px] sm:min-h-[340px] pb-14 bg-afrilink-cream/60 rounded-lg p-2 sm:p-4 border border-afrilink-grey-light">
           <svg
             viewBox="0 0 700 560"
             className="w-full h-auto max-h-[500px] select-none"
@@ -296,7 +296,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
         </div>
 
         {/* Selected Node Details panel, opens below the map */}
-        <div key={activeNode} className="bg-afrilink-cream border border-afrilink-grey-light rounded-lg p-6 relative overflow-hidden animate-fade-in">
+        <div key={activeNode} className="bg-afrilink-cream border border-afrilink-grey-light rounded-lg p-4 sm:p-6 relative overflow-hidden animate-fade-in">
           {/* Card Eyebrow & Title */}
           <div className="flex items-center justify-between gap-2 mb-2">
             <span className="text-[13px] font-semibold text-afrilink-orange flex items-center gap-1">
