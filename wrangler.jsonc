@@ -3,6 +3,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "afrilink-corporation",
+  // Account that owns the afrilinkcorp.co.za zone
+  "account_id": "175b5a29f9e46da931f5cf25bb33b5a6",
   "compatibility_date": "2026-10-01",
   // Wrangler runs this before every deploy, so dist/ always exists
   "build": {
@@ -12,5 +14,11 @@
     "directory": "./dist",
     // Astro prerenders each route as <route>/index.html
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  // Cloudflare creates the DNS records and certificates for these hostnames;
+  // the afrilinkcorp.co.za zone must be active in the same Cloudflare account
+  "routes": [
+    { "pattern": "afrilinkcorp.co.za", "custom_domain": true },
+    { "pattern": "www.afrilinkcorp.co.za", "custom_domain": true }
+  ]
 }

@@ -4,8 +4,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  // Set by the GitHub Pages workflow; locally the site is served from the root
-  site: process.env.SITE_URL,
+  // Production domain; the GitHub Pages workflow overrides it via SITE_URL
+  site: process.env.SITE_URL || 'https://afrilinkcorp.co.za',
   base: process.env.BASE_PATH || '/',
   integrations: [react()],
 });
