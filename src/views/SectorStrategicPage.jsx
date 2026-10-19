@@ -11,18 +11,13 @@ const SECTOR_NAV_ITEMS = [
   { label: 'Infrastructure & Civils', route: 'investments/infrastructure', badge: 'Civils' },
   { label: 'Digital Engineering', route: 'investments/digital', badge: 'Tech' },
   { label: 'Human Capital', route: 'investments/human-capital', badge: 'Academy' },
-  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'Auto & AI' },
+  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'AI & EdTech' },
 ];
 
 export default function SectorStrategicPage({ onNavigate }) {
   const strategicHoldings = investmentsData.filter(i => i.category === 'Strategic');
 
   const ventures = [
-    {
-      title: 'Vacuform 2000 (Pty) Ltd',
-      badge: 'Precision Automotive Manufacturing',
-      desc: '6,500 m² state-of-the-art facility in Rosslyn, Pretoria. Embedded within the global Motherson Group tier-1 automotive supplier network since 2011, manufacturing precision thermoformed and injection-molded components for BMW, Mercedes-Benz, Ford, Volkswagen, and Nissan.',
-    },
     {
       title: 'ELO Digital Office Alliance',
       badge: 'German Enterprise Automation',
@@ -43,17 +38,17 @@ export default function SectorStrategicPage({ onNavigate }) {
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-afrilink-orange/15 rounded-full blur-[100px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="eyebrow mb-4">Investment Sector Tag: Strategic Ventures & Manufacturing</div>
+          <div className="eyebrow mb-4">Investment Sector Tag: Strategic Ventures & Alliances</div>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-[68px] leading-[1.1] font-semibold text-white mb-4">
-            Advanced Manufacturing & <span className="text-afrilink-gold">Global Alliances</span>
+            Enterprise Technology & <span className="text-afrilink-gold">Global Alliances</span>
           </h1>
           <p className="text-white/80 text-lg sm:text-xl font-light max-w-3xl leading-relaxed mb-8">
-            High-barrier-to-entry industrial enterprises, tier-1 automotive component manufacturing, enterprise AI software integration, and cross-border technology alliances.
+            Enterprise AI software integration, academic digitization, and cross-border technology alliances.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Industrial Joint Venture Brief
+              Strategic Venture Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
               View All Holdings
@@ -74,9 +69,9 @@ export default function SectorStrategicPage({ onNavigate }) {
         {/* Key Ventures Grid */}
         <div className="space-y-6 mb-20">
           <div className="max-w-2xl mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Industrial Champions</span>
+            <span className="text-xs uppercase tracking-widest font-bold text-afrilink-orange">Strategic Alliances</span>
             <h2 className="font-heading text-3xl sm:text-4xl font-semibold text-afrilink-fg mt-1">
-              High-Barrier Industrial Platforms
+              Technology & Knowledge Platforms
             </h2>
           </div>
 
@@ -111,7 +106,7 @@ export default function SectorStrategicPage({ onNavigate }) {
               </h2>
             </div>
             <p className="text-afrilink-fg-60 text-sm max-w-md">
-              Review our specialized investment vehicle housing industrial manufacturing and software assets.
+              Review our specialized investment vehicle housing enterprise software and technology alliance assets.
             </p>
           </div>
 
@@ -131,10 +126,10 @@ export default function SectorStrategicPage({ onNavigate }) {
           <div>
             <span className="text-xs uppercase tracking-widest font-bold text-afrilink-gold">Global Co-Investment</span>
             <h3 className="font-heading text-2xl sm:text-3xl font-semibold mt-1">
-              Co-Invest in African Industrial Scale
+              Co-Invest in African Technology Ventures
             </h3>
             <p className="text-white/70 text-sm mt-1 max-w-xl">
-              Connect with Afrilink Corporation to structure equity participation across manufacturing, enterprise AI, and EdTech ventures.
+              Connect with Afrilink Corporation to structure equity participation across enterprise AI, software, and EdTech ventures.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">

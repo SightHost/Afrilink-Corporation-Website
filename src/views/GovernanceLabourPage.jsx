@@ -112,7 +112,7 @@ export default function GovernanceLabourPage({ onNavigate }) {
               Occupational Health & Safety (OHS)
             </h3>
             <p className="text-afrilink-fg-80 text-sm leading-relaxed mb-4">
-              All personnel deployed across mining exploration concessions, civil engineering sites, and industrial manufacturing plants are bound by mandatory OHS safety induction, continuous hazard identification, and verified medical surveillance.
+              All personnel deployed across mining exploration concessions, civil engineering sites, and operational facilities are bound by mandatory OHS safety induction, continuous hazard identification, and verified medical surveillance.
             </p>
             <ul className="space-y-2 text-xs text-afrilink-fg-60 font-medium">
               <li className="flex items-center gap-2">

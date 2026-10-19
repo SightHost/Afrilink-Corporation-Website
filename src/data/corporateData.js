@@ -124,14 +124,6 @@ export const strategicPartnersData = [
     logoText: 'SA SUPPLIER DIVERSITY COUNCIL',
     location: 'Johannesburg, South Africa',
     description: 'Afrilink received the coveted SASDC Achiever Award in 2015. Continuous alignment with SASDC corporate members for Tier-1 supply chain procurement, enterprise development, and market access.'
-  },
-  {
-    name: 'Motherson Group (via Vacuform 2000)',
-    badge: 'Global Automotive Network',
-    type: 'Industrial Manufacturing Partner',
-    logoText: 'MOTHERSON GROUP',
-    location: 'Global / Rosslyn, South Africa',
-    description: 'Vacuform 2000 has been embedded within the global Motherson Group tier-1 automotive supplier network since 2011, serving BMW, Mercedes-Benz, Ford, Volkswagen, and Nissan from its 6,500 m² Rosslyn manufacturing plant.'
   }
 ];
 
@@ -167,14 +159,6 @@ export const galleryItems = [
     year: 'Johannesburg',
     image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80',
     caption: 'Presentation of the prestigious Achiever Award 2015 by the South African Supplier Diversity Council, recognizing Afrilink’s corporate supplier excellence.'
-  },
-  {
-    id: 5,
-    title: 'Vacuform 2000 Precision Manufacturing Facility',
-    category: 'Projects',
-    year: 'Rosslyn, Pretoria',
-    image: withBase('/vacuform-facility.webp'),
-    caption: 'State-of-the-art 6,500 m² automotive component thermoforming and injection facility in Rosslyn, supplying BMW, Mercedes-Benz, Ford, and VW.'
   },
   {
     id: 6,

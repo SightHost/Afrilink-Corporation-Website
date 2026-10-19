@@ -203,7 +203,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
                 </li>
                 <li>
                   <button onClick={() => onNavigate?.('investments/strategic')} className="text-left hover:text-afrilink-gold transition-colors">
-                    Strategic Manufacturing
+                    Strategic Ventures
                   </button>
                 </li>
                 <li>

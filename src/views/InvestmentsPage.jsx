@@ -12,7 +12,7 @@ const SECTOR_NAV_ITEMS = [
   { label: 'Infrastructure & Civils', route: 'investments/infrastructure', badge: 'Civils' },
   { label: 'Digital Engineering', route: 'investments/digital', badge: 'Tech' },
   { label: 'Human Capital', route: 'investments/human-capital', badge: 'Academy' },
-  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'Auto & AI' },
+  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'AI & EdTech' },
 ];
 
 const SECTORS = ['All', 'Mining', 'Infrastructure', 'Digital', 'Human Capital', 'Strategic'];
@@ -71,11 +71,11 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
       desc: 'Mahlori Group accredited vocational education, artisan learnerships, and township youth empowerment.',
     },
     {
-      title: 'Strategic Ventures & Auto',
+      title: 'Strategic Ventures & AI',
       route: 'investments/strategic',
       icon: Factory,
-      count: 'Rosslyn Plant',
-      desc: 'Vacuform 2000 6,500m² auto parts plant supplying BMW & Mercedes; German ELO AI software alliance.',
+      count: 'Global Alliances',
+      desc: 'German ELO AI software alliance, University of Botswana EdTech MOU, and Hindsight cloud accounting software.',
     },
   ];
 

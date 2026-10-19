@@ -68,7 +68,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
         { label: 'Sector: Infrastructure & Civils', route: 'investments/infrastructure', desc: 'Bulk water, civic engineering & municipal PPPs' },
         { label: 'Sector: Digital Engineering', route: 'investments/digital', desc: 'Strider Digital tier-1 bank UX & QA engineering' },
         { label: 'Sector: Human Capital Academy', route: 'investments/human-capital', desc: 'Mahlori Group youth upskilling & SETA certifications' },
-        { label: 'Sector: Strategic Manufacturing', route: 'investments/strategic', desc: 'Vacuform 2000 automotive parts & German ELO AI alliance' }
+        { label: 'Sector: Strategic Ventures', route: 'investments/strategic', desc: 'German ELO AI alliance & University of Botswana EdTech MOU' }
       ]
     },
     { label: 'Contact Us', route: 'contact' }

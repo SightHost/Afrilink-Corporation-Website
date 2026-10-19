@@ -11,11 +11,10 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
       flag: '🇿🇦',
       badge: 'Headquarters & Core Asset Base',
       hubs: 'Johannesburg, Pretoria, Limpopo & Mpumalanga',
-      description: 'The operational and governance anchor of Afrilink Corporation. Directing mineral consortia, civil infrastructure, Tier-1 automotive manufacturing, and elite digital talent squads.',
+      description: 'The operational and governance anchor of Afrilink Corporation. Directing mineral consortia, civil infrastructure, and elite digital talent squads.',
       companies: [
         { name: 'Afrilink Mining (Pty) Ltd', desc: 'Chrome, Iron, Vanadium & Titanium Tenure', slug: 'afrilink-mining' },
         { name: 'Afrilink Building & Civils', desc: 'Water, Sanitation & Civil Engineering', slug: 'afrilink-buildings' },
-        { name: 'Vacuform 2000 (Motherson Net)', desc: 'Tier-1 Automotive Component Manufacturing (Rosslyn)', slug: 'strategic-ventures' },
         { name: 'Strider Digital', desc: 'Enterprise UX & QA Digital Engineering (Level 3 B-BBEE)', slug: 'strider-digital' },
         { name: 'Mahlori Group', desc: 'Daveyton Human Capital & Skills Academy', slug: 'mahlori-group' }
       ]
@@ -48,12 +47,11 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
       id: 'eu',
       name: 'Europe (Technology & Offtake)',
       flag: '🇪🇺',
-      badge: 'Enterprise AI & Automotive OEMs',
-      hubs: 'Stuttgart & Munich, Germany',
-      description: 'Longstanding European corporate alliances including German enterprise content titan ELO Digital Office and global automotive supply chains (BMW, Mercedes-Benz, VW).',
+      badge: 'Enterprise AI & Technology',
+      hubs: 'Stuttgart, Germany',
+      description: 'Longstanding European corporate alliances including German enterprise content titan ELO Digital Office.',
       companies: [
-        { name: 'ELO Digital Office (Germany)', desc: 'Enterprise AI and low-code ECM across 1.3M+ global users', slug: 'strategic-ventures' },
-        { name: 'Automotive OEM Supply Lines', desc: 'Tier-1 supplier networks with German automotive majors', slug: 'strategic-ventures' }
+        { name: 'ELO Digital Office (Germany)', desc: 'Enterprise AI and low-code ECM across 1.3M+ global users', slug: 'strategic-ventures' }
       ]
     },
     us: {

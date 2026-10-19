@@ -11,7 +11,7 @@ const SECTOR_NAV_ITEMS = [
   { label: 'Infrastructure & Civils', route: 'investments/infrastructure', badge: 'Civils' },
   { label: 'Digital Engineering', route: 'investments/digital', badge: 'Tech' },
   { label: 'Human Capital', route: 'investments/human-capital', badge: 'Academy' },
-  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'Auto & AI' },
+  { label: 'Strategic Ventures', route: 'investments/strategic', badge: 'AI & EdTech' },
 ];
 
 export default function SectorMiningPage({ onNavigate }) {

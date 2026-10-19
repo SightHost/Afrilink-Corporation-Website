@@ -63,7 +63,7 @@ export default function LegalModal({ type, onClose }) {
         },
         {
           heading: '3. Intellectual Property Rights',
-          body: 'All trademarks, logos, copy, architectural renderings, photographic assets, and structural layouts on this website are the proprietary intellectual property of Afrilink Corporation (Pty) Ltd or their respective consortium entities (Vacuform 2000, Strider Digital, Mahlori Group, University of Botswana). Unauthorized duplication or reverse engineering is prohibited.'
+          body: 'All trademarks, logos, copy, architectural renderings, photographic assets, and structural layouts on this website are the proprietary intellectual property of Afrilink Corporation (Pty) Ltd or their respective consortium entities (Strider Digital, Mahlori Group, University of Botswana). Unauthorized duplication or reverse engineering is prohibited.'
         }
       ]
     }

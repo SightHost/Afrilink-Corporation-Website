@@ -62,7 +62,7 @@ export default function QuickSearchModal({ isOpen, onClose, onNavigate }) {
     { label: 'Sector: Infrastructure, Water & Civils', route: 'investments/infrastructure', category: 'Sectors', icon: Briefcase },
     { label: 'Sector: Digital Engineering & Tech Talent', route: 'investments/digital', category: 'Sectors', icon: Briefcase },
     { label: 'Sector: Human Capital Academy (Daveyton)', route: 'investments/human-capital', category: 'Sectors', icon: Briefcase },
-    { label: 'Sector: Strategic Manufacturing & ELO AI', route: 'investments/strategic', category: 'Sectors', icon: Briefcase },
+    { label: 'Sector: Strategic Ventures & ELO AI', route: 'investments/strategic', category: 'Sectors', icon: Briefcase },
     { label: 'Partner With Us Briefing Form', route: 'partner', category: 'Investment CTA', icon: Briefcase },
     { label: 'Johannesburg Corporate Office & Contacts', route: 'contact', category: 'Contact', icon: Building }
   ].filter(l => l.label.toLowerCase().includes(normalizedQuery));

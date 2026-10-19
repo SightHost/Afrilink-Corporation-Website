@@ -223,44 +223,38 @@ Mahlori addresses one of South Africa’s most pressing socio-economic challenge
     name: 'Strategic Ventures Portfolio',
     shortName: 'Strategic Ventures',
     sector: 'Strategic Ventures',
-    category: 'Manufacturing & Tech',
+    category: 'Strategic',
     country: 'South Africa & International',
     flag: '🌍',
-    heroImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80',
     galleryImages: [
       'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80'
     ],
-    oneLiner: 'Manufacturing excellence, enterprise software, and international digital education alliances.',
-    description: `Afrilink’s Strategic Ventures division encapsulates game-changing holdings in high-barrier manufacturing, enterprise software, and international technology partnerships that generate resilient cash flows and technological edge:
+    oneLiner: 'Enterprise software, AI automation, and international digital education alliances.',
+    description: `Afrilink’s Strategic Ventures division encapsulates game-changing holdings in enterprise software, and international technology partnerships that generate resilient cash flows and technological edge:
 
-1. Vacuform 2000 (Pty) Ltd: Established in 1974, operating an advanced 6,500 m² manufacturing plant in Rosslyn, Pretoria. An official Tier-1 automotive component supplier to global automotive OEMs: BMW, Mercedes-Benz, Ford, Volkswagen, Nissan, FORVIA, and Dräxlmaier. Integrated into the global Motherson Group network since 2011.
-2. Hindsight Consulting (Pty) Ltd: Proprietary cloud accounting, payroll, and HR software engineered specifically for African SMMEs and mid-market enterprises.
-3. University of Botswana Alliance: A binding 5-year MOU establishing Afrilink as the digital transformation partner digitizing degrees into accessible LMS/ECM formats.
-4. ELO Digital Office Strategic Alliance: Collaboration with the German enterprise content management and AI process automation powerhouse (serving 1.3M+ global users).`,
+1. Hindsight Consulting (Pty) Ltd: Proprietary cloud accounting, payroll, and HR software engineered specifically for African SMMEs and mid-market enterprises.
+2. University of Botswana Alliance: A binding 5-year MOU establishing Afrilink as the digital transformation partner digitizing degrees into accessible LMS/ECM formats.
+3. ELO Digital Office Strategic Alliance: Collaboration with the German enterprise content management and AI process automation powerhouse (serving 1.3M+ global users).`,
     facts: [
-      { label: 'Automotive Asset', value: 'Vacuform 2000 (6,500 m² Rosslyn Facility)' },
-      { label: 'Tier-1 Automotive Clients', value: 'BMW, Mercedes-Benz, Ford, VW, Nissan, FORVIA' },
-      { label: 'Automotive Global Network', value: 'Motherson Group (since 2011)' },
       { label: 'SaaS Software', value: 'Hindsight Consulting (Accounting & HR)' },
       { label: 'EdTech Partner', value: 'University of Botswana (5-Year MOU)' },
       { label: 'AI & ECM Partner', value: 'ELO Digital Office (Germany)' }
     ],
     opportunity: {
       headline: 'Venture Synergies & African Technology Expansion',
-      description: 'Engage with our strategic venture entities across automotive manufacturing supply chains, software licensing, and digital transformation.',
+      description: 'Engage with our strategic venture entities across software licensing, enterprise automation, and digital transformation.',
       points: [
-        'Automotive component localization joint ventures with international Tier-1 and Tier-2 manufacturers.',
         'Enterprise ECM & workflow automation deployments powered by ELO Digital Office across SADC public and private sectors.',
         'African university digital curriculum conversion partnerships scaling the Botswana model across SADC.',
         'Hindsight Consulting distributor and fintech integration partnerships.'
       ]
     },
     metrics: [
-      { label: 'Vacuform Facility', value: '6,500 m²' },
-      { label: 'Automotive OEMs', value: '7+ Global Brands' },
-      { label: 'ELO User Base', value: '1.3M+ Global Users' }
+      { label: 'ELO User Base', value: '1.3M+ Global Users' },
+      { label: 'UB Partnership', value: '5-Year MOU' }
     ]
   }
 ];
@@ -306,12 +300,11 @@ export const focusAreasData = [
     id: 'strategic-ventures',
     title: 'Strategic Ventures & Digital Tech',
     iconName: 'Cpu',
-    summary: 'High-barrier precision automotive manufacturing, enterprise digital talent, EdTech university digitization, and enterprise AI automation.',
+    summary: 'Enterprise digital talent, EdTech university digitization, and enterprise AI automation.',
     highlights: [
-      'Tier-1 automotive component manufacturing in Rosslyn supplying BMW, Mercedes, Ford and VW',
       'Strider Digital: elite UX and QA digital talent servicing premier banks with 9.6/10 NPS',
       'University of Botswana 5-year digital transformation alliance and ELO Digital Office Germany alliance'
     ],
-    associatedHoldings: ['Vacuform 2000', 'Strider Digital', 'Mahlori Group', 'ELO Alliance']
+    associatedHoldings: ['Strider Digital', 'Mahlori Group', 'ELO Alliance']
   }
 ];
