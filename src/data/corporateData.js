@@ -12,44 +12,44 @@ export const ceoProfile = {
     {
       title: 'Executive Career (39 Years)',
       content: `Dr Molefe Mokgatle has directed large-scale commercial strategy and restructuring across blue-chip multinationals and national institutions. His track record includes senior executive and directorship tenures at:
-- **Esso Africa**: Regional commercial planning and distribution strategy across sub-Saharan Africa.
-- **Nedbank**: Corporate banking, client relationship structures, and commercial credit origination.
-- **South African Breweries Miller (SABMiller)**: Key market operations and FMCG supply network distribution.
-- **Sowetan**: Executive media management during South Africa’s historic democratic transition.
-- **South African Broadcasting Corporation (SABC)**: Chief Executive Officer of Television. Led the historic repositioning of the SABC from a state broadcaster into a world-class public broadcaster, establishing the distinct identities of SABC 1, SABC 2, and SABC 3 that defined South African media.
-- **AfriSam**: Chief Commercial Executive, steering industrial market leadership and cement/aggregates supply for South Africa’s 2010 FIFA World Cup infrastructure boom.
-- **Aveng Grinaker-LTA**: Executive Director, spearheading heavy civil engineering and infrastructure delivery on marquee national megaprojects.`
+- Esso Africa: Regional commercial planning and distribution strategy across sub-Saharan Africa.
+- Nedbank: Corporate banking, client relationship structures, and commercial credit origination.
+- South African Breweries Miller (SABMiller): Key market operations and FMCG supply network distribution.
+- Sowetan: Executive media management during South Africa’s historic democratic transition.
+- South African Broadcasting Corporation (SABC): Chief Executive Officer of Television. Led the historic repositioning of the SABC from a state broadcaster into a world-class public broadcaster, establishing the distinct identities of SABC 1, SABC 2, and SABC 3 that defined South African media.
+- AfriSam: Chief Commercial Executive, steering industrial market leadership and cement/aggregates supply for South Africa’s 2010 FIFA World Cup infrastructure boom.
+- Aveng Grinaker-LTA: Executive Director, spearheading heavy civil engineering and infrastructure delivery on marquee national megaprojects.`
     },
     {
       title: 'International Stage & Global Governance',
       content: `A globally respected voice in governance and media diplomacy:
-- **United Nations Address**: Addressed the United Nations General Assembly in New York on the pivotal role of media and communication infrastructure in cementing South Africa’s democratic transition.
-- **NATAS & The EMMY Awards**: Appointed to the International Board of the National Academy of Television Arts and Sciences (NATAS, New York), and served as an official International EMMY Awards judge for three consecutive terms.
-- **Global Sporting Rights**: Chief negotiator for high-stakes broadcast and sponsorship rights for the FIFA World Cup, Africa Cup of Nations (AFCON), Rugby World Cup, ICC Cricket World Cup, and the Summer Olympic Games.`
+- United Nations Address: Addressed the United Nations General Assembly in New York on the pivotal role of media and communication infrastructure in cementing South Africa’s democratic transition.
+- NATAS & The EMMY Awards: Appointed to the International Board of the National Academy of Television Arts and Sciences (NATAS, New York), and served as an official International EMMY Awards judge for three consecutive terms.
+- Global Sporting Rights: Chief negotiator for high-stakes broadcast and sponsorship rights for the FIFA World Cup, Africa Cup of Nations (AFCON), Rugby World Cup, ICC Cricket World Cup, and the Summer Olympic Games.`
     },
     {
       title: 'Recognition & Academic Distinction',
       content: `Dr Mokgatle's intellectual rigor and executive contributions have been recognized internationally:
-- Nominated **International Man of the Year** by the Cambridge Bibliographical Centre (UK) in both 1993 and 1994.
-- Named among South Africa’s **Top 100 Leaders** by *The Star* (1996 Newsmakers).
-- Appointed to the **PSIRA Panel of Experts** by the Ministry of Police (2017) to advise on the transformation and regulatory reform of the private security industry.
-- Awarded Doctor of Business Administration (DBA) by the Paris School of Business (2025), with seminal doctoral research focused on *Governance Failure and Institutional Turnaround in South African State-Owned Companies*.`
+- Nominated International Man of the Year by the Cambridge Bibliographical Centre (UK) in both 1993 and 1994.
+- Named among South Africa’s Top 100 Leaders by The Star (1996 Newsmakers).
+- Appointed to the PSIRA Panel of Experts by the Ministry of Police (2017) to advise on the transformation and regulatory reform of the private security industry.
+- Awarded Doctor of Business Administration (DBA) by the Paris School of Business (2025), with seminal doctoral research focused on Governance Failure and Institutional Turnaround in South African State-Owned Companies.`
     },
     {
       title: 'Community Leadership & Grassroots Impact',
       content: `Dr Mokgatle’s commitment to empowerment is rooted in decades of grassroots activism:
-- Former President of the **South African Student Movement (SASM)**, Pretoria Region, during the liberation struggle.
-- Led the **Motokolo Community Land Claim**, successfully helping the community reclaim ancestral title deeds and subsequently co-founding viable economic cooperatives in sand mining, commercial agriculture, poultry production, and brick manufacturing.
-- Sustained governance and strategic advisory service to **SADSAWU** (South African Domestic Service and Allied Workers Union) and **SANCO** (South African National Civic Organisation).`
+- Former President of the South African Student Movement (SASM), Pretoria Region, during the liberation struggle.
+- Led the Motokolo Community Land Claim, successfully helping the community reclaim ancestral title deeds and subsequently co-founding viable economic cooperatives in sand mining, commercial agriculture, poultry production, and brick manufacturing.
+- Sustained governance and strategic advisory service to SADSAWU (South African Domestic Service and Allied Workers Union) and SANCO (South African National Civic Organisation).`
     },
     {
       title: 'Distinguished Fellowships & Memberships',
       content: `Dr Mokgatle maintains active international policy and directorship affiliations:
-- Member of the **Royal Institute of International Affairs (Chatham House)**, London, UK.
-- Member of the **South African Institute of International Affairs (SAIIA)**, Jan Smuts House, Johannesburg.
-- Fellow of the **Chartered Management Institute (FCMI)**, UK.
-- Fellow of the **Chartered Institute of Marketing (FCIM)**, UK.
-- Certified Director (**Cert. Dir**), Institute of Directors South Africa (IoDSA).`
+- Member of the Royal Institute of International Affairs (Chatham House), London, UK.
+- Member of the South African Institute of International Affairs (SAIIA), Jan Smuts House, Johannesburg.
+- Fellow of the Chartered Management Institute (FCMI), UK.
+- Fellow of the Chartered Institute of Marketing (FCIM), UK.
+- Certified Director (Cert. Dir), Institute of Directors South Africa (IoDSA).`
     }
   ]
 };
