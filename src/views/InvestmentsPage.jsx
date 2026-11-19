@@ -219,7 +219,7 @@ export default function InvestmentsPage({ currentSlug, onNavigate }) {
           <p className="text-white/90 text-base leading-[1.7] max-w-xl mx-auto mb-8">
             Each of our investment platforms is actively structured for co-investment, offtake partnerships, DFI debt, and technical joint ventures. Submit a brief and our executive team will revert within 48 hours.
           </p>
-          <CTAButton variant="outline-light" size="lg" onClick={() => onNavigate('partner')}>
+          <CTAButton variant="outline-light" size="lg" onClick={() => onNavigate('contact')}>
             Submit Partnership Brief
           </CTAButton>
         </div>

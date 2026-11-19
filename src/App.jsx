@@ -27,7 +27,6 @@ import SectorStrategicPage from './views/SectorStrategicPage';
 import { withBase } from './lib/paths';
 
 import ContactPage from './views/ContactPage';
-import PartnerPage from './views/PartnerPage';
 
 // Client-side router mapping routes to dedicated pages
 function parseRoute(route) {
@@ -59,9 +58,8 @@ function parseRoute(route) {
   }
   if (route === 'investments') return { page: 'investments-hub', sub: null };
 
-  // Contact & Partner
+  // Contact
   if (route === 'contact') return { page: 'contact', sub: null };
-  if (route === 'partner') return { page: 'partner', sub: null };
 
   return { page: 'home', sub: null };
 }
@@ -138,9 +136,8 @@ export default function App({ route = 'home' }) {
           />
         )}
 
-        {/* Contact & Partner */}
+        {/* Contact */}
         {page === 'contact' && <ContactPage onNavigate={navigate} />}
-        {page === 'partner' && <PartnerPage onNavigate={navigate} />}
       </main>
 
       {/* Footer */}

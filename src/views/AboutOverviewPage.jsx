@@ -30,8 +30,8 @@ export default function AboutOverviewPage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
+              Contact Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('about/ceo')}>
               Meet Our Founder & CEO

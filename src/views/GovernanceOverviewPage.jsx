@@ -45,7 +45,7 @@ export default function GovernanceOverviewPage({ onNavigate }) {
             <CTAButton variant="orange" size="md" onClick={() => onNavigate('governance/bbee')}>
               Level 1 B-BBEE Certificate
             </CTAButton>
-            <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('contact')}>
               Institutional Due Diligence Request
             </CTAButton>
           </div>

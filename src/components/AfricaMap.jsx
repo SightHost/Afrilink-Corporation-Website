@@ -324,7 +324,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
               <div
                 key={idx}
                 onClick={() => {
-                  if (co.slug === 'partner') onNavigate?.('partner');
+                  if (co.slug === 'partner') onNavigate?.('contact');
                   else if (co.slug === 'about-ceo') onNavigate?.('about/ceo');
                   else onSelectEntity ? onSelectEntity(co.slug) : onNavigate?.(`investments/${co.slug}`);
                 }}
@@ -348,7 +348,7 @@ export default function AfricaMap({ onSelectEntity, onNavigate }) {
             onClick={() => {
               if (activeNode === 'bw') onNavigate?.('investments/afrilink-mg');
               else if (activeNode === 'za') onNavigate?.('investments');
-              else onNavigate?.('partner');
+              else onNavigate?.('contact');
             }}
             className="w-full py-3 px-5 rounded-full btn-glass btn-glass-orange text-white text-sm font-semibold flex items-center justify-center gap-2"
           >

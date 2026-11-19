@@ -41,7 +41,7 @@ export default function SectorInfrastructurePage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
               Submit Infrastructure Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments')}>
@@ -119,8 +119,8 @@ export default function SectorInfrastructurePage({ onNavigate }) {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
+              Contact Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('investments/digital')}>
               Next: Digital Engineering

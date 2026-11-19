@@ -29,7 +29,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
               Institutional Co-Investment Inquiry
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('governance/bbee')}>
@@ -118,7 +118,7 @@ export default function AboutShareholdersPage({ onNavigate }) {
                 </p>
               </div>
             </div>
-            <CTAButton variant="orange" size="sm" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="orange" size="sm" onClick={() => onNavigate('contact')}>
               Request Under NDA
             </CTAButton>
           </div>

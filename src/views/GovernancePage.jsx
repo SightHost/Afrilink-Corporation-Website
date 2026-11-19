@@ -72,7 +72,7 @@ export default function GovernancePage({ currentSub, onNavigate }) {
             <AlertCircle className="w-5 h-5 text-afrilink-orange shrink-0 mt-0.5" />
             <p className="text-afrilink-fg-80 text-sm leading-relaxed">
               Full authenticated versions of all statutory documents are available to qualified institutional investors, development finance institutions, and regulatory partners under a signed non-disclosure and confidentiality agreement. To request formal document access, please{' '}
-              <button onClick={() => onNavigate('partner')} className="text-afrilink-orange font-semibold hover:underline">submit a partnership brief</button>.
+              <button onClick={() => onNavigate('contact')} className="text-afrilink-orange font-semibold hover:underline">submit a partnership brief</button>.
             </p>
           </div>
         </div>

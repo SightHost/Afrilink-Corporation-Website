@@ -32,7 +32,7 @@ export default function AboutCeoPage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
               Initiate Partnership Brief
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('contact')}>

@@ -58,8 +58,8 @@ function HeroSection({ onNavigate }) {
 
           {/* CTA Row */}
           <div className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <CTAButton variant="orange" size="lg" onClick={() => onNavigate('partner')}>
-              Partner With Us
+            <CTAButton variant="orange" size="lg" onClick={() => onNavigate('contact')}>
+              Contact Us
             </CTAButton>
             <CTAButton variant="outline-light" size="lg" onClick={() => onNavigate('investments')}>
               Explore Holdings
@@ -309,7 +309,7 @@ function PartnerCTA({ onNavigate }) {
           Whether you represent institutional capital, a mining joint-venture consortium, a development finance institution, or a diaspora fund — Afrilink Corporation has structured pathways to collaborate. Submit a partnership brief and our executive team will respond within 48 hours.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <CTAButton variant="orange" size="xl" onClick={() => onNavigate('partner')}>
+          <CTAButton variant="orange" size="xl" onClick={() => onNavigate('contact')}>
             Submit Partnership Brief
           </CTAButton>
           <CTAButton variant="outline-light" size="xl" onClick={() => onNavigate('contact')}>

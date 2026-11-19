@@ -15,7 +15,7 @@ export default function LegalModal({ type, onClose }) {
         },
         {
           heading: '2. Collection and Purpose of Processing',
-          body: 'We collect personal information solely when submitted directly by you via our "Partner With Us" briefing portal, contact forms, or direct correspondence. This includes your name, title, organization, email address, contact numbers, jurisdiction, indicative investment scale, and uploaded proposals. The purpose of processing is strictly limited to evaluating investment syndicates, structuring joint ventures, responding to partnership inquiries, and fulfilling statutory compliance.'
+          body: 'We collect personal information solely when submitted directly by you via our "Contact Us" form or direct correspondence. This includes your name, title, organization, email address, contact numbers, jurisdiction, indicative investment scale, and uploaded proposals. The purpose of processing is strictly limited to evaluating investment syndicates, structuring joint ventures, responding to partnership inquiries, and fulfilling statutory compliance.'
         },
         {
           heading: '3. Non-Disclosure & Security Measures',
@@ -59,7 +59,7 @@ export default function LegalModal({ type, onClose }) {
         },
         {
           heading: '2. Qualified Investor Verification',
-          body: 'Prospective institutional investors, DFIs, and joint-venture partners submitting brief proposals via the "Partner With Us" interface understand that binding investment agreements require independent due diligence, bilateral Non-Disclosure Agreements (NDAs), and regulatory clearance from the South African Reserve Bank (SARB) and relevant mining tenure regulators.'
+          body: 'Prospective institutional investors, DFIs, and joint-venture partners submitting brief proposals via the "Contact Us" form understand that binding investment agreements require independent due diligence, bilateral Non-Disclosure Agreements (NDAs), and regulatory clearance from the South African Reserve Bank (SARB) and relevant mining tenure regulators.'
         },
         {
           heading: '3. Intellectual Property Rights',

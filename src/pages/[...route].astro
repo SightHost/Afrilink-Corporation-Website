@@ -27,7 +27,6 @@ export function getStaticPaths() {
     'investments/human-capital': 'Human Capital & Training',
     'investments/strategic': 'Strategic Ventures',
     'contact': 'Contact',
-    'partner': 'Partner With Us',
     ...Object.fromEntries(investmentsData.map((inv) => [`investments/${inv.slug}`, inv.name])),
   };
 

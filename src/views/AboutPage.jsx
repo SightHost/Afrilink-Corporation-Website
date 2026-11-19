@@ -69,7 +69,7 @@ function OverviewTab({ onNavigate }) {
 
       <div className="flex flex-wrap gap-4">
         <CTAButton variant="orange" onClick={() => onNavigate('about/ceo')}>Meet Dr Mokgatle</CTAButton>
-        <CTAButton variant="outline" onClick={() => onNavigate('partner')}>Partner With Us</CTAButton>
+        <CTAButton variant="outline" onClick={() => onNavigate('contact')}>Contact Us</CTAButton>
       </div>
     </div>
   );

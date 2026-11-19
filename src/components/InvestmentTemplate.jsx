@@ -96,7 +96,7 @@ export default function InvestmentTemplate({
                 <CTAButton
                   variant="orange"
                   size="md"
-                  onClick={() => onNavigate?.(`partner?interest=${slug}`)}
+                  onClick={() => onNavigate?.('contact')}
                 >
                   Discuss This Opportunity
                 </CTAButton>
@@ -181,7 +181,7 @@ export default function InvestmentTemplate({
                     <CTAButton
                       variant="orange"
                       size="sm"
-                      onClick={() => onNavigate?.(`partner?interest=${slug}`)}
+                      onClick={() => onNavigate?.('contact')}
                     >
                       Submit Syndicate Brief
                     </CTAButton>
@@ -216,7 +216,7 @@ export default function InvestmentTemplate({
                     variant="outline"
                     size="sm"
                     className="w-full text-center"
-                    onClick={() => onNavigate?.(`partner?interest=${slug}`)}
+                    onClick={() => onNavigate?.('contact')}
                   >
                     Request Full Asset Deck
                   </CTAButton>
@@ -278,7 +278,7 @@ export default function InvestmentTemplate({
               </p>
             </div>
             <button
-              onClick={() => onNavigate?.(`partner?interest=${slug}`)}
+              onClick={() => onNavigate?.('contact')}
               className="px-8 py-3.5 rounded-full bg-afrilink-navy hover:bg-afrilink-ink text-white font-semibold text-base transition-all shadow-card-hover hover:-translate-y-0.5 shrink-0 flex items-center gap-2 group"
             >
               <span>Complete Brief Form</span>

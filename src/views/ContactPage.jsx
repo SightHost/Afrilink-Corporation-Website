@@ -118,17 +118,6 @@ export default function ContactPage({ onNavigate }) {
                 For mining and mineral tenure enquiries.
               </div>
             </div>
-
-            {/* Partner CTA */}
-            <div className="bg-afrilink-butter rounded-lg p-5 border border-afrilink-orange/30 shadow-card">
-              <div className="text-afrilink-fg font-semibold text-base mb-2">Submit a Partnership Brief</div>
-              <p className="text-afrilink-fg-80 text-sm mb-4 leading-relaxed">
-                For structured investment enquiries, joint ventures or DFI partnerships, please use our dedicated Partner Brief form.
-              </p>
-              <CTAButton variant="orange" size="sm" onClick={() => onNavigate('partner')}>
-                Partner With Us
-              </CTAButton>
-            </div>
           </div>
 
           {/* Contact Form */}

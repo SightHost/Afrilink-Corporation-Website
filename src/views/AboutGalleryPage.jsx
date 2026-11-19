@@ -38,8 +38,8 @@ export default function AboutGalleryPage({ onNavigate }) {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
+              Contact Us
             </CTAButton>
             <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('about/overview')}>
               Company Overview
@@ -182,8 +182,8 @@ export default function AboutGalleryPage({ onNavigate }) {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
-            <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
-              Partner With Us
+            <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
+              Contact Us
             </CTAButton>
             <CTAButton variant="outline" size="md" onClick={() => onNavigate('about/overview')}>
               Overview

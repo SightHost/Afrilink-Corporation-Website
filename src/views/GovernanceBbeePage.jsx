@@ -44,7 +44,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
             <CTAButton variant="orange" size="md" onClick={() => setShowModal(true)} icon={false}>
               Preview Certificate <Eye className="w-4 h-4 ml-1" />
             </CTAButton>
-            <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('partner')}>
+            <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('contact')}>
               Procurement & Partner Brief
             </CTAButton>
           </div>
@@ -170,7 +170,7 @@ export default function GovernanceBbeePage({ onNavigate }) {
               Procuring goods and professional services from Afrilink Corporation gives private and public sector partners an immediate 135% recognition on their own Preferential Procurement element. Every R1,000,000 spent with Afrilink yields R1,350,000 in qualifying B-BBEE procurement recognition.
             </p>
             <div className="flex flex-wrap gap-4">
-              <CTAButton variant="orange" size="md" onClick={() => onNavigate('partner')}>
+              <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>
                 Initiate Procurement Partnership
               </CTAButton>
               <CTAButton variant="outline-light" size="md" onClick={() => onNavigate('governance/compliance')}>

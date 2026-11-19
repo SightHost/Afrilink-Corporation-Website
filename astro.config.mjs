@@ -8,4 +8,6 @@ export default defineConfig({
   site: process.env.SITE_URL || 'https://afrilinkcorp.co.za',
   base: process.env.BASE_PATH || '/',
   integrations: [react()],
+  // The Partner page was merged into Contact; keep old links working
+  redirects: { '/partner': '/contact' },
 });

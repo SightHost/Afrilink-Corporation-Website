@@ -221,8 +221,8 @@ export default function Footer({ onNavigate, onOpenLegal }) {
               </h4>
               <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <button onClick={() => onNavigate?.('partner')} className="text-white font-semibold hover:text-afrilink-gold hover:underline flex items-center gap-1">
-                    <span>Partner With Us</span>
+                  <button onClick={() => onNavigate?.('contact')} className="text-white font-semibold hover:text-afrilink-gold hover:underline flex items-center gap-1">
+                    <span>Contact Us</span>
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
                 </li>

@@ -177,14 +177,14 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
               <kbd className="hidden lg:inline bg-afrilink-cream px-1.5 py-0.5 rounded text-[10px] text-afrilink-fg-60">⌘K</kbd>
             </button>
 
-            {/* Pinned Primary Header CTA: Partner With Us */}
+            {/* Pinned Primary Header CTA: Contact Us */}
             <CTAButton
               variant="orange"
               size="sm"
-              onClick={() => handleNavClick('partner')}
+              onClick={() => handleNavClick('contact')}
               className="whitespace-nowrap"
             >
-              Partner With Us
+              Contact Us
             </CTAButton>
 
             {/* Mobile Hamburger Button */}
@@ -275,9 +275,9 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
               variant="orange"
               size="lg"
               className="w-full justify-center"
-              onClick={() => handleNavClick('partner')}
+              onClick={() => handleNavClick('contact')}
             >
-              Partner With Us
+              Contact Us
             </CTAButton>
             <div className="text-center text-xs text-afrilink-fg-60">
               Johannesburg · Gaborone · London · Diaspora Conduits
