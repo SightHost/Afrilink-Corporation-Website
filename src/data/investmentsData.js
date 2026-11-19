@@ -97,7 +97,7 @@ The consortium’s primary mineral focus includes chrome ore and its high-value 
     category: 'Infrastructure',
     country: 'South Africa',
     flag: '🇿🇦',
-    heroImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f9?auto=format&fit=crop&w=1600&q=80',
+    heroImage: withBase('/afrilink-buildings-civils.webp'),
     galleryImages: [
       'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=800&q=80',
