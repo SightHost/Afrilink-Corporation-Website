@@ -1,4 +1,5 @@
 // Data for Afrilink Corporation investments
+import { withBase } from '../lib/paths';
 
 export const investmentsData = [
   {
@@ -10,7 +11,7 @@ export const investmentsData = [
     category: 'Mining',
     country: 'Botswana',
     flag: '🇧🇼',
-    heroImage: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1600&q=80',
+    heroImage: withBase('/afrilink-mg-botswana.webp'),
     galleryImages: [
       'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
@@ -53,7 +54,7 @@ Botswana represents one of the world's most stable and attractive mining investm
     category: 'Mining',
     country: 'South Africa',
     flag: '🇿🇦',
-    heroImage: 'https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1600&q=80',
+    heroImage: withBase('/afrilink-mining-sa.webp'),
     galleryImages: [
       'https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f9?auto=format&fit=crop&w=800&q=80',
