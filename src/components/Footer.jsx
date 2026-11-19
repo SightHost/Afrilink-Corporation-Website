@@ -41,13 +41,14 @@ export default function Footer({ onNavigate, onOpenLegal }) {
   return (
     <footer className="relative bg-afrilink-orange text-white/85 overflow-hidden">
       {/* Pan-African symbol wall background */}
-      <img
-        src={withBase('/footer-bg.webp')}
-        alt=""
+      {/* Tiled at near-native size (zoomed out) instead of stretched to cover */}
+      <div
         aria-hidden="true"
-        loading="lazy"
-        decoding="async"
-        className="absolute inset-0 w-full h-full object-cover object-center opacity-85 pointer-events-none select-none"
+        className="absolute inset-0 opacity-85 pointer-events-none select-none bg-repeat bg-top"
+        style={{
+          backgroundImage: `url(${withBase('/footer-bg.webp')})`,
+          backgroundSize: 'auto 260px',
+        }}
       />
       <div className="absolute inset-0 bg-afrilink-ink/30 pointer-events-none" />
 
