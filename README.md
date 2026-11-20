@@ -22,3 +22,20 @@ The site is a static Astro build served by Cloudflare Workers (config in `wrangl
 - **From your machine:** `npx wrangler login` once, then `npm run deploy`.
 - **From GitHub (auto-deploy on push):** Cloudflare dashboard → Workers & Pages → Create → Import a repository → pick this repo.
   Deploy command: `npx wrangler deploy` (it runs the build itself via `wrangler.jsonc`).
+
+## Google Antigravity CLI
+
+Install the `agy` CLI once on Windows with PowerShell:
+
+```powershell
+irm https://antigravity.google/cli/install.ps1 | iex
+```
+
+From the repository root, start an Antigravity session with:
+
+```sh
+npm run antigravity
+```
+
+The CLI starts in this project directory. On first launch, complete its setup and confirm that you trust the workspace. For other operating systems, see the [official installation guide](https://antigravity.google/docs/getting-started).
+If `agy` is not recognized after installation, restart your terminal so it picks up the updated PATH.

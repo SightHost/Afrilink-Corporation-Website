@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "astro preview --open",
     "astro": "astro",
+    "antigravity": "agy",
     "deploy": "wrangler deploy",
     "dev:api": "astro build && wrangler dev"
   },
