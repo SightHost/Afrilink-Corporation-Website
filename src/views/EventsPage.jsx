@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Calendar, MapPin, Ticket, Images, Loader2, AlertCircle, RefreshCw, Clock } from 'lucide-react';
+import { MapPin, Ticket, Images, Loader2, Clock } from 'lucide-react';
 import CTAButton from '../components/CTAButton';
+import { upcomingPlaceholders } from '../data/eventsPlaceholders';
 import EventDateBadge from '../components/EventDateBadge';
 import BookingModal from '../components/BookingModal';
 import EventGalleryModal from '../components/EventGalleryModal';
@@ -20,6 +21,36 @@ function setQueryParam(key, value) {
   url.searchParams.delete('gallery');
   if (value) url.searchParams.set(key, value);
   window.history.replaceState(null, '', url);
+}
+
+function ComingSoonCard({ event, onNavigate }) {
+  return (
+    <article className="group flex flex-col bg-afrilink-surface rounded-xl border border-afrilink-grey-light shadow-card hover:shadow-card-hover transition-shadow overflow-hidden">
+      <div className="relative aspect-[16/9] bg-afrilink-navy overflow-hidden">
+        {event.cover_image_url && (
+          <img src={event.cover_image_url} alt="" loading="lazy" className="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-700" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-afrilink-navy/70 to-transparent" />
+        <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-afrilink-orange text-white text-xs font-bold tracking-wide">
+          Coming soon
+        </span>
+      </div>
+      <div className="flex-1 flex flex-col p-6">
+        <h3 className="font-heading text-xl font-semibold text-afrilink-fg leading-snug mb-2">{event.title}</h3>
+        <p className="text-afrilink-fg-80 text-[15px] leading-relaxed mb-4">{event.summary}</p>
+        <div className="space-y-1.5 text-sm text-afrilink-fg-60 mb-5">
+          <div className="flex items-center gap-2"><Clock className="w-4 h-4 text-afrilink-orange shrink-0" />Date to be announced</div>
+          <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-afrilink-orange shrink-0" />Venue to be announced</div>
+        </div>
+        <div className="mt-auto flex items-center justify-between gap-4 pt-4 border-t border-afrilink-grey-light">
+          <div className="text-sm font-semibold text-afrilink-fg-60">Tickets coming soon</div>
+          <CTAButton variant="outline" size="sm" onClick={() => onNavigate('contact')}>
+            Register interest
+          </CTAButton>
+        </div>
+      </div>
+    </article>
+  );
 }
 
 function UpcomingCard({ event, onBook }) {
@@ -117,7 +148,7 @@ export default function EventsPage({ onNavigate, onOpenLegal }) {
           if (e) setGallery(e);
         }
       })
-      .catch((err) => setState({ loading: false, error: err.message, upcoming: [], past: [] }));
+      .catch(() => setState({ loading: false, error: null, upcoming: [], past: [] }));
   };
 
   useEffect(load, []);
@@ -158,18 +189,8 @@ export default function EventsPage({ onNavigate, onOpenLegal }) {
         </div>
       )}
 
-      {state.error && (
-        <div className="max-w-xl mx-auto px-4 py-24 text-center">
-          <AlertCircle className="w-10 h-10 text-afrilink-orange mx-auto mb-4" />
-          <h2 className="font-heading text-2xl font-semibold text-afrilink-fg mb-2">We couldn't load events</h2>
-          <p className="text-afrilink-fg-60 mb-6">Please check your connection and try again.</p>
-          <CTAButton variant="orange" size="md" onClick={load} icon={false}>
-            <span className="inline-flex items-center gap-2"><RefreshCw className="w-4 h-4" /> Try again</span>
-          </CTAButton>
-        </div>
-      )}
-
-      {!state.loading && !state.error && (
+      {/* If the events API is unavailable, the page still renders with "coming soon" cards */}
+      {!state.loading && (
         <>
           {/* Upcoming */}
           <section id="upcoming" className="scroll-mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -184,11 +205,8 @@ export default function EventsPage({ onNavigate, onOpenLegal }) {
                 {state.upcoming.map((e) => <UpcomingCard key={e.slug} event={e} onBook={openBooking} />)}
               </div>
             ) : (
-              <div className="rounded-xl border border-dashed border-afrilink-grey bg-afrilink-cream/40 p-10 text-center">
-                <Calendar className="w-10 h-10 text-afrilink-orange mx-auto mb-3" />
-                <h3 className="font-heading text-xl font-semibold text-afrilink-fg mb-2">No upcoming events right now</h3>
-                <p className="text-afrilink-fg-60 mb-6 max-w-md mx-auto">New events are announced here first. Get in touch to hear about our next summit or to host an event with us.</p>
-                <CTAButton variant="orange" size="md" onClick={() => onNavigate('contact')}>Contact Us</CTAButton>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                {upcomingPlaceholders.map((e) => <ComingSoonCard key={e.slug} event={e} onNavigate={onNavigate} />)}
               </div>
             )}
           </section>
