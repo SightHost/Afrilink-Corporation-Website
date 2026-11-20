@@ -35,3 +35,6 @@ skills-lock.json
 # Local secrets for `wrangler dev` (copy from .dev.vars.example)
 .dev.vars
 .env
+
+# Claude Code local config and skill links (skills live in .agents/)
+.claude
