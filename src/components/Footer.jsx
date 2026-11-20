@@ -53,10 +53,10 @@ export default function Footer({ onNavigate, onOpenLegal }) {
       <div className="absolute inset-0 bg-afrilink-ink/30 pointer-events-none" />
 
       {/* Main Footer Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16 border-b border-afrilink-orange-soft">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-10 border-b border-afrilink-orange-soft">
           {/* Brand Info & Tagline (lg: 4 cols) */}
-          <div className="lg:col-span-4 space-y-5">
+          <div className="lg:col-span-4 space-y-4">
             <div>
               <AfrilinkLogo light={true} imgClassName="h-[60px]" onClick={() => onNavigate?.('home')} />
             </div>
@@ -64,10 +64,6 @@ export default function Footer({ onNavigate, onOpenLegal }) {
             <div className="inline-block px-3 py-1 rounded-full bg-afrilink-gold text-[13px] font-heading font-semibold text-afrilink-navy">
               Making Diaspora Work
             </div>
-
-            <p className="text-sm sm:text-[15px] text-white/90 leading-[1.7] max-w-sm">
-              Afrilink Corporation (Pty) Ltd is an avant-garde South African investment holding company committed to broad-based economic empowerment, strict governance, and sustainable business growth across Southern Africa and the continent.
-            </p>
 
             {/* Social Channels */}
             <div className="pt-2">
@@ -110,10 +106,10 @@ export default function Footer({ onNavigate, onOpenLegal }) {
           <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
             {/* About Column */}
             <div>
-              <h4 className="text-base font-heading font-semibold text-white mb-4">
+              <h4 className="relative text-base font-heading font-semibold text-white mb-4 pb-2.5 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-10 after:rounded-full after:bg-afrilink-gold">
                 About Group
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/80">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li>
                   <button onClick={() => onNavigate?.('about')} className="text-left hover:text-afrilink-gold transition-colors">
                     Company Overview
@@ -144,10 +140,10 @@ export default function Footer({ onNavigate, onOpenLegal }) {
 
             {/* Governance Column */}
             <div>
-              <h4 className="text-base font-heading font-semibold text-white mb-4">
+              <h4 className="relative text-base font-heading font-semibold text-white mb-4 pb-2.5 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-10 after:rounded-full after:bg-afrilink-gold">
                 Governance
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/80">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li>
                   <button onClick={() => onNavigate?.('governance/bbee')} className="text-left hover:text-afrilink-gold transition-colors">
                     B-BBEE Verification
@@ -178,10 +174,10 @@ export default function Footer({ onNavigate, onOpenLegal }) {
 
             {/* Investments Column */}
             <div>
-              <h4 className="text-base font-heading font-semibold text-white mb-4">
+              <h4 className="relative text-base font-heading font-semibold text-white mb-4 pb-2.5 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-10 after:rounded-full after:bg-afrilink-gold">
                 Sectors & Holdings
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/80">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li>
                   <button onClick={() => onNavigate?.('investments/mining')} className="text-left hover:text-afrilink-gold transition-colors">
                     Mining & Commodities
@@ -217,10 +213,10 @@ export default function Footer({ onNavigate, onOpenLegal }) {
 
             {/* Contact & Brief Column */}
             <div>
-              <h4 className="text-base font-heading font-semibold text-white mb-4">
+              <h4 className="relative text-base font-heading font-semibold text-white mb-4 pb-2.5 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-10 after:rounded-full after:bg-afrilink-gold">
                 Engage
               </h4>
-              <ul className="space-y-2.5 text-sm text-white/80">
+              <ul className="space-y-2 text-sm text-white/80">
                 <li>
                   <button onClick={() => onNavigate?.('contact')} className="text-white font-semibold hover:text-afrilink-gold hover:underline flex items-center gap-1">
                     <span>Contact Us</span>
@@ -251,7 +247,7 @@ export default function Footer({ onNavigate, onOpenLegal }) {
         </div>
 
         {/* Corporate Leadership Credit */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/80">
+        <div className="pt-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/80">
           <div>
             <strong className="text-white font-semibold">Afrilink Corporation (Pty) Ltd</strong> · Chairman & CEO: <span className="text-white font-semibold">Dr Molefe M.D. Mokgatle</span>
           </div>
