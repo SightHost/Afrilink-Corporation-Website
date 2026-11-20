@@ -2,6 +2,7 @@ import React from 'react';
 import { Globe, Award, Users, Shield, TrendingUp, CheckCircle2, Building2 } from 'lucide-react';
 import SubNavPill from '../components/SubNavPill';
 import CTAButton from '../components/CTAButton';
+import GroupOrganogram from '../components/GroupOrganogram';
 import { milestonesData, strategicPartnersData } from '../data/corporateData';
 
 const ABOUT_PAGES = [
@@ -129,6 +130,9 @@ export default function AboutOverviewPage({ onNavigate }) {
             </div>
           </div>
         </div>
+
+        {/* Group Organogram */}
+        <GroupOrganogram onNavigate={onNavigate} />
 
         {/* Strategic Alliances & Institutional Partners */}
         {strategicPartnersData && strategicPartnersData.length > 0 && (
