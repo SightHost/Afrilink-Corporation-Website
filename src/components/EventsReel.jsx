@@ -3,10 +3,13 @@ import { MapPin, Ticket, Images } from 'lucide-react';
 import CTAButton from './CTAButton';
 import EventDateBadge from './EventDateBadge';
 import { fetchEvents, formatEventDate } from '../lib/eventsApi';
+import { upcomingPlaceholders } from '../data/eventsPlaceholders';
+
+const comingSoon = upcomingPlaceholders.map((e) => ({ ...e, kind: 'soon' }));
 
 // A continuously scrolling strip of event cards shown under the home-page hero.
 // Upcoming events (featured first) lead, followed by recent past events.
-// Hidden entirely if there are no events or the API is unreachable.
+// With no real upcoming events (or no API), the "Coming soon" placeholders fill in.
 export default function EventsReel({ onNavigate }) {
   const [items, setItems] = useState(null);
 
@@ -14,9 +17,10 @@ export default function EventsReel({ onNavigate }) {
     fetchEvents()
       .then(({ upcoming, past }) => {
         const up = [...upcoming].sort((a, b) => Number(b.featured) - Number(a.featured));
-        setItems([...up.map((e) => ({ ...e, kind: 'upcoming' })), ...past.slice(0, 8).map((e) => ({ ...e, kind: 'past' }))]);
+        const lead = up.length ? up.map((e) => ({ ...e, kind: 'upcoming' })) : comingSoon;
+        setItems([...lead, ...past.slice(0, 8).map((e) => ({ ...e, kind: 'past' }))]);
       })
-      .catch(() => setItems([]));
+      .catch(() => setItems(comingSoon));
   }, []);
 
   if (!items || items.length === 0) return null;
@@ -27,7 +31,8 @@ export default function EventsReel({ onNavigate }) {
   const loop = [...base, ...base];
   const duration = `${Math.max(30, base.length * 7)}s`;
 
-  const open = (e) => onNavigate(e.kind === 'upcoming' ? `events/?event=${e.slug}` : `events/?gallery=${e.slug}`);
+  const open = (e) =>
+    onNavigate(e.kind === 'upcoming' ? `events/?event=${e.slug}` : e.kind === 'past' ? `events/?gallery=${e.slug}` : 'events');
 
   return (
     <section className="bg-afrilink-ink py-14 border-t border-white/5 overflow-hidden" aria-label="Afrilink events">
@@ -66,12 +71,13 @@ export default function EventsReel({ onNavigate }) {
                 {e.kind === 'upcoming' && <EventDateBadge iso={e.starts_at} className="absolute top-4 left-4" />}
                 <span
                   className={`absolute top-4 right-4 px-2.5 py-1 rounded-full text-[11px] font-bold ${
-                    e.kind === 'upcoming' ? 'bg-afrilink-orange text-white' : 'bg-white/15 text-white backdrop-blur'
+                    e.kind === 'past' ? 'bg-white/15 text-white backdrop-blur' : 'bg-afrilink-orange text-white'
                   }`}
                 >
-                  {e.kind === 'upcoming' ? 'Upcoming' : 'Past event'}
+                  {e.kind === 'upcoming' ? 'Upcoming' : e.kind === 'soon' ? 'Coming soon' : 'Past event'}
                 </span>
                 <div className="absolute inset-x-0 bottom-0 p-5">
+                  {e.kind === 'soon' && <div className="text-afrilink-gold text-xs font-semibold mb-1">Date to be announced</div>}
                   {e.kind === 'past' && (
                     <div className="text-afrilink-gold text-xs font-semibold mb-1">{formatEventDate(e.starts_at, { dateStyle: 'long' })}</div>
                   )}
@@ -81,7 +87,7 @@ export default function EventsReel({ onNavigate }) {
                       <span className="inline-flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-afrilink-orange" />{e.city}</span>
                     ) : <span />}
                     <span className="inline-flex items-center gap-1 text-afrilink-gold group-hover:underline">
-                      {e.kind === 'upcoming' ? <><Ticket className="w-3.5 h-3.5" /> Book tickets</> : <><Images className="w-3.5 h-3.5" /> View gallery</>}
+                      {e.kind === 'upcoming' ? <><Ticket className="w-3.5 h-3.5" /> Book tickets</> : e.kind === 'soon' ? <><Ticket className="w-3.5 h-3.5" /> Find out more</> : <><Images className="w-3.5 h-3.5" /> View gallery</>}
                     </span>
                   </div>
                 </div>
