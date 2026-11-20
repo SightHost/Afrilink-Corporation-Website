@@ -4,6 +4,7 @@ import AfricaMap from '../components/AfricaMap';
 import StatCounter from '../components/StatCounter';
 import InvestmentCard from '../components/InvestmentCard';
 import CTAButton from '../components/CTAButton';
+import EventsReel from '../components/EventsReel';
 import { investmentsData, focusAreasData } from '../data/investmentsData';
 import { milestonesData } from '../data/corporateData';
 import { withBase } from '../lib/paths';
@@ -325,6 +326,7 @@ export default function HomePage({ onNavigate }) {
   return (
     <div>
       <HeroSection onNavigate={onNavigate} />
+      <EventsReel onNavigate={onNavigate} />
       <StatBarSection />
       <FocusAreasSection onNavigate={onNavigate} />
       <FootprintSection onNavigate={onNavigate} />

@@ -27,6 +27,9 @@ import SectorStrategicPage from './views/SectorStrategicPage';
 import { withBase } from './lib/paths';
 
 import ContactPage from './views/ContactPage';
+import EventsPage from './views/EventsPage';
+import EventCheckoutResultPage from './views/EventCheckoutResultPage';
+import TicketPage from './views/TicketPage';
 
 // Client-side router mapping routes to dedicated pages
 function parseRoute(route) {
@@ -57,6 +60,12 @@ function parseRoute(route) {
     return { page: 'investments-hub', sub: slug };
   }
   if (route === 'investments') return { page: 'investments-hub', sub: null };
+
+  // Events
+  if (route === 'events') return { page: 'events', sub: null };
+  if (route === 'events/success') return { page: 'events-result', sub: 'success' };
+  if (route === 'events/cancelled') return { page: 'events-result', sub: 'cancelled' };
+  if (route === 'events/ticket') return { page: 'events-ticket', sub: null };
 
   // Contact
   if (route === 'contact') return { page: 'contact', sub: null };
@@ -135,6 +144,11 @@ export default function App({ route = 'home' }) {
             onNavigate={navigate}
           />
         )}
+
+        {/* Events */}
+        {page === 'events' && <EventsPage onNavigate={navigate} onOpenLegal={setLegalModal} />}
+        {page === 'events-result' && <EventCheckoutResultPage variant={sub} onNavigate={navigate} />}
+        {page === 'events-ticket' && <TicketPage onNavigate={navigate} />}
 
         {/* Contact */}
         {page === 'contact' && <ContactPage onNavigate={navigate} />}

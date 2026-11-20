@@ -295,3 +295,24 @@
   }
 }
 
+
+/* Home-page events reel: seamless horizontal loop (track holds the list twice) */
+@keyframes eventsReel {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.events-reel-track {
+  animation: eventsReel var(--reel-duration, 40s) linear infinite;
+  will-change: transform;
+}
+
+.events-reel:hover .events-reel-track,
+.events-reel:focus-within .events-reel-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .events-reel { overflow-x: auto; }
+  .events-reel-track { animation: none; }
+}

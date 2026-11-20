@@ -9,12 +9,15 @@
     "lint": "oxlint",
     "preview": "astro preview --open",
     "astro": "astro",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "dev:api": "astro build && wrangler dev"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.1",
+    "@supabase/supabase-js": "^2.119.2",
     "astro": "^7.3.8",
     "lucide-react": "^1.56.0",
+    "qrcode": "^1.5.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

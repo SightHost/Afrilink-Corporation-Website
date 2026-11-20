@@ -1,0 +1,21 @@
+# Copy this file to .dev.vars (never commit .dev.vars) and fill in values
+# from your DEVELOPMENT Supabase project and PayFast SANDBOX account.
+# Used only by `npm run dev:api` (wrangler dev). Production values are set
+# with `npx wrangler secret put <NAME>`; see docs/EVENTS_SETUP.md.
+
+SUPABASE_URL=https://YOUR-DEV-PROJECT-REF.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=
+
+# PayFast sandbox: https://sandbox.payfast.co.za → Settings
+PAYFAST_MODE=sandbox
+PAYFAST_MERCHANT_ID=
+PAYFAST_MERCHANT_KEY=
+PAYFAST_PASSPHRASE=
+
+# PayFast must be able to reach notify_url, so for local tests set this to your
+# Cloudflare Tunnel URL (see the guide), e.g. https://abc-123.trycloudflare.com
+SITE_URL=http://localhost:8787
+
+# Optional locally: without it, ticket emails are skipped (logged instead)
+RESEND_API_KEY=
+EVENTS_FROM_EMAIL=Afrilink Events <events@afrilinkcorp.co.za>

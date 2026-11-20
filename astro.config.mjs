@@ -10,4 +10,8 @@ export default defineConfig({
   integrations: [react()],
   // The Partner page was merged into Contact; keep old links working
   redirects: { '/partner': '/contact' },
+  // During `npm run dev`, send /api calls to the local Worker (`npm run dev:api`)
+  vite: {
+    server: { proxy: { '/api': 'http://localhost:8787' } },
+  },
 });

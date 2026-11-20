@@ -1,4 +1,5 @@
-// Cloudflare Workers config: serves the static Astro build from dist/
+// Cloudflare Workers config: serves the static Astro build from dist/, plus a
+// small Worker (worker/index.js) that handles the Events API under /api/*.
 // https://developers.cloudflare.com/workers/static-assets/
 {
   "$schema": "node_modules/wrangler/config-schema.json",
@@ -6,15 +7,33 @@
   // Account that owns the afrilinkcorp.co.za zone
   "account_id": "175b5a29f9e46da931f5cf25bb33b5a6",
   "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker/index.js",
   // Wrangler runs this before every deploy, so dist/ always exists
   "build": {
     "command": "npm run build"
   },
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     // Astro prerenders each route as <route>/index.html
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    // Only API calls invoke the Worker; pages and images are served directly
+    "run_worker_first": ["/api/*"]
   },
+  // Non-secret settings. Secrets (keys, passphrase) are set with
+  // `npx wrangler secret put <NAME>` — see docs/EVENTS_SETUP.md.
+  "vars": {
+    "SITE_URL": "https://afrilinkcorp.co.za",
+    // "sandbox" for testing, "live" to take real payments
+    "PAYFAST_MODE": "sandbox",
+    // Fill in from Supabase → Project Settings → API → Project URL
+    "SUPABASE_URL": "https://YOUR-PROJECT-REF.supabase.co",
+    // Must be an address on a domain verified in Resend
+    "EVENTS_FROM_EMAIL": "Afrilink Events <events@afrilinkcorp.co.za>"
+  },
+  // Show Worker logs (e.g. rejected PayFast notifications) in the dashboard
+  "observability": { "enabled": true },
   // Cloudflare creates the DNS records and certificates for these hostnames;
   // the afrilinkcorp.co.za zone must be active in the same Cloudflare account
   "routes": [

@@ -26,6 +26,10 @@ export function getStaticPaths() {
     'investments/digital': 'Digital & Technology',
     'investments/human-capital': 'Human Capital & Training',
     'investments/strategic': 'Strategic Ventures',
+    'events': 'Events',
+    'events/success': 'Booking Confirmation',
+    'events/cancelled': 'Payment Cancelled',
+    'events/ticket': 'Your Ticket',
     'contact': 'Contact',
     ...Object.fromEntries(investmentsData.map((inv) => [`investments/${inv.slug}`, inv.name])),
   };

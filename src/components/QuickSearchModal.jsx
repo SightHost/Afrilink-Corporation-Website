@@ -63,6 +63,7 @@ export default function QuickSearchModal({ isOpen, onClose, onNavigate }) {
     { label: 'Sector: Digital Engineering & Tech Talent', route: 'investments/digital', category: 'Sectors', icon: Briefcase },
     { label: 'Sector: Human Capital Academy (Daveyton)', route: 'investments/human-capital', category: 'Sectors', icon: Briefcase },
     { label: 'Sector: Strategic Ventures & ELO AI', route: 'investments/strategic', category: 'Sectors', icon: Briefcase },
+    { label: 'Events: Upcoming Tickets & Past Gallery', route: 'events', category: 'Events', icon: Sparkles },
     { label: 'Johannesburg Corporate Office & Contacts', route: 'contact', category: 'Contact', icon: Building }
   ].filter(l => l.label.toLowerCase().includes(normalizedQuery));
 

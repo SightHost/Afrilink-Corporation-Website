@@ -71,6 +71,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
         { label: 'Sector: Strategic Ventures', route: 'investments/strategic', desc: 'German ELO AI alliance & University of Botswana EdTech MOU' }
       ]
     },
+    { label: 'Events', route: 'events' },
     { label: 'Contact Us', route: 'contact' }
   ];
 
